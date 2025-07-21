@@ -119,7 +119,7 @@ export default function Footer() {
                 <ul className="space-y-3">
                   <li>
                     <Link
-                      href="#"
+                      href="/g1-specs"
                       className="text-white/80 hover:text-white transition-colors flex items-center group"
                     >
                       <ChevronRight

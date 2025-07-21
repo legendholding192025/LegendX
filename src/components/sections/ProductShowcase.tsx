@@ -6,7 +6,7 @@ export default function ProductShowcase() {
     <section className="pt-20 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl font-bold text-[#5E366D] mb-4 text-center">Product Showcase</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-[#5E366D] mb-4 text-center">Products</h2>
         <div className="w-24 h-1 bg-[#EE8900] mx-auto rounded-full mb-6"></div>
         </div>
         
@@ -36,9 +36,11 @@ export default function ProductShowcase() {
             </div>
             <div className="flex items-center justify-center gap-4">
               <h3 className="text-2xl font-bold text-gray-900">G1</h3>
-              <button className="bg-[rgb(43,28,72)] hover:bg-[rgb(53,38,82)] text-white px-8 py-3 rounded-lg transition-colors duration-300 text-sm">
-                View Specs
-              </button>
+              <Link href="/g1-specs">
+                <button className="bg-[rgb(43,28,72)] hover:bg-[rgb(53,38,82)] text-white px-8 py-3 rounded-lg transition-colors duration-300 text-sm">
+                  View Specs
+                </button>
+              </Link>
             </div>
           </div>
           
