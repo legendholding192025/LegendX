@@ -3,8 +3,16 @@ import Image from 'next/image';
 
 export default function AboutSection() {
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section 
+      className="py-20 relative"
+      style={{
+        backgroundImage: 'url("https://cdn.legendholding.com/images/cdn_687a26aa467e88.57510195_20250718_104914.png")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Image Card */}
           <div>

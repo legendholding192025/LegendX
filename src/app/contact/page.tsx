@@ -21,7 +21,7 @@ export default function ContactPage() {
             alt="Contact Us"
             width={400}
             height={200}
-            className="object-contain w-64 md:w-auto lg:w-auto animate-slide-down"
+            className="object-contain w-64 md:w-auto lg:w-auto"
             priority
           />
         </div>

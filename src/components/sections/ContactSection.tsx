@@ -177,7 +177,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-gray-700 font-medium">Phone</p>
-                  <a href="tel:+97142340738" className="text-gray-900 font-semibold hover:text-orange-500 transition-colors duration-200">
+                  <a href="tel:+97142340738" className="text-gray-900 font-normal hover:text-orange-500 transition-colors duration-200">
                     +971 4 234 0738
                   </a>
                 </div>
@@ -190,7 +190,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-gray-700 font-medium">Email</p>
-                  <a href="mailto:info@legendx.com" className="text-gray-900 font-semibold hover:text-orange-500 transition-colors duration-200">
+                  <a href="mailto:info@legendx.com" className="text-gray-900 font-normal hover:text-orange-500 transition-colors duration-200">
                     info@legendx.com
                   </a>
                 </div>
@@ -203,7 +203,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-gray-700 font-medium">Address</p>
-                  <p className="text-gray-900 font-semibold">
+                  <p className="text-gray-900 font-normal">
                     Legend Holding Group HQ, Jebel Ali Freezone
                     <br />
                     Gate 5, Dubai, United Arab Emirates
@@ -218,7 +218,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-gray-700 font-medium">Business Hours</p>
-                  <p className="text-gray-900 font-semibold">Monday - Saturday : 9:00 AM - 6:00 PM</p>
+                  <p className="text-gray-900 font-normal">Monday - Saturday : 9:00 AM - 6:00 PM</p>
                 </div>
               </div>
             </div>
