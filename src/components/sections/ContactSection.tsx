@@ -13,7 +13,7 @@ export default function ContactSection() {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
-    countryCode: "+91",
+    countryCode: "+971",
     phoneNumber: "",
     productOfInterest: "",
     serviceType: "rental",

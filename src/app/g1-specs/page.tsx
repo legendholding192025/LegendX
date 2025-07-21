@@ -297,16 +297,16 @@ export default function G1SpecsPage() {
 
       {/* Video Modal */}
       {showVideo && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
-          <div className="relative bg-black rounded-lg max-w-4xl w-full max-h-[90vh]">
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="relative w-screen h-screen max-w-none max-h-none bg-black">
             <button
               onClick={() => setShowVideo(false)}
-              className="absolute top-4 right-4 text-white hover:text-gray-300 text-2xl font-bold z-10 bg-black bg-opacity-50 rounded-full w-8 h-8 flex items-center justify-center"
+              className="absolute top-4 right-4 text-white hover:text-gray-300 text-3xl font-bold z-10 bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center"
             >
               ×
             </button>
             <video
-              className="w-full h-full rounded-lg"
+              className="w-full h-full object-contain"
               controls
               autoPlay
               src="https://cdn.legendholding.com/videos/video_cdn_687e25a426cb22.10735691_20250721_113356.mp4"
@@ -412,7 +412,7 @@ function ContactUsFormCard() {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
-    countryCode: "+91",
+    countryCode: "+971",
     phoneNumber: "",
     productOfInterest: "",
     serviceType: "rental",
