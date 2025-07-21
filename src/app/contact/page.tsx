@@ -5,7 +5,7 @@ export default function ContactPage() {
   return (
     <main>
       {/* Contact Banner */}
-      <section className="relative w-full h-48 md:h-56 lg:h-64">
+      <section className="relative w-full h-48 md:h-56 lg:h-64 pb-28">
         <Image
           src="https://cdn.legendholding.com/images/cdn_687a0576add895.66879957_20250718_082734.png"
           alt="Contact Us Banner"
