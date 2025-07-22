@@ -131,7 +131,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link 
-                      href="#" 
+                      href="/b1-specs" 
                       className="text-white/80 hover:text-white transition-colors flex items-center group"
                     >
                       <ChevronRight
@@ -143,7 +143,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/go1-specs"
                       className="text-white/80 hover:text-white transition-colors flex items-center group"
                     >
                       <ChevronRight

@@ -44,21 +44,18 @@ export default function HeroSection() {
       </div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-48">
-        <div className="relative">
+        <div className="relative h-full flex items-end">
           {/* Text Content */}
-          {/* <div className="text-center">
-            <h1 className="text-7xl md:text-8xl lg:text-[10rem] font-bold mb-8">
-              <span className="bg-gradient-to-r from-purple-600 via-blue-500 to-cyan-400 bg-clip-text text-transparent">Unitree </span>
-              <span className="bg-gradient-to-r from-cyan-300 to-cyan-200 bg-clip-text text-transparent drop-shadow-lg">G1</span>
+          <div className="text-left mt-32">
+            <h1 className="mb-8">
+              <div className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                <span className="bg-gradient-to-r from-purple-600 via-blue-500 to-cyan-400 bg-clip-text text-transparent">Welcome To The</span>
+              </div>
+              <div className="text-7xl md:text-8xl lg:text-[10rem] font-bold">
+                <span className="bg-gradient-to-r from-cyan-300 to-cyan-200 bg-clip-text text-transparent drop-shadow-lg">Future</span>
+              </div>
             </h1>
-            <div className="text-3xl md:text-5xl mb-6">
-              <span className="text-purple-300">Price from </span>
-              <span className="text-cyan-400 font-bold text-5xl md:text-7xl">${formattedCount}</span>
-            </div>
-            <p className="text-white text-xl md:text-3xl">
-              Humanoid agent AI avatar
-            </p>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

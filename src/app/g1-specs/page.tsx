@@ -252,50 +252,86 @@ function SpecificationsTable() {
 export default function G1SpecsPage() {
   const [showSpecs, setShowSpecs] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+
+  const handleVideoClick = () => {
+    setIsVideoPlaying(true);
+  };
+
+  const handleVideoClose = () => {
+    setIsVideoPlaying(false);
+  };
 
   return (
     <main>
       {/* Banner Section */}
-      <section className="relative w-full h-[36rem] md:h-[42rem] lg:h-[48rem]">
-        <Image
-          src="https://cdn.legendholding.com/images/cloudinary_687def13c34d78.81722733_20250721_074107.jpg"
-          alt="G1 Specs Banner"
-          fill
-          className="object-cover w-full"
-          priority
-          sizes="100vw"
-          quality={100}
-          style={{ objectPosition: 'center -6rem' }}
-        />
-        <div className="absolute inset-0 flex items-center justify-center z-10">
-          {/* Product Information Card - Right Side */}
-          <div className="absolute right-12 md:right-20 lg:right-24 top-1/2 transform -translate-y-1/2 bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e] rounded-xl p-10 shadow-2xl border border-gray-700 max-w-md">
-            <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
-                <span className="text-5xl md:text-6xl">Unitree</span>
-                <br />
-                <span className="text-3xl md:text-4xl">G1</span>
-              </h1>
-              <p className="text-white text-lg mb-4">Humanoid agent AI avatar</p>
-              <p className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 text-xl font-semibold mb-4">
-                Price from $16K
-              </p>
-              <div className="w-full h-px bg-gradient-to-r from-purple-400 to-cyan-400 mb-6"></div>
-              <button 
-                onClick={() => setShowVideo(true)}
-                className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-lg border border-gray-600 transition-colors duration-300 mb-4"
-              >
-                Video
-              </button>
-              <p className="text-white text-sm opacity-80">
-                Continuous OTA Software Upgrade and Update
-              </p>
+      <section className="relative w-full h-[36rem] md:h-[42rem] lg:h-[48rem] overflow-hidden">
+        {!isVideoPlaying ? (
+          <>
+            <Image
+              src="https://cdn.legendholding.com/images/cloudinary_687def13c34d78.81722733_20250721_074107.jpg"
+              alt="G1 Specs Banner"
+              fill
+              className="object-cover w-full transition-all duration-700 ease-in-out"
+              priority
+              sizes="100vw"
+              quality={100}
+              style={{ objectPosition: 'center -6rem' }}
+            />
+            <div className="absolute inset-0 flex items-center justify-center z-10 transition-all duration-700 ease-in-out">
+              {/* Product Information Card - Right Side */}
+              <div className="absolute right-12 md:right-20 lg:right-24 top-1/2 transform -translate-y-1/2 bg-[#2c1b47]/71 rounded-xl p-10 shadow-2xl border border-gray-700 max-w-md transition-all duration-700 ease-in-out transform hover:scale-105">
+                <div className="text-center">
+                  <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 transition-all duration-500">
+                    <span className="text-5xl md:text-6xl">Unitree</span>
+                    <br />
+                    <span className="text-3xl md:text-4xl">G1</span>
+                  </h1>
+                  <p className="text-white text-lg mb-4 transition-all duration-500">Humanoid agent AI avatar</p>
+                  <p className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 text-xl font-semibold mb-4 transition-all duration-500">
+                    Price from $16K
+                  </p>
+                  <div className="w-full h-px bg-gradient-to-r from-purple-400 to-cyan-400 mb-6 transition-all duration-500"></div>
+                  <div className="flex items-center justify-center mb-4">
+                    <button 
+                      onClick={handleVideoClick}
+                      className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-lg border border-gray-600 transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-110 hover:shadow-lg"
+                    >
+                      <svg className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                      </svg>
+                      Watch Video
+                    </button>
+                  </div>
+                  <p className="text-white text-sm opacity-80 transition-all duration-500">
+                    Continuous OTA Software Upgrade and Update
+                  </p>
+                </div>
+              </div>
             </div>
+          </>
+        ) : (
+          <div className="relative w-full h-full animate-fadeIn">
+            <button
+              onClick={handleVideoClose}
+              className="absolute top-4 right-4 text-white hover:text-gray-300 text-3xl font-bold z-10 bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center transition-all duration-300 hover:bg-opacity-70 hover:scale-110 transform"
+            >
+              ×
+            </button>
+            <video
+              className="w-full h-full object-contain animate-scaleIn"
+              controls
+              autoPlay
+              muted
+              src="https://cdn.legendholding.com/videos/video_cdn_687e25a426cb22.10735691_20250721_113356.mp4"
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
-        </div>
+        )}
       </section>
 
-      {/* Video Modal */}
+      {/* Video Modal - Keep existing modal for fullscreen option */}
       {showVideo && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="relative w-screen h-screen max-w-none max-h-none bg-black">
@@ -373,32 +409,26 @@ export default function G1SpecsPage() {
 
       {/* Get in Touch Section */}
       <section
-        className="w-full py-12 relative"
+        className="w-full py-10 relative"
         style={{
-          backgroundImage: 'url(https://cdn.legendholding.com/images/cdn_687a26aa467e88.57510195_20250718_104914.png)',
+          backgroundImage: 'url(https://cdn.legendholding.com/images/cdn_687f41ed958c55.63868180_20250722_074653.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8 relative z-10">
+        <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-center justify-between gap-8 relative z-10 min-h-[320px]">
           {/* Left Side Content: Heading + Image */}
-          <div className="flex-1 flex flex-col items-center md:items-start">
-            <div className="mt-8 mb-8">
-              <h1 className="text-4xl font-bold text-[#5D376E] mb-2">Get in Touch</h1>
-              <p className="text-lg text-gray-600 mb-6">
+          <div className="flex-1 flex flex-col items-center md:items-start justify-center h-full">
+            <div className="my-0">
+              <h1 className="text-4xl font-bold text-white mb-2 text-center md:text-left">Get in Touch</h1>
+              <p className="text-lg text-white mb-6 text-center md:text-left">
                 Visit our office or reach out to us through any of the following channels.
               </p>
             </div>
-            <img
-              src="https://cdn.legendholding.com/images/cdn_687a1f4c67df37.03007310_20250718_101748.png"
-              alt="Get in Touch"
-              className="w-80 md:w-[28rem] lg:w-[32rem] h-auto object-contain drop-shadow-xl -ml-4 md:-ml-8 lg:-ml-12"
-              style={{ maxWidth: '100%' }}
-            />
           </div>
           {/* Right Side: Contact Us Form Card */}
-          <div className="flex-1 flex justify-center md:justify-end items-start pt-32 md:pt-40">
+          <div className="flex-1 flex justify-center md:justify-end items-center h-full">
             <ContactUsFormCard />
           </div>
         </div>
@@ -430,10 +460,10 @@ function ContactUsFormCard() {
   };
 
   return (
-    <div className="p-0 flex flex-col h-auto w-full max-w-2xl">
+    <div className="bg-black/70 rounded-3xl p-5 shadow-2xl flex flex-col h-auto w-full max-w-2xl transition-all duration-300 hover:shadow-3xl hover:scale-[1.02] hover:bg-black/80">
       <div className="mb-4">
-        <h2 className="text-black text-lg font-medium mb-1">Contact Us</h2>
-        <h3 className="text-black text-2xl font-bold">Fill the Form</h3>
+        <h2 className="text-white text-lg font-medium mb-1">Contact Us</h2>
+        <h3 className="text-white text-2xl font-bold">Fill the Form</h3>
         <div className="w-12 h-1 bg-orange-500 mt-2"></div>
       </div>
       <form onSubmit={handleSubmit} className="space-y-3 flex-1 flex flex-col">
