@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
-  const [supportDropdownOpen, setSupportDropdownOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -75,7 +75,7 @@ export default function Navbar() {
               </div>
             </div>
             
-            <div className="relative cursor-pointer group">
+            <div className="relative cursor-pointer group" onMouseEnter={() => setServicesDropdownOpen(true)} onMouseLeave={() => setServicesDropdownOpen(false)}>
               <div className="flex items-center space-x-1">
                 <span className="text-black group-hover:text-orange-500 transition-all duration-300 font-medium relative z-10">Services</span>
                 <svg className="w-4 h-4 text-gray-500 group-hover:text-orange-500 group-hover:rotate-180 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -83,23 +83,14 @@ export default function Navbar() {
                 </svg>
               </div>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
-            </div>
-            
-            <div className="relative cursor-pointer group" onMouseEnter={() => setSupportDropdownOpen(true)} onMouseLeave={() => setSupportDropdownOpen(false)}>
-              <div className="flex items-center space-x-1">
-                <span className="text-black group-hover:text-orange-500 transition-all duration-300 font-medium relative z-10">Support</span>
-                <svg className="w-4 h-4 text-gray-500 group-hover:text-orange-500 group-hover:rotate-180 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
-              {/* Support Dropdown menu */}
+              {/* Services Dropdown menu */}
               <div
-                className={`absolute top-full left-1/2 -translate-x-1/2 w-48 bg-white rounded-lg shadow-lg transition-all duration-200 z-30 border border-gray-100 ${supportDropdownOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-2 pointer-events-none'}`}
-                onMouseEnter={() => setSupportDropdownOpen(true)}
-                onMouseLeave={() => setSupportDropdownOpen(false)}
+                className={`absolute top-full left-1/2 -translate-x-1/2 w-40 bg-white rounded-lg shadow-lg transition-all duration-200 z-30 border border-gray-100 ${servicesDropdownOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-2 pointer-events-none'}`}
+                onMouseEnter={() => setServicesDropdownOpen(true)}
+                onMouseLeave={() => setServicesDropdownOpen(false)}
               >
-                <Link href="/support/get-in-touch" className="block px-4 py-2 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors">Get in Touch</Link>
+                <Link href="/services/sales" className="block px-4 py-2 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors">Sales</Link>
+                <Link href="/services/rental" className="block px-4 py-2 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors">Rental</Link>
               </div>
             </div>
             
@@ -137,17 +128,12 @@ export default function Navbar() {
                   <Link href="/go1-specs" className="text-gray-700 hover:text-orange-500 transition-all">GO1</Link>
                 </div>
               </div>
-              <div className="flex items-center justify-between hover:text-orange-500 transition-all duration-300 cursor-pointer">
-                <span className="text-gray-700 group-hover:text-orange-500">Services</span>
-                <svg className="w-4 h-4 text-gray-500 group-hover:text-orange-500 group-hover:rotate-180 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
-              {/* Support Dropdown for Mobile */}
+              {/* Services Dropdown for Mobile */}
               <div>
-                <span className="text-gray-700 font-semibold">Support</span>
+                <span className="text-gray-700 font-semibold">Services</span>
                 <div className="ml-4 mt-2 flex flex-col space-y-2">
-                  <Link href="/support/get-in-touch" className="text-gray-700 hover:text-orange-500 transition-all">Get in Touch</Link>
+                  <Link href="/services/sales" className="text-gray-700 hover:text-orange-500 transition-all">Sales</Link>
+                  <Link href="/services/rental" className="text-gray-700 hover:text-orange-500 transition-all">Rental</Link>
                 </div>
               </div>
               <Link href="/contact" className="text-gray-700 hover:text-orange-500 transition-all duration-300 font-medium">
