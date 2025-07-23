@@ -43,9 +43,6 @@ export default function B1SpecsPage() {
                     <span className="text-3xl md:text-4xl">B1</span>
                   </h1>
                   <p className="text-white text-lg mb-4 transition-all duration-500">Quadruped Robot</p>
-                  <p className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 text-xl font-semibold mb-4 transition-all duration-500">
-                    Price from $10K
-                  </p>
                   <div className="w-full h-px bg-gradient-to-r from-purple-400 to-cyan-400 mb-6 transition-all duration-500"></div>
                   <div className="flex items-center justify-center mb-4">
                     <button 
@@ -86,55 +83,139 @@ export default function B1SpecsPage() {
         )}
       </section>
 
-      {/* B1 Robot Images Section */}
+      {/* B1 Specs Section */}
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Image 1 - B1 on Concrete Blocks */}
-          <div className="relative group overflow-hidden rounded-xl shadow-lg">
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* First Row - Left: Image, Right: Text */}
+          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white">
             <Image
               src="https://cdn.legendholding.com/images/cdn_687f6d36cfe293.84571079_20250722_105134.jpg"
               alt="B1 Robot on Concrete Blocks"
-              width={400}
-              height={300}
-              className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
               quality={90}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
 
-          {/* Image 2 - B1 on Train Tracks */}
-          <div className="relative group overflow-hidden rounded-xl shadow-lg">
+          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-4">All-Terrain Mobility</h3>
+            <p className="text-white/80 mb-6">Advanced quadruped robot designed for challenging environments and heavy-duty applications</p>
+            
+            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+              Key Features
+            </div>
+            
+            <ol className="space-y-4 text-white/90">
+              <li className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">1.</span>
+                <span>Exceptional terrain adaptability with ability to navigate complex obstacles and uneven surfaces.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">2.</span>
+                <span>High payload capacity of 20kg while walking and 80kg when standing stationary.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">3.</span>
+                <span>Advanced perception system with multiple sensors for autonomous navigation and obstacle avoidance.</span>
+              </li>
+            </ol>
+          </div>
+
+          {/* Second Row - Left: Text, Right: Image */}
+          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-4">Industrial Grade Performance</h3>
+            
+            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+              Specifications
+            </div>
+            
+            <ol className="space-y-4 text-white/90">
+              <li className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">1.</span>
+                <span>Maximum walking speed of 1.2m/s for efficient operation in various environments.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">2.</span>
+                <span>IP67 standard protection with optional IP68 for extreme weather and water resistance.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">3.</span>
+                <span>Extended endurance with 2-2.5 hours of continuous operation on a single charge.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">4.</span>
+                <span>Compact design measuring 1126mm x 467mm x 636mm for versatile deployment.</span>
+              </li>
+            </ol>
+          </div>
+
+          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white">
             <Image
               src="https://cdn.legendholding.com/images/cdn_687f6d45bc7273.03033435_20250722_105149.jpg"
               alt="B1 Robot on Train Tracks"
-              width={400}
-              height={300}
-              className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
               quality={90}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
+        </div>
 
-          {/* Image 3 - B1 Carrying Load */}
-          <div className="relative group overflow-hidden rounded-xl shadow-lg">
+        {/* Additional B1 Capabilities Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white">
             <Image
               src="https://cdn.legendholding.com/images/cdn_687f6d5acffc71.05340033_20250722_105210.png"
               alt="B1 Robot Carrying Load"
-              width={400}
-              height={300}
-              className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
               quality={90}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+
+          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-4">Advanced Load Handling</h3>
+            
+            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+              Payload Capabilities
+            </div>
+            
+            <div className="space-y-4 text-white/90">
+              <p className="text-lg font-semibold text-white">
+                Maximum Load Capacity: 20kg Walking / 80kg Standing
+              </p>
+              <p className="text-white/80">
+                The B1 robot excels in industrial applications requiring heavy payload transportation and manipulation. Its robust design ensures reliable performance even under maximum load conditions.
+              </p>
+              <div className="mt-4 space-y-2">
+                <div className="flex items-center">
+                  <span className="text-orange-400 font-bold mr-3">•</span>
+                  <span>Stable walking with 20kg payload</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-orange-400 font-bold mr-3">•</span>
+                  <span>Stationary operations up to 80kg</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-orange-400 font-bold mr-3">•</span>
+                  <span>Precise load positioning and control</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+
 
       {/* Specs Section */}
       <section className="w-full bg-black py-16">
@@ -270,25 +351,40 @@ export default function B1SpecsPage() {
       <section
         className="w-full py-10 relative"
         style={{
-          backgroundImage: 'url(https://cdn.legendholding.com/images/cdn_687f41ed958c55.63868180_20250722_074653.png)',
+          backgroundImage: 'url(https://cdn.legendholding.com/images/cdn_687a26aa467e88.57510195_20250718_104914.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-center justify-between gap-8 relative z-10 min-h-[320px]">
-          {/* Left Side Content: Heading */}
-          <div className="flex-1 flex flex-col items-center md:items-start justify-center h-full">
-            <div className="my-0">
-              <h1 className="text-4xl font-bold text-white mb-2 text-center md:text-left">Get in Touch</h1>
-              <p className="text-lg text-white mb-6 text-center md:text-left">
-                Visit our office or reach out to us through any of the following channels.
-              </p>
-            </div>
+        <div className="max-w-5xl mx-auto px-4 relative z-10 min-h-[320px]">
+          {/* Heading Above Everything */}
+          <div className="text-left mb-8">
+            <h1 className="text-4xl font-bold text-[rgb(43,28,72)] mb-2">Get in Touch</h1>
+            <p className="text-lg text-[rgb(43,28,72)]">
+              Visit our office or reach out to us through any of the following channels.
+            </p>
           </div>
-          {/* Right Side: Contact Us Form Card */}
-          <div className="flex-1 flex justify-center md:justify-end items-center h-full">
-            <ContactUsFormCard />
+          
+          {/* Content Row */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            {/* Left Side: Image */}
+            <div className="flex-1 flex justify-center md:justify-start">
+              <Image
+                src="https://cdn.legendholding.com/images/cdn_687a1f4c67df37.03007310_20250718_101748.png"
+                alt="Contact Image"
+                width={400}
+                height={300}
+                className="w-full max-w-md h-auto object-contain"
+                priority
+                sizes="(max-width: 768px) 100vw, 400px"
+                quality={90}
+              />
+            </div>
+            {/* Right Side: Contact Us Form Card */}
+            <div className="flex-1 flex justify-center md:justify-end">
+              <ContactUsFormCard />
+            </div>
           </div>
         </div>
       </section>
@@ -316,10 +412,10 @@ function ContactUsFormCard() {
   };
 
   return (
-    <div className="bg-black/70 rounded-3xl p-5 shadow-2xl flex flex-col h-auto w-full max-w-2xl transition-all duration-300 hover:shadow-3xl hover:scale-[1.02] hover:bg-black/80">
+    <div className="rounded-3xl p-5 shadow-2xl flex flex-col h-auto w-full max-w-2xl transition-all duration-300 hover:shadow-3xl hover:scale-[1.02]">
       <div className="mb-4">
-        <h2 className="text-white text-lg font-medium mb-1">Contact Us</h2>
-        <h3 className="text-white text-2xl font-bold">Fill the Form</h3>
+        <h2 className="text-[rgb(43,28,72)] text-lg font-medium mb-1">Contact Us</h2>
+        <h3 className="text-[rgb(43,28,72)] text-2xl font-bold">Fill the Form</h3>
         <div className="w-12 h-1 bg-orange-500 mt-2"></div>
       </div>
       <form onSubmit={handleSubmit} className="space-y-3 flex-1 flex flex-col">
@@ -364,13 +460,17 @@ function ContactUsFormCard() {
           />
         </div>
         <div>
-          <Input
-            type="text"
-            placeholder="Product of Interest"
+          <select
             value={formData.productOfInterest}
             onChange={(e) => handleInputChange("productOfInterest", e.target.value)}
-            className="bg-white !bg-white border-0 rounded-lg h-12 text-gray-900 placeholder:text-gray-500 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
-          />
+            className="w-full bg-white border-0 rounded-lg h-12 text-gray-900 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-200 focus:scale-[1.02]"
+          >
+            <option value="">Select Product of Interest</option>
+            <option value="B1 Humanoid Robot">B1 Humanoid Robot</option>
+            <option value="G1 Humanoid Robot">G1 Humanoid Robot</option>
+            <option value="GO1 Quadruped Robot">GO1 Quadruped Robot</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
         <div className="bg-white rounded-lg p-3">
           <Label className="text-gray-700 font-medium mb-3 block">Service Type</Label>

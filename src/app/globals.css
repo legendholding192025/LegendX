@@ -1,14 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  /* Brand fonts - using web fonts as fallbacks until brand fonts are provided */
+  /* 
+  To use your actual brand fonts:
+  1. Place Richmond font files in /public/fonts/
+  2. Place Effra font files in /public/fonts/
+  3. Update the @font-face declarations below with your actual font file paths
+  */
+  
+  /* Richmond font for headings - using Playfair Display as fallback */
+  @font-face {
+    font-family: 'Richmond';
+    src: local('Playfair Display'), local('Georgia'), serif;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Effra font for content - using Inter as fallback */
+  @font-face {
+    font-family: 'Effra';
+    src: local('Inter'), local('Arial'), sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
   html {
     scroll-behavior: smooth;
   }
   
   body {
-    @apply text-secondary-900 bg-white;
+    @apply text-secondary-900 bg-white font-sans;
+  }
+  
+  /* Apply brand fonts to headings */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
   }
 }
 

@@ -288,9 +288,6 @@ export default function G1SpecsPage() {
                     <span className="text-3xl md:text-4xl">G1</span>
                   </h1>
                   <p className="text-white text-lg mb-4 transition-all duration-500">Humanoid agent AI avatar</p>
-                  <p className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 text-xl font-semibold mb-4 transition-all duration-500">
-                    Price from $16K
-                  </p>
                   <div className="w-full h-px bg-gradient-to-r from-purple-400 to-cyan-400 mb-6 transition-all duration-500"></div>
                   <div className="flex items-center justify-center mb-4">
                     <button 
@@ -353,19 +350,257 @@ export default function G1SpecsPage() {
         </div>
       )}
 
-      {/* Specs Section */}
-      <section className="max-w-5xl mx-auto px-4 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#5E366D] mb-4 text-center">G1 Specs</h2>
-          <div className="w-24 h-1 bg-[#EE8900] mx-auto rounded-full mb-6"></div>
-        </div>
-        <img 
-          src="https://cdn.legendholding.com/images/cloudinary_687df3922cfbf9.75666994_20250721_080018.png" 
-          alt="G1 Specs"
-          style={{ display: 'block', maxWidth: '100%', height: 'auto' }}
-        />
-      </section>
+      {/* G1 Specs Section */}
+      <section className="max-w-7xl mx-auto px-4 py-16">
+        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">G1 Specs</h2>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* First Row - Left: Image, Right: Text */}
+          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full">
+            <Image
+              src="https://cdn.legendholding.com/images/cdn_6880bd6f9fc8c3.06590023_20250723_104607.png"
+              alt="G1 Robot Body Size"
+              fill
+              className="object-contain transition-transform duration-300 group-hover:scale-105"
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              quality={90}
+            />
+          </div>
 
+          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-4">Body Size & Specifications</h3>
+            <p className="text-white/80 mb-6">Advanced humanoid robot with precise dimensions and weight distribution</p>
+            
+            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+              Key Measurements
+            </div>
+            
+            <ol className="space-y-4 text-white/90">
+              <li className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">1.</span>
+                <span>Weight: <strong>35kg</strong> - Optimized for stability and mobility</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">2.</span>
+                <span>Height: <strong>1320mm</strong> - Human-like proportions for natural interaction</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">3.</span>
+                <span>Dimensions: 1320x450x200mm (Stand) / 690x450x300mm (Fold)</span>
+              </li>
+            </ol>
+          </div>
+
+          {/* Second Row - Left: Text, Right: Image */}
+          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-4">Advanced Degrees of Freedom</h3>
+            
+            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+              Joint Freedom
+            </div>
+            
+            <ol className="space-y-4 text-white/90">
+              <li className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">1.</span>
+                <span>Total Degrees of Freedom: <strong>23 - 43</strong> (depending on configuration)</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">2.</span>
+                <span>Single Leg: 6 degrees of freedom for natural walking</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">3.</span>
+                <span>Single Arm: 5 degrees of freedom for precise manipulation</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">4.</span>
+                <span>Waist: 1 degree of freedom with optional additional 2</span>
+              </li>
+            </ol>
+          </div>
+
+          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full">
+            <Image
+              src="https://cdn.legendholding.com/images/cdn_6880d868980ee1.50193069_20250723_124112.png"
+              alt="G1 Robot Degrees of Freedom"
+              fill
+              className="object-contain transition-transform duration-300 group-hover:scale-105"
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              quality={90}
+            />
+          </div>
+        </div>
+
+        {/* Additional G1 Capabilities Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full">
+            <Image
+              src="https://cdn.legendholding.com/images/cdn_6880bd41a010c8.12532654_20250723_104521.png"
+              alt="G1 Robot Maximum Joint Torque"
+              fill
+              className="object-contain transition-transform duration-300 group-hover:scale-105"
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              quality={90}
+            />
+          </div>
+
+          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-4">Power & Performance</h3>
+            
+            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+              Technical Specifications
+            </div>
+            
+            <div className="space-y-4 text-white/90">
+              <div className="flex items-center">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span>Maximum Joint Torque: <strong>120N.m</strong></span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span>Battery Life: <strong>About 2h</strong> of continuous operation</span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span>Arm Maximum Load: <strong>3Kg</strong> for manipulation tasks</span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span>360° Detection: <strong>3D LIDAR + Depth Camera</strong> for advanced perception</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Fourth Row - Left: Text, Right: Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-4">Dexterous Hand Technology</h3>
+            
+            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+              Advanced Manipulation
+            </div>
+            
+            <div className="space-y-4 text-white/90">
+              <div className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span><strong>3-finger force control dexterous hand</strong> for precise manipulation</span>
+              </div>
+              <div className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span>Optional installation of <strong>tactile sensor arrays</strong></span>
+              </div>
+              <div className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span>Advanced force feedback for <strong>delicate object handling</strong></span>
+              </div>
+              <div className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span>Human-like grip patterns for <strong>natural interaction</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full">
+            <Image
+              src="https://cdn.legendholding.com/images/cdn_6880bd4befaa81.53340882_20250723_104531.png"
+              alt="G1 Robot Dexterous Hand"
+              fill
+              className="object-contain transition-transform duration-300 group-hover:scale-105"
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              quality={90}
+            />
+          </div>
+        </div>
+
+        {/* Fifth Row - Left: Image, Right: Text */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full">
+            <Image
+              src="https://cdn.legendholding.com/images/cdn_6880bd267ba806.78795331_20250723_104454.png"
+              alt="G1 Robot Battery Life"
+              fill
+              className="object-contain transition-transform duration-300 group-hover:scale-105"
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              quality={90}
+            />
+          </div>
+
+          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-4">Battery & Endurance</h3>
+            
+            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+              Power Management
+            </div>
+            
+            <div className="space-y-4 text-white/90">
+              <div className="flex items-center">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span>Battery Life: <strong>About 2h</strong> of continuous operation</span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span>Advanced power management for <strong>optimal performance</strong></span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span>Quick charging capabilities for <strong>minimal downtime</strong></span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span>Energy-efficient design for <strong>extended mission duration</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Sixth Row - Left: Text, Right: Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-4">360° Detection & Perception</h3>
+            
+            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+              Advanced Sensing
+            </div>
+            
+            <div className="space-y-4 text-white/90">
+              <div className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span><strong>3D LIDAR + Depth Camera</strong> for comprehensive environment mapping</span>
+              </div>
+              <div className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span>360° field of view for <strong>complete situational awareness</strong></span>
+              </div>
+              <div className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span>Real-time obstacle detection and <strong>path planning</strong></span>
+              </div>
+              <div className="flex items-start">
+                <span className="text-orange-400 font-bold mr-3">•</span>
+                <span>Advanced perception algorithms for <strong>safe navigation</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full">
+            <Image
+              src="https://cdn.legendholding.com/images/cdn_6880bda99d5cc1.74040172_20250723_104705.png"
+              alt="G1 Robot 360° Detection Perception"
+              fill
+              className="object-contain transition-transform duration-300 group-hover:scale-105"
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              quality={90}
+            />
+          </div>
+        </div>
+      </section>
       {/* Technical Details Section */}
       <section className="w-full bg-black py-16">
         <div className="max-w-5xl mx-auto px-4">
@@ -411,25 +646,40 @@ export default function G1SpecsPage() {
       <section
         className="w-full py-10 relative"
         style={{
-          backgroundImage: 'url(https://cdn.legendholding.com/images/cdn_687f41ed958c55.63868180_20250722_074653.png)',
+          backgroundImage: 'url(https://cdn.legendholding.com/images/cdn_687a26aa467e88.57510195_20250718_104914.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-center justify-between gap-8 relative z-10 min-h-[320px]">
-          {/* Left Side Content: Heading + Image */}
-          <div className="flex-1 flex flex-col items-center md:items-start justify-center h-full">
-            <div className="my-0">
-              <h1 className="text-4xl font-bold text-white mb-2 text-center md:text-left">Get in Touch</h1>
-              <p className="text-lg text-white mb-6 text-center md:text-left">
+        <div className="max-w-5xl mx-auto px-4 relative z-10 min-h-[320px]">
+          {/* Heading Above Everything */}
+          <div className="text-left mb-8">
+            <h1 className="text-4xl font-bold text-[rgb(43,28,72)] mb-2">Get in Touch</h1>
+            <p className="text-lg text-[rgb(43,28,72)]">
                 Visit our office or reach out to us through any of the following channels.
               </p>
             </div>
+          
+          {/* Content Row */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            {/* Left Side: Image */}
+            <div className="flex-1 flex justify-center md:justify-start">
+              <Image
+                src="https://cdn.legendholding.com/images/cdn_687a1f4c67df37.03007310_20250718_101748.png"
+                alt="Contact Image"
+                width={400}
+                height={300}
+                className="w-full max-w-md h-auto object-contain"
+                priority
+                sizes="(max-width: 768px) 100vw, 400px"
+                quality={90}
+              />
           </div>
           {/* Right Side: Contact Us Form Card */}
-          <div className="flex-1 flex justify-center md:justify-end items-center h-full">
+            <div className="flex-1 flex justify-center md:justify-end">
             <ContactUsFormCard />
+            </div>
           </div>
         </div>
       </section>
@@ -460,10 +710,10 @@ function ContactUsFormCard() {
   };
 
   return (
-    <div className="bg-black/70 rounded-3xl p-5 shadow-2xl flex flex-col h-auto w-full max-w-2xl transition-all duration-300 hover:shadow-3xl hover:scale-[1.02] hover:bg-black/80">
+    <div className="rounded-3xl p-5 shadow-2xl flex flex-col h-auto w-full max-w-2xl transition-all duration-300 hover:shadow-3xl hover:scale-[1.02]">
       <div className="mb-4">
-        <h2 className="text-white text-lg font-medium mb-1">Contact Us</h2>
-        <h3 className="text-white text-2xl font-bold">Fill the Form</h3>
+        <h2 className="text-[rgb(43,28,72)] text-lg font-medium mb-1">Contact Us</h2>
+        <h3 className="text-[rgb(43,28,72)] text-2xl font-bold">Fill the Form</h3>
         <div className="w-12 h-1 bg-orange-500 mt-2"></div>
       </div>
       <form onSubmit={handleSubmit} className="space-y-3 flex-1 flex flex-col">
@@ -508,13 +758,17 @@ function ContactUsFormCard() {
           />
         </div>
         <div>
-          <Input
-            type="text"
-            placeholder="Product of Interest"
+          <select
             value={formData.productOfInterest}
             onChange={(e) => handleInputChange("productOfInterest", e.target.value)}
-            className="bg-white !bg-white border-0 rounded-lg h-12 text-gray-900 placeholder:text-gray-500 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
-          />
+            className="w-full bg-white border-0 rounded-lg h-12 text-gray-900 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-200 focus:scale-[1.02]"
+          >
+            <option value="">Select Product of Interest</option>
+            <option value="G1 Humanoid Robot">G1 Humanoid Robot</option>
+            <option value="GO1 Quadruped Robot">GO1 Quadruped Robot</option>
+            <option value="B1 Humanoid Robot">B1 Humanoid Robot</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
         <div className="bg-white rounded-lg p-3">
           <Label className="text-gray-700 font-medium mb-3 block">Service Type</Label>

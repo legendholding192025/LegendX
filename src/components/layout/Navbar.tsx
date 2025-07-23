@@ -57,7 +57,7 @@ export default function Navbar() {
               onMouseLeave={() => setProductsDropdownOpen(false)}
             >
               <div className="flex items-center space-x-1">
-                <span className="text-black group-hover:text-orange-500 transition-all duration-300 font-medium relative z-10">Products</span>
+                <span className="text-black group-hover:text-orange-500 transition-all duration-300 font-medium relative z-10 font-heading">Products</span>
                 <svg className="w-4 h-4 text-gray-500 group-hover:text-orange-500 group-hover:rotate-180 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -77,7 +77,7 @@ export default function Navbar() {
             
             <div className="relative cursor-pointer group" onMouseEnter={() => setServicesDropdownOpen(true)} onMouseLeave={() => setServicesDropdownOpen(false)}>
               <div className="flex items-center space-x-1">
-                <span className="text-black group-hover:text-orange-500 transition-all duration-300 font-medium relative z-10">Services</span>
+                <span className="text-black group-hover:text-orange-500 transition-all duration-300 font-medium relative z-10 font-heading">Services</span>
                 <svg className="w-4 h-4 text-gray-500 group-hover:text-orange-500 group-hover:rotate-180 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -93,6 +93,11 @@ export default function Navbar() {
                 <Link href="/services/rental" className="block px-4 py-2 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors">Rental</Link>
               </div>
             </div>
+            
+            <Link href="/support/terms-policies" className="relative text-black hover:text-orange-500 transition-all duration-300 font-medium group">
+              <span className="relative z-10 font-heading">Support</span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
+            </Link>
             
             <Link href="/contact" className="relative text-black hover:text-orange-500 transition-all duration-300 font-medium group">
               <span className="relative z-10">Contact Us</span>
@@ -136,6 +141,9 @@ export default function Navbar() {
                   <Link href="/services/rental" className="text-gray-700 hover:text-orange-500 transition-all">Rental</Link>
                 </div>
               </div>
+              <Link href="/support/terms-policies" className="text-gray-700 hover:text-orange-500 transition-all duration-300 font-medium">
+                Support
+              </Link>
               <Link href="/contact" className="text-gray-700 hover:text-orange-500 transition-all duration-300 font-medium">
                 Contact Us
               </Link>

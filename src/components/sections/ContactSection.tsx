@@ -109,13 +109,17 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <Input
-                  type="text"
-                  placeholder="Product of Interest"
+                <select
                   value={formData.productOfInterest}
                   onChange={(e) => handleInputChange("productOfInterest", e.target.value)}
-                  className="bg-white !bg-white border-0 rounded-lg h-12 text-gray-900 placeholder:text-gray-500 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
-                />
+                  className="w-full bg-white border-0 rounded-lg h-12 text-gray-900 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-200 focus:scale-[1.02]"
+                >
+                  <option value="">Select Product of Interest</option>
+                  <option value="G1 Humanoid Robot">G1 Humanoid Robot</option>
+                  <option value="GO1 Quadruped Robot">GO1 Quadruped Robot</option>
+                  <option value="B1 Humanoid Robot">B1 Humanoid Robot</option>
+                  <option value="Other">Other</option>
+                </select>
               </div>
 
               <div className="bg-white rounded-lg p-3">

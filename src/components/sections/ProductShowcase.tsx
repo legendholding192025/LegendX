@@ -56,14 +56,14 @@ export default function ProductShowcase() {
               </div>
             </div>
             <div className="mt-6 w-full flex justify-center">
-              <div className="flex items-center rounded-full overflow-hidden transition-transform duration-300 hover:scale-105 shadow-md h-12">
+              <Link href="/b1-specs" className="flex items-center rounded-full overflow-hidden transition-transform duration-300 hover:scale-105 shadow-md h-12">
                 <div className="bg-[#EE8900] text-white px-4 font-bold text-lg flex items-center justify-center h-full min-w-[60px]">
                   B1
                 </div>
                 <div className="bg-[#2B1C48] text-white px-6 font-medium text-sm hover:bg-[#3A2A5A] transition-colors duration-300 flex items-center justify-center h-full min-w-[140px]">
                   View Specs
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
           
@@ -84,14 +84,14 @@ export default function ProductShowcase() {
               </div>
             </div>
             <div className="mt-6 w-full flex justify-center">
-              <div className="flex items-center rounded-full overflow-hidden transition-transform duration-300 hover:scale-105 shadow-md h-12">
+              <Link href="/go1-specs" className="flex items-center rounded-full overflow-hidden transition-transform duration-300 hover:scale-105 shadow-md h-12">
                 <div className="bg-[#EE8900] text-white px-4 font-bold text-lg flex items-center justify-center h-full min-w-[60px]">
                   GO1
                 </div>
                 <div className="bg-[#2B1C48] text-white px-6 font-medium text-sm hover:bg-[#3A2A5A] transition-colors duration-300 flex items-center justify-center h-full min-w-[140px]">
                   View Specs
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

@@ -56,9 +56,9 @@ export default function AboutSection() {
           
           {/* Right Side - Content */}
           <div className="text-left">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#5E366D] mb-4">About Legend X</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#5E366D] mb-4 font-heading">About Legend X</h2>
             <div className="w-24 h-1 bg-[#EE8900] rounded-full mb-6"></div>
-              <p className="text-lg text-gray-800 leading-relaxed">
+              <p className="text-lg text-gray-800 leading-relaxed font-sans">
                 Specialized in cutting-edge technology and AI-driven innovations, the company offers advanced robotics solutions designed to enhance everyday life, both at the corporate and personal level. By harnessing the power of artificial intelligence, it delivers efficiency, convenience, and a meaningful impact on society through smart automation and intelligent systems.
               </p>
           </div>

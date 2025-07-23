@@ -37,7 +37,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Effra', 'var(--font-inter)', 'system-ui', 'sans-serif'],
+        heading: ['Richmond', 'var(--font-playfair)', 'Georgia', 'serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
       animation: {

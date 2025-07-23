@@ -47,12 +47,12 @@ export default function HeroSection() {
         <div className="relative h-full flex items-end">
           {/* Text Content */}
           <div className="text-left mt-32">
-            <h1 className="mb-8">
-              <div className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                <span className="bg-gradient-to-r from-purple-600 via-blue-500 to-cyan-400 bg-clip-text text-transparent">Welcome To The</span>
+            <h1 className="mb-8 font-heading">
+              <div className="text-4xl md:text-5xl lg:text-5xl font-bold mb-4">
+                <span className="bg-gradient-to-r from-purple-600 via-blue-500 to-cyan-400 bg-clip-text text-transparent">Welcome To The Future With</span>
               </div>
-              <div className="text-7xl md:text-8xl lg:text-[10rem] font-bold">
-                <span className="bg-gradient-to-r from-cyan-300 to-cyan-200 bg-clip-text text-transparent drop-shadow-lg">Future</span>
+              <div className="text-7xl md:text-8xl lg:text-[5rem] font-bold">
+                <span className="bg-gradient-to-r from-cyan-300 to-cyan-200 bg-clip-text text-transparent drop-shadow-lg">Legend X Robotics</span>
               </div>
             </h1>
           </div>
