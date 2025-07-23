@@ -37,9 +37,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Effra', 'var(--font-inter)', 'system-ui', 'sans-serif'],
-        heading: ['Richmond', 'var(--font-playfair)', 'Georgia', 'serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        sans: ['Effra', 'serif'],
+        heading: ['Richmond', 'serif'],
+        mono: ['monospace'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

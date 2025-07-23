@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  /* Brand fonts - using web fonts as fallbacks until brand fonts are provided */
+  /* Brand fonts - Richmond and Effra only */
   /* 
   To use your actual brand fonts:
   1. Place Richmond font files in /public/fonts/
@@ -13,20 +11,49 @@
   3. Update the @font-face declarations below with your actual font file paths
   */
   
-  /* Richmond font for headings - using Playfair Display as fallback */
+  /* Richmond font for headings */
   @font-face {
     font-family: 'Richmond';
-    src: local('Playfair Display'), local('Georgia'), serif;
+    src: url('/fonts/Richmond-Regular.woff2') format('woff2'),
+         url('/fonts/Richmond-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
   
-  /* Effra font for content - using Inter as fallback */
+  @font-face {
+    font-family: 'Richmond';
+    src: url('/fonts/Richmond-Bold.woff2') format('woff2'),
+         url('/fonts/Richmond-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Effra font for content */
   @font-face {
     font-family: 'Effra';
-    src: local('Inter'), local('Arial'), sans-serif;
+    src: url('/fonts/Effra-Regular.woff2') format('woff2'),
+         url('/fonts/Effra-Regular.woff') format('woff');
     font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Effra';
+    src: url('/fonts/Effra-Medium.woff2') format('woff2'),
+         url('/fonts/Effra-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Effra';
+    src: url('/fonts/Effra-Bold.woff2') format('woff2'),
+         url('/fonts/Effra-Bold.woff') format('woff');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
@@ -41,7 +68,7 @@
   
   /* Apply brand fonts to headings */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+    font-family: 'Richmond', serif !important;
   }
 }
 

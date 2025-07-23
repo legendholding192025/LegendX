@@ -352,7 +352,7 @@ export default function G1SpecsPage() {
 
       {/* G1 Specs Section */}
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">G1 Specs</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 font-heading" style={{ fontFamily: 'Richmond, serif' }}>G1 Specs</h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* First Row - Left: Image, Right: Text */}
@@ -369,7 +369,7 @@ export default function G1SpecsPage() {
           </div>
 
           <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-white mb-4">Body Size & Specifications</h3>
+            <h3 className="text-2xl font-bold text-white mb-4 font-heading">Body Size & Specifications</h3>
             <p className="text-white/80 mb-6">Advanced humanoid robot with precise dimensions and weight distribution</p>
             
             <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
@@ -394,7 +394,7 @@ export default function G1SpecsPage() {
 
           {/* Second Row - Left: Text, Right: Image */}
           <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-white mb-4">Advanced Degrees of Freedom</h3>
+            <h3 className="text-2xl font-bold text-white mb-4 font-heading">Advanced Degrees of Freedom</h3>
             
             <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Joint Freedom
@@ -448,7 +448,7 @@ export default function G1SpecsPage() {
           </div>
 
           <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-white mb-4">Power & Performance</h3>
+            <h3 className="text-2xl font-bold text-white mb-4 font-heading">Power & Performance</h3>
             
             <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Technical Specifications
@@ -469,7 +469,7 @@ export default function G1SpecsPage() {
               </div>
               <div className="flex items-center">
                 <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>360° Detection: <strong>3D LIDAR + Depth Camera</strong> for advanced perception</span>
+                <span>360 Detection: <strong>3D LIDAR + Depth Camera</strong> for advanced perception</span>
               </div>
             </div>
           </div>
@@ -478,7 +478,7 @@ export default function G1SpecsPage() {
         {/* Fourth Row - Left: Text, Right: Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
           <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-white mb-4">Dexterous Hand Technology</h3>
+            <h3 className="text-2xl font-bold text-white mb-4 font-heading">Dexterous Hand Technology</h3>
             
             <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Advanced Manipulation
@@ -532,7 +532,7 @@ export default function G1SpecsPage() {
           </div>
 
           <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-white mb-4">Battery & Endurance</h3>
+            <h3 className="text-2xl font-bold text-white mb-4 font-heading">Battery & Endurance</h3>
             
             <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Power Management
@@ -562,7 +562,7 @@ export default function G1SpecsPage() {
         {/* Sixth Row - Left: Text, Right: Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
           <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-white mb-4">360° Detection & Perception</h3>
+            <h3 className="text-2xl font-bold text-white mb-4 font-heading" style={{ fontFamily: 'Richmond, serif' }}>360° Detection & Perception</h3>
             
             <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Advanced Sensing
@@ -605,7 +605,7 @@ export default function G1SpecsPage() {
       <section className="w-full bg-black py-16">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 text-center">Technical Details</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 text-center font-heading">Technical Details</h2>
             <div className="w-24 h-1 bg-[#EE8900] mx-auto rounded-full mb-6"></div>
           </div>
           <div className="w-full flex justify-center">
@@ -655,7 +655,7 @@ export default function G1SpecsPage() {
         <div className="max-w-5xl mx-auto px-4 relative z-10 min-h-[320px]">
           {/* Heading Above Everything */}
           <div className="text-left mb-8">
-            <h1 className="text-4xl font-bold text-[rgb(43,28,72)] mb-2">Get in Touch</h1>
+            <h1 className="text-4xl font-bold text-[rgb(43,28,72)] mb-2 font-heading">Get in Touch</h1>
             <p className="text-lg text-[rgb(43,28,72)]">
                 Visit our office or reach out to us through any of the following channels.
               </p>
@@ -712,8 +712,8 @@ function ContactUsFormCard() {
   return (
     <div className="rounded-3xl p-5 shadow-2xl flex flex-col h-auto w-full max-w-2xl transition-all duration-300 hover:shadow-3xl hover:scale-[1.02]">
       <div className="mb-4">
-        <h2 className="text-[rgb(43,28,72)] text-lg font-medium mb-1">Contact Us</h2>
-        <h3 className="text-[rgb(43,28,72)] text-2xl font-bold">Fill the Form</h3>
+        <h2 className="text-[rgb(43,28,72)] text-lg font-medium mb-1 font-heading" style={{ fontFamily: 'Richmond, serif' }}>Contact Us</h2>
+        <h3 className="text-[rgb(43,28,72)] text-2xl font-bold font-heading" style={{ fontFamily: 'Richmond, serif' }}>Fill the Form</h3>
         <div className="w-12 h-1 bg-orange-500 mt-2"></div>
       </div>
       <form onSubmit={handleSubmit} className="space-y-3 flex-1 flex flex-col">
@@ -764,10 +764,9 @@ function ContactUsFormCard() {
             className="w-full bg-white border-0 rounded-lg h-12 text-gray-900 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-200 focus:scale-[1.02]"
           >
             <option value="">Select Product of Interest</option>
-            <option value="G1 Humanoid Robot">G1 Humanoid Robot</option>
-            <option value="GO1 Quadruped Robot">GO1 Quadruped Robot</option>
-            <option value="B1 Humanoid Robot">B1 Humanoid Robot</option>
-            <option value="Other">Other</option>
+                          <option value="G1 Humanoid Robot">G1 Humanoid Robot</option>
+              <option value="GO1 Quadruped Robot">GO1 Quadruped Robot</option>
+              <option value="B1 Quadruped Robot">B1 Quadruped Robot</option>
           </select>
         </div>
         <div className="bg-white rounded-lg p-3">

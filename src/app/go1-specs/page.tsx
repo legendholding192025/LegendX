@@ -273,8 +273,7 @@ function ContactUsFormCard() {
             <option value="">Select Product of Interest</option>
             <option value="GO1 Quadruped Robot">GO1 Quadruped Robot</option>
             <option value="G1 Humanoid Robot">G1 Humanoid Robot</option>
-            <option value="B1 Humanoid Robot">B1 Humanoid Robot</option>
-            <option value="Other">Other</option>
+            <option value="B1 Quadruped Robot">B1 Quadruped Robot</option>
           </select>
         </div>
         <div className="bg-white rounded-lg p-3">
