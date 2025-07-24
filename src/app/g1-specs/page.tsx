@@ -278,9 +278,9 @@ export default function G1SpecsPage() {
               quality={100}
               style={{ objectPosition: 'center' }}
             />
-            <div className="absolute inset-0 flex items-center justify-center z-10 transition-all duration-700 ease-in-out">
+            <div className="absolute inset-0 flex items-center justify-end z-10 transition-all duration-700 ease-in-out">
               {/* Product Information Card - Right Side */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 md:left-auto md:right-20 lg:right-24 top-1/2 transform -translate-y-1/2 bg-[#2c1b47]/71 rounded-xl p-6 md:p-10 shadow-2xl border border-gray-700 max-w-sm md:max-w-md transition-all duration-700 ease-in-out transform hover:scale-105">
+              <div className="absolute left-1/2 transform -translate-x-1/2 md:left-auto md:right-4 lg:right-6 xl:right-8 top-1/2 transform -translate-y-1/2 bg-[#2c1b47]/71 rounded-xl p-6 md:p-10 shadow-2xl border border-gray-700 max-w-sm md:max-w-md transition-all duration-700 ease-in-out transform hover:scale-105">
                 <div className="text-center">
                   <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 transition-all duration-500">
                     <span className="text-4xl md:text-6xl">Unitree</span>
