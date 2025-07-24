@@ -119,7 +119,7 @@ export default function TermsPoliciesPage() {
 
                       {/* Maintenance Condition Section */}
                       <div className="mb-6">
-                        <h3 className="text-xl font-semibold text-gray-900 mb-4">Maintenance Condition</h3>
+                        <h3 className="text-xl font-semibold text-[#2B1C48] mb-4">Maintenance Condition</h3>
                         <p className="text-gray-700 mb-4">
                           According to the specific situation, we will provide corresponding maintenance or parts replacement for the Unitree product you purchased. But the following cases are not covered by the free warranty:
                         </p>
@@ -154,7 +154,7 @@ export default function TermsPoliciesPage() {
 
                       {/* Other Detailed Rules Section */}
                       <div>
-                        <h3 className="text-xl font-semibold text-gray-900 mb-4">Other Detailed Rules</h3>
+                        <h3 className="text-xl font-semibold text-[#2B1C48] mb-4">Other Detailed Rules</h3>
                         <ul className="space-y-2 text-gray-700 list-disc list-inside">
                           <li>When you send the product to Unitree Robotics, you need to bear the postage cost first.</li>
                           <li>After receiving the defective products, you need to guarantee, Unitree Robotics will test the products to determine the problems and responsibilities. If it is a quality defect of the product itself, Unitree Robotics will be responsible for the cost of testing, materials, labor and express delivery.</li>
@@ -202,7 +202,7 @@ export default function TermsPoliciesPage() {
 
                       {/* Warranty Exclusions */}
                       <div>
-                        <h3 className="text-xl font-semibold text-gray-900 mb-4">Warranty Exclusions</h3>
+                        <h3 className="text-xl font-semibold text-[#2B1C48] mb-4">Warranty Exclusions</h3>
                         <p className="text-gray-700 mb-4">
                           The following conditions will not be covered by the warranty policy:
                         </p>
@@ -213,7 +213,7 @@ export default function TermsPoliciesPage() {
 
                       {/* Instructions on Return and Replacement */}
                       <div>
-                        <h3 className="text-xl font-semibold text-gray-900 mb-4">Instructions on Return and Replacement</h3>
+                        <h3 className="text-xl font-semibold text-[#2B1C48] mb-4">Instructions on Return and Replacement</h3>
                         
                         <div className="space-y-4">
                           <p className="text-gray-700">
@@ -251,7 +251,7 @@ export default function TermsPoliciesPage() {
 
                       {/* Limitation of Liability */}
                       <div>
-                        <h3 className="text-xl font-semibold text-gray-900 mb-4">Limitation of Liability</h3>
+                        <h3 className="text-xl font-semibold text-[#2B1C48] mb-4">Limitation of Liability</h3>
                         
                         <div className="space-y-4">
                           <p className="text-gray-700">

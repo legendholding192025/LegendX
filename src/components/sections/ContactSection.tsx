@@ -66,53 +66,53 @@ export default function ContactSection() {
 
             <form onSubmit={handleSubmit} className="space-y-3 flex-1 flex flex-col">
               <div>
-                <Input
-                  type="text"
-                  placeholder="Your full name"
-                  value={formData.fullName}
-                  onChange={(e) => handleInputChange("fullName", e.target.value)}
-                  className="bg-white !bg-white border-0 rounded-lg h-12 text-gray-900 placeholder:text-gray-500 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
-                  required
-                />
+                            <Input
+              type="text"
+              placeholder="Your full name"
+              value={formData.fullName}
+              onChange={(e) => handleInputChange("fullName", e.target.value)}
+              className="bg-white !bg-white border-0 rounded-lg h-12 text-[#2B1C48] placeholder:text-gray-500 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
+              required
+            />
               </div>
 
               <div>
-                <Input
-                  type="email"
-                  placeholder="Your email"
-                  value={formData.email}
-                  onChange={(e) => handleInputChange("email", e.target.value)}
-                  className="bg-white !bg-white border-0 rounded-lg h-12 text-gray-900 placeholder:text-gray-500 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
-                  required
-                />
+                            <Input
+              type="email"
+              placeholder="Your email"
+              value={formData.email}
+              onChange={(e) => handleInputChange("email", e.target.value)}
+              className="bg-white !bg-white border-0 rounded-lg h-12 text-[#2B1C48] placeholder:text-gray-500 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
+              required
+            />
               </div>
 
               <div className="flex gap-2">
                 <select
                   value={formData.countryCode}
                   onChange={(e) => handleInputChange("countryCode", e.target.value)}
-                  className="w-20 bg-white border-0 rounded-lg h-12 text-gray-900 px-2 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-200 focus:scale-[1.02]"
+                  className="w-20 bg-white border-0 rounded-lg h-12 text-[#2B1C48] px-2 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-200 focus:scale-[1.02]"
                 >
                   <option value="+91">+91</option>
                   <option value="+1">+1</option>
                   <option value="+44">+44</option>
                   <option value="+971">+971</option>
                 </select>
-                <Input
-                  type="tel"
-                  placeholder="Phone number"
-                  value={formData.phoneNumber}
-                  onChange={(e) => handleInputChange("phoneNumber", e.target.value)}
-                  className="flex-1 bg-white !bg-white border-0 rounded-lg h-12 text-gray-900 placeholder:text-gray-500 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
-                  required
-                />
+                            <Input
+              type="tel"
+              placeholder="Phone number"
+              value={formData.phoneNumber}
+              onChange={(e) => handleInputChange("phoneNumber", e.target.value)}
+              className="flex-1 bg-white !bg-white border-0 rounded-lg h-12 text-[#2B1C48] placeholder:text-gray-500 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
+              required
+            />
               </div>
 
               <div>
                 <select
                   value={formData.productOfInterest}
                   onChange={(e) => handleInputChange("productOfInterest", e.target.value)}
-                  className="w-full bg-white border-0 rounded-lg h-12 text-gray-900 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-200 focus:scale-[1.02]"
+                  className="w-full bg-white border-0 rounded-lg h-12 text-[#2B1C48] px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-200 focus:scale-[1.02]"
                 >
                   <option value="">Select Product of Interest</option>
                   <option value="G1 Humanoid Robot">G1 Humanoid Robot</option>
@@ -180,7 +180,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-gray-700 font-medium text-sm sm:text-base">Phone</p>
-                  <a href="tel:+97142340738" className="text-gray-900 font-normal hover:text-orange-500 transition-colors duration-200 text-sm sm:text-base">
+                  <a href="tel:+97142340738" className="text-[#2B1C48] font-normal hover:text-orange-500 transition-colors duration-200 text-sm sm:text-base">
                     +971 4 234 0738
                   </a>
                 </div>
@@ -193,7 +193,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-gray-700 font-medium text-sm sm:text-base">Email</p>
-                  <a href="mailto:info@legendx.com" className="text-gray-900 font-normal hover:text-orange-500 transition-colors duration-200 text-sm sm:text-base">
+                  <a href="mailto:info@legendx.com" className="text-[#2B1C48] font-normal hover:text-orange-500 transition-colors duration-200 text-sm sm:text-base">
                     info@legendx.com
                   </a>
                 </div>
@@ -206,7 +206,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-gray-700 font-medium text-sm sm:text-base">Address</p>
-                  <p className="text-gray-900 font-normal text-sm sm:text-base">
+                  <p className="text-[#2B1C48] font-normal text-sm sm:text-base">
                     Legend Holding Group HQ, Jebel Ali Freezone
                     <br />
                     Gate 5, Dubai, United Arab Emirates
@@ -221,7 +221,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-gray-700 font-medium text-sm sm:text-base">Business Hours</p>
-                  <p className="text-gray-900 font-normal text-sm sm:text-base">Monday - Saturday : 9:00 AM - 6:00 PM</p>
+                  <p className="text-[#2B1C48] font-normal text-sm sm:text-base">Monday - Saturday : 9:00 AM - 6:00 PM</p>
                 </div>
               </div>
             </div>

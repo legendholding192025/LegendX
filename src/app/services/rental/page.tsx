@@ -337,7 +337,7 @@ function ContactUsFormCard() {
             placeholder="Your full name"
             value={formData.fullName}
             onChange={(e) => handleInputChange("fullName", e.target.value)}
-            className="w-full bg-white border-0 rounded-lg h-12 text-gray-900 placeholder:text-gray-500 px-4 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
+            className="w-full bg-white border-0 rounded-lg h-12 text-[#2B1C48] placeholder:text-gray-500 px-4 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
             required
           />
         </div>
@@ -347,7 +347,7 @@ function ContactUsFormCard() {
             placeholder="Your email"
             value={formData.email}
             onChange={(e) => handleInputChange("email", e.target.value)}
-            className="w-full bg-white border-0 rounded-lg h-12 text-gray-900 placeholder:text-gray-500 px-4 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
+            className="w-full bg-white border-0 rounded-lg h-12 text-[#2B1C48] placeholder:text-gray-500 px-4 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
             required
           />
         </div>
@@ -355,7 +355,7 @@ function ContactUsFormCard() {
           <select
             value={formData.countryCode}
             onChange={(e) => handleInputChange("countryCode", e.target.value)}
-            className="w-20 bg-white border-0 rounded-lg h-12 text-gray-900 px-2 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-200 focus:scale-[1.02]"
+            className="w-20 bg-white border-0 rounded-lg h-12 text-[#2B1C48] px-2 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-200 focus:scale-[1.02]"
           >
             <option value="+91">+91</option>
             <option value="+1">+1</option>
@@ -367,7 +367,7 @@ function ContactUsFormCard() {
             placeholder="Phone number"
             value={formData.phoneNumber}
             onChange={(e) => handleInputChange("phoneNumber", e.target.value)}
-            className="flex-1 bg-white border-0 rounded-lg h-12 text-gray-900 placeholder:text-gray-500 px-4 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
+            className="flex-1 bg-white border-0 rounded-lg h-12 text-[#2B1C48] placeholder:text-gray-500 px-4 transition-all duration-200 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02]"
             required
           />
         </div>
@@ -375,7 +375,7 @@ function ContactUsFormCard() {
           <select
             value={formData.productOfInterest}
             onChange={(e) => handleInputChange("productOfInterest", e.target.value)}
-            className="w-full bg-white border-0 rounded-lg h-12 text-gray-900 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-200 focus:scale-[1.02]"
+            className="w-full bg-white border-0 rounded-lg h-12 text-[#2B1C48] px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-200 focus:scale-[1.02]"
           >
             <option value="">Select Product of Interest</option>
               <option value="G1 Humanoid Robot">G1 Humanoid Robot</option>
@@ -386,35 +386,19 @@ function ContactUsFormCard() {
         </div>
         <div className="bg-white rounded-lg p-3">
           <label className="text-gray-700 font-medium mb-3 block">Service Type</label>
-          <div className="flex gap-6">
-            <div className="flex items-center space-x-2">
-              <input
-                type="radio"
-                id="rental"
-                name="serviceType"
-                value="rental"
-                checked={formData.serviceType === "rental"}
-                onChange={(e) => handleInputChange("serviceType", e.target.value)}
-                className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500 transition-all duration-200 hover:scale-110"
-              />
-              <label htmlFor="rental" className="text-gray-700 cursor-pointer">
-                Rental
-              </label>
-            </div>
-            <div className="flex items-center space-x-2">
-              <input
-                type="radio"
-                id="purchase"
-                name="serviceType"
-                value="purchase"
-                checked={formData.serviceType === "purchase"}
-                onChange={(e) => handleInputChange("serviceType", e.target.value)}
-                className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500 transition-all duration-200 hover:scale-110"
-              />
-              <label htmlFor="purchase" className="text-gray-700 cursor-pointer">
-                Purchase
-              </label>
-            </div>
+          <div className="flex items-center space-x-2">
+            <input
+              type="radio"
+              id="rental"
+              name="serviceType"
+              value="rental"
+              checked={true}
+              readOnly
+              className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500"
+            />
+            <label htmlFor="rental" className="text-gray-700">
+              Rental
+            </label>
           </div>
         </div>
         <button

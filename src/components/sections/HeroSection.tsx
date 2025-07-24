@@ -49,18 +49,18 @@ export default function HeroSection() {
       <div className="relative w-full h-screen flex items-center">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Text Content - Bottom Left */}
-          <div className="w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 mt-32 sm:mt-40 lg:mt-48">
+          <div className="w-full sm:w-2/3 lg:w-1/2 xl:w-2/5 mt-32 sm:mt-40 lg:mt-48">
             <h1 className="font-heading">
               {/* First Line */}
-              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-3 lg:mb-4 whitespace-nowrap">
-                <span className="bg-gradient-to-r from-[#2B1C48] via-[#4A2B6B] to-[#EE8900] bg-clip-text text-transparent">
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-5 lg:mb-6 whitespace-nowrap">
+                <span className="text-[#2B1C48]">
                   Welcome To The Future With
                 </span>
               </div>
               
               {/* Second Line */}
               <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight whitespace-nowrap">
-                <span className="bg-gradient-to-br from-[#EE8900] via-[#FFA726] to-[#2B1C48] bg-clip-text text-transparent drop-shadow-lg">
+                <span className="text-[#EE8900] drop-shadow-lg">
                   Legend X Robotics
                 </span>
               </div>
