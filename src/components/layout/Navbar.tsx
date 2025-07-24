@@ -3,8 +3,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -57,7 +59,7 @@ export default function Navbar() {
               onMouseLeave={() => setProductsDropdownOpen(false)}
             >
               <div className="flex items-center space-x-1">
-                <span className="text-black group-hover:text-orange-500 transition-all duration-300 font-medium relative z-10 font-heading">Products</span>
+                <span className={`${pathname.includes('/g1-specs') || pathname.includes('/b1-specs') || pathname.includes('/go1-specs') ? 'text-orange-500' : 'text-[#2B1C48]'} group-hover:text-orange-500 transition-all duration-300 font-medium relative z-10 font-heading`}>Products</span>
                 <svg className="w-4 h-4 text-gray-500 group-hover:text-orange-500 group-hover:rotate-180 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -69,15 +71,15 @@ export default function Navbar() {
                 onMouseEnter={() => setProductsDropdownOpen(true)}
                 onMouseLeave={() => setProductsDropdownOpen(false)}
               >
-                <Link href="/g1-specs" className="block px-4 py-2 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors">G1</Link>
-                <Link href="/b1-specs" className="block px-4 py-2 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors">B1</Link>
-                <Link href="/go1-specs" className="block px-4 py-2 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors">GO1</Link>
+                <Link href="/g1-specs" className={`block px-4 py-2 ${pathname === '/g1-specs' ? 'bg-orange-50 text-orange-600' : 'text-[#2B1C48]'} hover:bg-orange-50 hover:text-orange-600 transition-colors rounded-t-lg first:rounded-t-lg last:rounded-b-lg font-heading`}>G1 Humanoid Robot</Link>
+                <Link href="/b1-specs" className={`block px-4 py-2 ${pathname === '/b1-specs' ? 'bg-orange-50 text-orange-600' : 'text-[#2B1C48]'} hover:bg-orange-50 hover:text-orange-600 transition-colors font-heading`}>B1 Quadruped Robot</Link>
+                <Link href="/go1-specs" className={`block px-4 py-2 ${pathname === '/go1-specs' ? 'bg-orange-50 text-orange-600' : 'text-[#2B1C48]'} hover:bg-orange-50 hover:text-orange-600 transition-colors rounded-b-lg last:rounded-b-lg font-heading`}>GO1 Quadruped Robot</Link>
               </div>
             </div>
             
             <div className="relative cursor-pointer group" onMouseEnter={() => setServicesDropdownOpen(true)} onMouseLeave={() => setServicesDropdownOpen(false)}>
               <div className="flex items-center space-x-1">
-                <span className="text-black group-hover:text-orange-500 transition-all duration-300 font-medium relative z-10 font-heading">Services</span>
+                <span className={`${pathname.includes('/services') ? 'text-orange-500' : 'text-[#2B1C48]'} group-hover:text-orange-500 transition-all duration-300 font-medium relative z-10 font-heading`}>Services</span>
                 <svg className="w-4 h-4 text-gray-500 group-hover:text-orange-500 group-hover:rotate-180 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -89,18 +91,18 @@ export default function Navbar() {
                 onMouseEnter={() => setServicesDropdownOpen(true)}
                 onMouseLeave={() => setServicesDropdownOpen(false)}
               >
-                <Link href="/services/sales" className="block px-4 py-2 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors">Sales</Link>
-                <Link href="/services/rental" className="block px-4 py-2 text-gray-800 hover:bg-orange-50 hover:text-orange-600 transition-colors">Rental</Link>
+                <Link href="/services/sales" className={`block px-4 py-2 ${pathname === '/services/sales' ? 'bg-orange-50 text-orange-600' : 'text-[#2B1C48]'} hover:bg-orange-50 hover:text-orange-600 transition-colors rounded-t-lg first:rounded-t-lg font-heading`}>Sales</Link>
+                <Link href="/services/rental" className={`block px-4 py-2 ${pathname === '/services/rental' ? 'bg-orange-50 text-orange-600' : 'text-[#2B1C48]'} hover:bg-orange-50 hover:text-orange-600 transition-colors rounded-b-lg last:rounded-b-lg font-heading`}>Rental</Link>
               </div>
             </div>
             
-            <Link href="/support/terms-policies" className="relative text-black hover:text-orange-500 transition-all duration-300 font-medium group">
+            <Link href="/support/terms-policies" className={`relative ${pathname.includes('/support') ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all duration-300 font-medium group`}>
               <span className="relative z-10 font-heading">Support</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
             </Link>
             
-            <Link href="/contact" className="relative text-black hover:text-orange-500 transition-all duration-300 font-medium group">
-              <span className="relative z-10">Contact Us</span>
+            <Link href="/contact" className={`relative ${pathname.includes('/contact') ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all duration-300 font-medium group`}>
+              <span className="relative z-10 font-heading">Contact Us</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
             </Link>
           </div>
@@ -126,25 +128,25 @@ export default function Navbar() {
             <div className="flex flex-col space-y-4">
               {/* Products Dropdown for Mobile */}
               <div>
-                <span className="text-gray-700 font-semibold">Products</span>
+                <span className={`${pathname.includes('/g1-specs') || pathname.includes('/b1-specs') || pathname.includes('/go1-specs') ? 'text-orange-500' : 'text-[#2B1C48]'} font-semibold font-heading`}>Products</span>
                 <div className="ml-4 mt-2 flex flex-col space-y-2">
-                  <Link href="/g1-specs" className="text-gray-700 hover:text-orange-500 transition-all">G1</Link>
-                  <Link href="/b1-specs" className="text-gray-700 hover:text-orange-500 transition-all">B1</Link>
-                  <Link href="/go1-specs" className="text-gray-700 hover:text-orange-500 transition-all">GO1</Link>
+                  <Link href="/g1-specs" className={`${pathname === '/g1-specs' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}>G1 Humanoid Robot</Link>
+                  <Link href="/b1-specs" className={`${pathname === '/b1-specs' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}>B1 Quadruped Robot</Link>
+                  <Link href="/go1-specs" className={`${pathname === '/go1-specs' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}>GO1 Quadruped Robot</Link>
                 </div>
               </div>
               {/* Services Dropdown for Mobile */}
               <div>
-                <span className="text-gray-700 font-semibold">Services</span>
+                <span className={`${pathname.includes('/services') ? 'text-orange-500' : 'text-[#2B1C48]'} font-semibold font-heading`}>Services</span>
                 <div className="ml-4 mt-2 flex flex-col space-y-2">
-                  <Link href="/services/sales" className="text-gray-700 hover:text-orange-500 transition-all">Sales</Link>
-                  <Link href="/services/rental" className="text-gray-700 hover:text-orange-500 transition-all">Rental</Link>
+                  <Link href="/services/sales" className={`${pathname === '/services/sales' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}>Sales</Link>
+                  <Link href="/services/rental" className={`${pathname === '/services/rental' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}>Rental</Link>
                 </div>
               </div>
-              <Link href="/support/terms-policies" className="text-gray-700 hover:text-orange-500 transition-all duration-300 font-medium">
+              <Link href="/support/terms-policies" className={`${pathname.includes('/support') ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all duration-300 font-medium font-heading`}>
                 Support
               </Link>
-              <Link href="/contact" className="text-gray-700 hover:text-orange-500 transition-all duration-300 font-medium">
+              <Link href="/contact" className={`${pathname.includes('/contact') ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all duration-300 font-medium font-heading`}>
                 Contact Us
               </Link>
             </div>

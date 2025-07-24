@@ -126,7 +126,7 @@ export default function Footer() {
                         size={16}
                         className="mr-2 text-secondary group-hover:translate-x-1 transition-transform"
                       />
-                      G1
+                      G1 Humanoid Robot
                     </Link>
                   </li>
                   <li>
@@ -138,7 +138,7 @@ export default function Footer() {
                         size={16}
                         className="mr-2 text-secondary group-hover:translate-x-1 transition-transform"
                       />
-                      B1
+                      B1 Quadruped Robot
                     </Link>
                   </li>
                   <li>
@@ -150,7 +150,7 @@ export default function Footer() {
                         size={16}
                         className="mr-2 text-secondary group-hover:translate-x-1 transition-transform"
                       />
-                      GO1
+                      GO1 Quadruped Robot
                     </Link>
                   </li>
                 </ul>

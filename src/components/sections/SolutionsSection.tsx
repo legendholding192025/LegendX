@@ -48,7 +48,7 @@ export default function SolutionsSection() {
               />
             </div>
             {/* Content Side */}
-            <div className="md:w-1/2 w-full flex flex-col justify-center h-60 md:h-64 p-6 bg-[#2c1b47]">
+            <div className={`md:w-1/2 w-full flex flex-col justify-center h-60 md:h-64 p-6 ${idx % 2 === 0 ? 'bg-[#2B1C48]' : 'bg-[#EE8900]'}`}>
               <div className="flex items-center mb-2">
                 <h3 className="text-2xl font-bold text-white">{solution.title}</h3>
               </div>

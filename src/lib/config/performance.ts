@@ -71,8 +71,6 @@ export const PERFORMANCE_CONFIG = {
   // Network optimization
   network: {
     preconnect: [
-      'https://fonts.googleapis.com',
-      'https://fonts.gstatic.com',
       'https://cdn.legendholding.com',
     ],
     dnsPrefetch: [

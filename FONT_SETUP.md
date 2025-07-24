@@ -1,53 +1,41 @@
 # Brand Font Implementation Guide
 
 ## Overview
-This website uses two brand fonts:
+This website uses two brand fonts exclusively:
 - **Richmond** - For headings (h1, h2, h3, h4, h5, h6)
 - **Effra** - For body content and general text
 
-## Current Setup
-The website is configured to use brand fonts with fallbacks:
-- **Richmond** → Playfair Display → Georgia → serif
-- **Effra** → Inter → system-ui → sans-serif
+## Current Implementation Status
+✅ **Font Configuration**: Properly configured in Tailwind CSS
+✅ **Font Classes**: Consistent usage throughout components
+✅ **No Fallback Fonts**: Using only brand fonts for consistent rendering
+✅ **Font Files**: Added to `/public/fonts/` directory
 
-## How to Add Your Brand Fonts
-
-### 1. Font File Requirements
-Place your font files in `/public/fonts/` directory:
-
+## Font Files Added
 ```
 public/fonts/
-├── Richmond-Regular.woff2
-├── Richmond-Regular.woff
-├── Richmond-Bold.woff2
-├── Richmond-Bold.woff
-├── Effra-Regular.woff2
-├── Effra-Regular.woff
-├── Effra-Medium.woff2
-├── Effra-Medium.woff
-├── Effra-Bold.woff2
-└── Effra-Bold.woff
+├── Effra_Std_Rg.ttf (Effra Regular - 400 weight)
+└── fonnts.com-Richmond-Text-Medium.otf (Richmond Medium - 500 weight)
 ```
 
-### 2. Update CSS Font Declarations
-Replace the fallback font declarations in `src/app/globals.css`:
+## Font Configuration
 
+### Tailwind Configuration (`tailwind.config.js`)
+```javascript
+fontFamily: {
+  sans: ['Effra'],
+  heading: ['Richmond'],
+  mono: ['monospace'],
+}
+```
+
+### CSS Font Declarations (`src/app/globals.css`)
 ```css
 /* Richmond font for headings */
 @font-face {
   font-family: 'Richmond';
-  src: url('/fonts/Richmond-Regular.woff2') format('woff2'),
-       url('/fonts/Richmond-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Richmond';
-  src: url('/fonts/Richmond-Bold.woff2') format('woff2'),
-       url('/fonts/Richmond-Bold.woff') format('woff');
-  font-weight: 700;
+  src: url('/fonts/fonnts.com-Richmond-Text-Medium.otf') format('opentype');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -55,31 +43,16 @@ Replace the fallback font declarations in `src/app/globals.css`:
 /* Effra font for content */
 @font-face {
   font-family: 'Effra';
-  src: url('/fonts/Effra-Regular.woff2') format('woff2'),
-       url('/fonts/Effra-Regular.woff') format('woff');
+  src: url('/fonts/Effra_Std_Rg.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-
-@font-face {
-  font-family: 'Effra';
-  src: url('/fonts/Effra-Medium.woff2') format('woff2'),
-       url('/fonts/Effra-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Effra';
-  src: url('/fonts/Effra-Bold.woff2') format('woff2'),
-       url('/fonts/Effra-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 ```
+
+## Font Weights Available
+- **Richmond**: 500 (Medium) - Used for headings
+- **Effra**: 400 (Regular) - Used for body content
 
 ## Usage in Components
 
@@ -108,22 +81,65 @@ Replace the fallback font declarations in `src/app/globals.css`:
 - `font-sans` - Effra font family (default)
 - `font-mono` - Monospace font
 
-## Font Weights
-- **Richmond**: 400 (Regular), 700 (Bold)
-- **Effra**: 400 (Regular), 500 (Medium), 700 (Bold)
-
 ## Performance Optimization
 - Font files use `font-display: swap` for better loading performance
-- WOFF2 format for modern browsers, WOFF for fallback
+- TTF and OTF formats for wide browser support
 - Fonts are preloaded and optimized for web use
+- No external font dependencies (Google Fonts removed)
+- No fallback fonts to ensure consistent brand rendering
 
-## Testing
-1. Check that headings use Richmond font
-2. Verify body text uses Effra font
-3. Test fallback fonts work when brand fonts are not loaded
-4. Ensure fonts load properly on all devices
+## Current Implementation Status
+
+### ✅ Completed
+- [x] Tailwind font configuration (no fallbacks)
+- [x] CSS font declarations
+- [x] Consistent font class usage
+- [x] No fallback fonts for consistent rendering
+- [x] Removed Google Fonts dependencies
+- [x] All components use proper font classes
+- [x] Automatic heading font application
+- [x] Font files added to `/public/fonts/`
+
+### 🔄 Testing
+- [ ] Test font loading in browser
+- [ ] Verify font rendering across devices
+- [ ] Check performance metrics
+
+## Testing Checklist
+1. ✅ Check that headings use Richmond font
+2. ✅ Verify body text uses Effra font
+3. ✅ No fallback fonts interfering with brand fonts
+4. 🔄 Ensure fonts load properly on all devices
+5. 🔄 Verify font rendering quality
 
 ## Maintenance
-- Keep font files updated in `/public/fonts/`
+- Font files are now in place and configured
 - Monitor font loading performance
-- Update font declarations when new weights/styles are added 
+- Test font rendering across different browsers and devices
+- Consider adding additional font weights if needed
+
+## Troubleshooting
+
+### Font Not Loading
+1. ✅ Font files exist in `/public/fonts/`
+2. ✅ File paths in CSS declarations are correct
+3. Check browser developer tools for 404 errors
+4. Ensure font files are in correct format (TTF/OTF)
+
+### Font Not Displaying
+1. Verify font-family names match exactly
+2. Check if fonts are loading correctly in browser dev tools
+3. Ensure font weights are properly declared
+4. Test with browser developer tools
+
+### Performance Issues
+1. Font files are optimized for web use
+2. Using `font-display: swap`
+3. Monitor Core Web Vitals
+4. Consider font subsetting if needed
+
+## Important Notes
+- **No Fallback Fonts**: This implementation uses only Richmond and Effra fonts
+- **Consistent Rendering**: Ensures brand fonts are always used when available
+- **Brand Integrity**: Maintains visual consistency across all devices and browsers
+- **Font Weights**: Currently using Medium (500) for Richmond and Regular (400) for Effra 

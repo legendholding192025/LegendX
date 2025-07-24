@@ -25,7 +25,7 @@ export default function GO1SpecsPage() {
           <div className="absolute inset-0 flex items-center justify-center z-10 transition-all duration-700 ease-in-out" style={{ transform: 'translateY(-25%)' }}>
             {/* Centered Text Overlay */}
             <div className="text-center">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4 transition-all duration-500">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2B1C48] mb-4 transition-all duration-500">
                 Welcome To The Future
               </h1>
             </div>
@@ -35,13 +35,14 @@ export default function GO1SpecsPage() {
 
       {/* GO1 Specs Section */}
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">GO1 Specs</h2>
+      <h2 className="text-3xl sm:text-4xl font-bold text-[#5E366D] mb-4 text-center">GO1 Specs</h2>
+      <div className="w-24 h-1 bg-[#EE8900] mx-auto rounded-full mb-6"></div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* First Row - Left: Video, Right: Text */}
-          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white">
+          <div className="relative overflow-hidden rounded-xl shadow-lg bg-white">
             <video
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-full object-cover"
               autoPlay
               muted
               loop
@@ -52,61 +53,61 @@ export default function GO1SpecsPage() {
             </video>
           </div>
 
-          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#2B1C48] rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-4">ISS Intelligent Concomitant System</h3>
             <p className="text-white/80 mb-6">Adopt patented wireless vector positioning and control technology</p>
             
-            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-[#EE8900] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Advantages
             </div>
             
             <ol className="space-y-4 text-white/90">
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">1.</span>
+                <span className="text-white font-bold mr-3">1.</span>
                 <span>The robot is in the person's lateral peripheral vision, it is better than the conventional follow mode with natural human-computer interaction, safe and secure.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">2.</span>
+                <span className="text-white font-bold mr-3">2.</span>
                 <span>No need to always look back and worry about whether the robot is lost or encounters obstacles.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">3.</span>
+                <span className="text-white font-bold mr-3">3.</span>
                 <span>When the environment is complex, people can actively choose a simpler route to help the robot pass.</span>
               </li>
             </ol>
           </div>
 
           {/* Second Row - Left: Text, Right: Video */}
-          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-4">Robust and Reliable Powertrain</h3>
             
-            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-[#2B1C48] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Flexible and Adaptive Joints
             </div>
             
             <ol className="space-y-4 text-white/90">
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">1.</span>
+                <span className="text-white font-bold mr-3">1.</span>
                 <span>The new patented design of ultra-lightweight low-noise long-life power joints.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">2.</span>
+                <span className="text-white font-bold mr-3">2.</span>
                 <span>Body/Thigh Joint C520:8-1g 23.70N.m (MAX).</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">3.</span>
+                <span className="text-white font-bold mr-3">3.</span>
                 <span>Knee Joint C1.5×8-1 ratio 35.55N.m (MAX).</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">4.</span>
+                <span className="text-white font-bold mr-3">4.</span>
                 <span>A patented heat pipe-assisted heat dissipation system is built into the vicinity of the knee joint motor.</span>
               </li>
             </ol>
           </div>
 
-          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white">
+          <div className="relative overflow-hidden rounded-xl shadow-lg bg-white">
             <video
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-full object-cover"
               autoPlay
               muted
               loop
@@ -120,23 +121,23 @@ export default function GO1SpecsPage() {
 
         {/* Additional GO1 AI Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white">
+          <div className="relative overflow-hidden rounded-xl shadow-lg bg-white">
             <Image
               src="https://cdn.legendholding.com/images/cdn_687f78bc05b312.14723088_20250722_114044.jpg"
               alt="GO1 AI Capabilities"
               width={600}
               height={400}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-full object-cover scale-75"
               priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
               quality={90}
             />
           </div>
 
-          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#2B1C48] rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-4">GO1 with Built-in Super AI</h3>
             
-            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-[#EE8900] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Hash Rate
             </div>
             
@@ -145,7 +146,7 @@ export default function GO1SpecsPage() {
                 Total: 16-core top CPU + GPU (384Core, 1.5TFLOPS)
               </p>
               <p className="text-white/80">
-                Reference, NVIDIA TX2 only has CPU (4 cores) + GPU (256Core, 1.3TFLOPS), and the unit price of the chip is 3000+ RMB.
+                1. Reference, NVIDIA TX2 only has CPU (4 cores) + GPU (256Core, 1.3TFLOPS), and the unit price of the chip is chargeable as an add-on.
               </p>
             </div>
           </div>

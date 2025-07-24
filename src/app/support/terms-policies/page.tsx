@@ -35,12 +35,12 @@ export default function TermsPoliciesPage() {
               <div className="flex-1 p-8">
                 {/* General Terms Label */}
                 <div className="mb-4">
-                  <span className="inline-block bg-gray-800 text-white px-3 py-1 rounded text-sm font-medium">
+                  <span className="inline-block bg-[#2B1C48] text-white px-3 py-1 rounded text-sm font-medium">
                     General Terms
                   </span>
                 </div>
                 
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Terms and Policies</h2>
+                <h2 className="text-3xl font-bold text-[#2B1C48] mb-6">Terms and Policies</h2>
                 
                 {/* Tab Navigation */}
                 <div className="border-b border-gray-200 mb-6">

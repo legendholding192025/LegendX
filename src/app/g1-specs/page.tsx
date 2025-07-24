@@ -288,11 +288,11 @@ export default function G1SpecsPage() {
                     <span className="text-3xl md:text-4xl">G1</span>
                   </h1>
                   <p className="text-white text-lg mb-4 transition-all duration-500">Humanoid agent AI avatar</p>
-                  <div className="w-full h-px bg-gradient-to-r from-purple-400 to-cyan-400 mb-6 transition-all duration-500"></div>
+                  <div className="w-full h-px bg-[#EE8900] mb-6 transition-all duration-500"></div>
                   <div className="flex items-center justify-center mb-4">
                     <button 
                       onClick={handleVideoClick}
-                      className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-lg border border-gray-600 transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-110 hover:shadow-lg"
+                      className="bg-[#EE8900] hover:bg-[#d67a00] text-white px-8 py-3 rounded-lg border border-[#EE8900] transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-110 hover:shadow-lg"
                     >
                       <svg className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
@@ -308,7 +308,7 @@ export default function G1SpecsPage() {
             </div>
           </>
         ) : (
-          <div className="relative w-full h-full animate-fadeIn">
+          <div className="relative w-full h-full animate-fadeIn bg-black">
             <button
               onClick={handleVideoClose}
               className="absolute top-4 right-4 text-white hover:text-gray-300 text-3xl font-bold z-10 bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center transition-all duration-300 hover:bg-opacity-70 hover:scale-110 transform"
@@ -352,8 +352,8 @@ export default function G1SpecsPage() {
 
       {/* G1 Specs Section */}
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 font-heading" style={{ fontFamily: 'Richmond, serif' }}>G1 Specs</h2>
-        
+      <h2 className="text-3xl sm:text-4xl font-bold text-[#5E366D] mb-4 text-center">G1 Specs</h2>
+      <div className="w-24 h-1 bg-[#EE8900] mx-auto rounded-full mb-6"></div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* First Row - Left: Image, Right: Text */}
           <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full">
@@ -368,53 +368,53 @@ export default function G1SpecsPage() {
             />
           </div>
 
-          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#2B1C48] rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-4 font-heading">Body Size & Specifications</h3>
             <p className="text-white/80 mb-6">Advanced humanoid robot with precise dimensions and weight distribution</p>
             
-            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-[#EE8900] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Key Measurements
             </div>
             
             <ol className="space-y-4 text-white/90">
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">1.</span>
-                <span>Weight: <strong>35kg</strong> - Optimized for stability and mobility</span>
+                <span className="text-white font-bold mr-3">1.</span>
+                <span>Weight: 35 kg - Optimized for stability and mobility</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">2.</span>
-                <span>Height: <strong>1320mm</strong> - Human-like proportions for natural interaction</span>
+                <span className="text-white font-bold mr-3">2.</span>
+                <span>Height: 132 cm - Human-like proportions for natural interaction</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">3.</span>
-                <span>Dimensions: 1320x450x200mm (Stand) / 690x450x300mm (Fold)</span>
+                <span className="text-white font-bold mr-3">3.</span>
+                <span>Dimensions: 132 × 45 × 20 cm (Stand) / 69 × 45 × 30 cm (Fold)</span>
               </li>
             </ol>
           </div>
 
           {/* Second Row - Left: Text, Right: Image */}
-          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-4 font-heading">Advanced Degrees of Freedom</h3>
             
-            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-[#2B1C48] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Joint Freedom
             </div>
             
             <ol className="space-y-4 text-white/90">
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">1.</span>
-                <span>Total Degrees of Freedom: <strong>23 - 43</strong> (depending on configuration)</span>
+                <span className="text-white font-bold mr-3">1.</span>
+                <span>Total Degrees of Freedom: 23 - 43 (depending on configuration)</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">2.</span>
+                <span className="text-white font-bold mr-3">2.</span>
                 <span>Single Leg: 6 degrees of freedom for natural walking</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">3.</span>
+                <span className="text-white font-bold mr-3">3.</span>
                 <span>Single Arm: 5 degrees of freedom for precise manipulation</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">4.</span>
+                <span className="text-white font-bold mr-3">4.</span>
                 <span>Waist: 1 degree of freedom with optional additional 2</span>
               </li>
             </ol>
@@ -447,29 +447,29 @@ export default function G1SpecsPage() {
             />
           </div>
 
-          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#2B1C48] rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-4 font-heading">Power & Performance</h3>
             
-            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-[#EE8900] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Technical Specifications
             </div>
             
             <div className="space-y-4 text-white/90">
               <div className="flex items-center">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>Maximum Joint Torque: <strong>120N.m</strong></span>
+                <span className="text-white font-bold mr-3">1.</span>
+                <span>Maximum Joint Torque: 120 N.m</span>
               </div>
               <div className="flex items-center">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>Battery Life: <strong>About 2h</strong> of continuous operation</span>
+                <span className="text-white font-bold mr-3">2.</span>
+                <span>Battery Life: About 2h of continuous operation</span>
               </div>
               <div className="flex items-center">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>Arm Maximum Load: <strong>3Kg</strong> for manipulation tasks</span>
+                <span className="text-white font-bold mr-3">3.</span>
+                <span>Arm Maximum Load: 3 Kg for manipulation tasks</span>
               </div>
               <div className="flex items-center">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>360 Detection: <strong>3D LIDAR + Depth Camera</strong> for advanced perception</span>
+                <span className="text-white font-bold mr-3">4.</span>
+                <span>360 Detection: 3D LIDAR + Depth Camera for advanced perception</span>
               </div>
             </div>
           </div>
@@ -477,29 +477,29 @@ export default function G1SpecsPage() {
 
         {/* Fourth Row - Left: Text, Right: Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-4 font-heading">Dexterous Hand Technology</h3>
             
-            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-[#2B1C48] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Advanced Manipulation
             </div>
             
             <div className="space-y-4 text-white/90">
               <div className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span><strong>3-finger force control dexterous hand</strong> for precise manipulation</span>
+                <span className="text-white font-bold mr-3">1.</span>
+                <span>3-finger force control dexterous hand for precise manipulation</span>
               </div>
               <div className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>Optional installation of <strong>tactile sensor arrays</strong></span>
+                <span className="text-white font-bold mr-3">2.</span>
+                <span>Optional installation of tactile sensor arrays</span>
               </div>
               <div className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>Advanced force feedback for <strong>delicate object handling</strong></span>
+                <span className="text-white font-bold mr-3">3.</span>
+                <span>Advanced force feedback for delicate object handling</span>
               </div>
               <div className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>Human-like grip patterns for <strong>natural interaction</strong></span>
+                <span className="text-white font-bold mr-3">4.</span>
+                <span>Human-like grip patterns for natural interaction</span>
               </div>
             </div>
           </div>
@@ -531,29 +531,29 @@ export default function G1SpecsPage() {
             />
           </div>
 
-          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#2B1C48] rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-4 font-heading">Battery & Endurance</h3>
             
-            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-[#EE8900] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Power Management
             </div>
             
             <div className="space-y-4 text-white/90">
               <div className="flex items-center">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>Battery Life: <strong>About 2h</strong> of continuous operation</span>
+                <span className="text-white font-bold mr-3">1.</span>
+                <span>Battery Life: About 2h of continuous operation</span>
               </div>
               <div className="flex items-center">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>Advanced power management for <strong>optimal performance</strong></span>
+                <span className="text-white font-bold mr-3">2.</span>
+                <span>Advanced power management for optimal performance</span>
               </div>
               <div className="flex items-center">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>Quick charging capabilities for <strong>minimal downtime</strong></span>
+                <span className="text-white font-bold mr-3">3.</span>
+                <span>Quick charging capabilities for minimal downtime</span>
               </div>
               <div className="flex items-center">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>Energy-efficient design for <strong>extended mission duration</strong></span>
+                <span className="text-white font-bold mr-3">4.</span>
+                <span>Energy-efficient design for extended mission duration</span>
               </div>
             </div>
           </div>
@@ -561,29 +561,29 @@ export default function G1SpecsPage() {
 
         {/* Sixth Row - Left: Text, Right: Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-white mb-4 font-heading" style={{ fontFamily: 'Richmond, serif' }}>360° Detection & Perception</h3>
+          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-4 font-heading">360° Detection & Perception</h3>
             
-            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-[#2B1C48] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Advanced Sensing
             </div>
             
             <div className="space-y-4 text-white/90">
               <div className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span><strong>3D LIDAR + Depth Camera</strong> for comprehensive environment mapping</span>
+                <span className="text-white font-bold mr-3">1.</span>
+                <span>3D LIDAR + Depth Camera for comprehensive environment mapping</span>
               </div>
               <div className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>360° field of view for <strong>complete situational awareness</strong></span>
+                <span className="text-white font-bold mr-3">2.</span>
+                <span>360° field of view for complete situational awareness</span>
               </div>
               <div className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>Real-time obstacle detection and <strong>path planning</strong></span>
+                <span className="text-white font-bold mr-3">3.</span>
+                <span>Real-time obstacle detection and path planning</span>
               </div>
               <div className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">•</span>
-                <span>Advanced perception algorithms for <strong>safe navigation</strong></span>
+                <span className="text-white font-bold mr-3">4.</span>
+                <span>Advanced perception algorithms for safe navigation</span>
               </div>
             </div>
           </div>
@@ -712,8 +712,8 @@ function ContactUsFormCard() {
   return (
     <div className="rounded-3xl p-5 shadow-2xl flex flex-col h-auto w-full max-w-2xl transition-all duration-300 hover:shadow-3xl hover:scale-[1.02]">
       <div className="mb-4">
-        <h2 className="text-[rgb(43,28,72)] text-lg font-medium mb-1 font-heading" style={{ fontFamily: 'Richmond, serif' }}>Contact Us</h2>
-        <h3 className="text-[rgb(43,28,72)] text-2xl font-bold font-heading" style={{ fontFamily: 'Richmond, serif' }}>Fill the Form</h3>
+        <h2 className="text-[rgb(43,28,72)] text-lg font-medium mb-1 font-heading">Contact Us</h2>
+        <h3 className="text-[rgb(43,28,72)] text-2xl font-bold font-heading">Fill the Form</h3>
         <div className="w-12 h-1 bg-orange-500 mt-2"></div>
       </div>
       <form onSubmit={handleSubmit} className="space-y-3 flex-1 flex flex-col">

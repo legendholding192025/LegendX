@@ -34,8 +34,8 @@ export default function B1SpecsPage() {
               style={{ objectPosition: 'center' }}
             />
             <div className="absolute inset-0 flex items-center justify-center z-10 transition-all duration-700 ease-in-out">
-              {/* Product Information Card - Right Side */}
-              <div className="absolute right-12 md:right-20 lg:right-24 top-1/2 transform -translate-y-1/2 bg-[#2c1b47]/71 rounded-xl p-10 shadow-2xl border border-gray-700 max-w-md transition-all duration-700 ease-in-out transform hover:scale-105">
+              {/* Product Information Card - Left Side */}
+              <div className="absolute left-12 md:left-20 lg:left-24 top-1/2 transform -translate-y-1/2 bg-[#2c1b47]/71 rounded-xl p-10 shadow-2xl border border-gray-700 max-w-md transition-all duration-700 ease-in-out transform hover:scale-105">
                 <div className="text-center">
                   <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 transition-all duration-500">
                     <span className="text-5xl md:text-6xl">Unitree</span>
@@ -43,11 +43,11 @@ export default function B1SpecsPage() {
                     <span className="text-3xl md:text-4xl">B1</span>
                   </h1>
                   <p className="text-white text-lg mb-4 transition-all duration-500">Quadruped Robot</p>
-                  <div className="w-full h-px bg-gradient-to-r from-purple-400 to-cyan-400 mb-6 transition-all duration-500"></div>
+                  <div className="w-full h-px bg-[#EE8900] mb-6 transition-all duration-500"></div>
                   <div className="flex items-center justify-center mb-4">
                     <button 
                       onClick={handleVideoClick}
-                      className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-lg border border-gray-600 transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-110 hover:shadow-lg"
+                      className="bg-[#EE8900] hover:bg-[#d67a00] text-white px-8 py-3 rounded-lg border border-[#EE8900] transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-110 hover:shadow-lg"
                     >
                       <svg className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
@@ -63,7 +63,7 @@ export default function B1SpecsPage() {
             </div>
           </>
         ) : (
-          <div className="relative w-full h-full animate-fadeIn">
+          <div className="relative w-full h-full animate-fadeIn bg-black">
             <button
               onClick={handleVideoClose}
               className="absolute top-4 right-4 text-white hover:text-gray-300 text-3xl font-bold z-10 bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center transition-all duration-300 hover:bg-opacity-70 hover:scale-110 transform"
@@ -101,53 +101,53 @@ export default function B1SpecsPage() {
             />
           </div>
 
-          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#2B1C48] rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-4">All-Terrain Mobility</h3>
             <p className="text-white/80 mb-6">Advanced quadruped robot designed for challenging environments and heavy-duty applications</p>
             
-            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-[#EE8900] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Key Features
             </div>
             
             <ol className="space-y-4 text-white/90">
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">1.</span>
+                <span className="text-white font-bold mr-3">1.</span>
                 <span>Exceptional terrain adaptability with ability to navigate complex obstacles and uneven surfaces.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">2.</span>
+                <span className="text-white font-bold mr-3">2.</span>
                 <span>High payload capacity of 20kg while walking and 80kg when standing stationary.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">3.</span>
+                <span className="text-white font-bold mr-3">3.</span>
                 <span>Advanced perception system with multiple sensors for autonomous navigation and obstacle avoidance.</span>
               </li>
             </ol>
           </div>
 
           {/* Second Row - Left: Text, Right: Image */}
-          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-4">Industrial Grade Performance</h3>
             
-            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-[#2B1C48] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Specifications
             </div>
             
             <ol className="space-y-4 text-white/90">
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">1.</span>
+                <span className="text-white font-bold mr-3">1.</span>
                 <span>Maximum walking speed of 1.2m/s for efficient operation in various environments.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">2.</span>
+                <span className="text-white font-bold mr-3">2.</span>
                 <span>IP67 standard protection with optional IP68 for extreme weather and water resistance.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">3.</span>
+                <span className="text-white font-bold mr-3">3.</span>
                 <span>Extended endurance with 2-2.5 hours of continuous operation on a single charge.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-orange-400 font-bold mr-3">4.</span>
+                <span className="text-white font-bold mr-3">4.</span>
                 <span>Compact design measuring 1126mm x 467mm x 636mm for versatile deployment.</span>
               </li>
             </ol>
@@ -182,10 +182,10 @@ export default function B1SpecsPage() {
             />
           </div>
 
-          <div className="bg-[#2c1b47] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#2B1C48] rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-4">Advanced Load Handling</h3>
             
-            <div className="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-[#EE8900] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
               Payload Capabilities
             </div>
             

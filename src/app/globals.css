@@ -5,27 +5,16 @@
 @layer base {
   /* Brand fonts - Richmond and Effra only */
   /* 
-  To use your actual brand fonts:
-  1. Place Richmond font files in /public/fonts/
-  2. Place Effra font files in /public/fonts/
-  3. Update the @font-face declarations below with your actual font file paths
+  Font files added to /public/fonts/:
+  - Effra_Std_Rg.ttf (Effra Regular)
+  - fonnts.com-Richmond-Text-Medium.otf (Richmond Medium)
   */
   
   /* Richmond font for headings */
   @font-face {
     font-family: 'Richmond';
-    src: url('/fonts/Richmond-Regular.woff2') format('woff2'),
-         url('/fonts/Richmond-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Richmond';
-    src: url('/fonts/Richmond-Bold.woff2') format('woff2'),
-         url('/fonts/Richmond-Bold.woff') format('woff');
-    font-weight: 700;
+    src: url('/fonts/fonnts.com-Richmond-Text-Medium.otf') format('opentype');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
   }
@@ -33,27 +22,8 @@
   /* Effra font for content */
   @font-face {
     font-family: 'Effra';
-    src: url('/fonts/Effra-Regular.woff2') format('woff2'),
-         url('/fonts/Effra-Regular.woff') format('woff');
+    src: url('/fonts/Effra_Std_Rg.ttf') format('truetype');
     font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Effra';
-    src: url('/fonts/Effra-Medium.woff2') format('woff2'),
-         url('/fonts/Effra-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Effra';
-    src: url('/fonts/Effra-Bold.woff2') format('woff2'),
-         url('/fonts/Effra-Bold.woff') format('woff');
-    font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
@@ -64,11 +34,13 @@
   
   body {
     @apply text-secondary-900 bg-white font-sans;
+    font-family: 'Effra', sans-serif;
   }
   
   /* Apply brand fonts to headings */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Richmond', serif !important;
+    @apply font-heading;
+    font-family: 'Richmond', sans-serif;
   }
 }
 

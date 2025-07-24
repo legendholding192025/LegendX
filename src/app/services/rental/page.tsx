@@ -87,7 +87,14 @@ export default function RentalPage() {
               Rent LegendX robots for your specific needs and experience cutting-edge AI technology.
             </p>
             {/* Contact Us Button */}
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <button 
+              onClick={() => {
+                document.getElementById('get-in-touch')?.scrollIntoView({ 
+                  behavior: 'smooth' 
+                });
+              }}
+              className="bg-[#EE8900] hover:bg-[#EE8900]/80 text-white px-8 py-3 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg"
+            >
               Contact Us
             </button>
           </div>
@@ -99,13 +106,13 @@ export default function RentalPage() {
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Section Title */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Available for Rent</h2>
-            <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#5E366D] mb-4 text-center">Available for Rent</h2>
+          <div className="w-24 h-1 bg-[#EE8900] mx-auto rounded-full mb-6"></div>
           </div>
 
           {/* Card 1: Expanding Video Card - GO1 */}
           <div
-            className={`relative bg-gradient-to-br from-indigo-900 to-purple-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${isHoveredGO1 ? 'scale-105' : ''}`}
+            className={`relative bg-[#2B1C48] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${isHoveredGO1 ? 'scale-105' : ''}`}
             onMouseEnter={handleMouseEnterGO1}
             onMouseLeave={handleMouseLeaveGO1}
             style={{ cursor: 'pointer', transition: 'box-shadow 0.7s, transform 0.7s, max-height 0.7s' }}
@@ -127,10 +134,10 @@ export default function RentalPage() {
               {/* Right Side - Content */}
               <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                  PERSONAL COMPANION
+                  Corporate Events
                 </h3>
                 <p className="text-white/90 text-lg leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Robots offer a unique and engaging presence at corporate events, conferences, product launches, and brand activations. Whether welcoming guests, delivering branded messages, or performing interactive routines, they create a memorable experience that reflects innovation and forward-thinking.
                 </p>
               </div>
             </div>
@@ -159,7 +166,7 @@ export default function RentalPage() {
 
           {/* Card 2: Content Left, Image Right - G1 */}
           <div
-            className={`relative bg-[#6B438B] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${isHoveredG1 ? 'scale-105' : ''}`}
+            className={`relative bg-[#EE8900] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${isHoveredG1 ? 'scale-105' : ''}`}
             onMouseEnter={handleMouseEnterG1}
             onMouseLeave={handleMouseLeaveG1}
             style={{ cursor: 'pointer', transition: 'box-shadow 0.7s, transform 0.7s, max-height 0.7s' }}
@@ -167,9 +174,9 @@ export default function RentalPage() {
             <div className="flex flex-col md:flex-row min-h-[500px]">
               {/* Content Left */}
               <div className="md:w-1/2 p-10 flex flex-col justify-center">
-                <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">DOMESTIC HELP</h3>
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Research and Development</h3>
                 <p className="text-white/90 text-lg leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                Robots serve as powerful platforms for research and innovation. With advanced hardware, open programming capabilities, and open AI integration, they provide researchers and developers with a reliable tool for testing robotics applications, algorithms, and real-world use cases.
                 </p>
               </div>
               {/* Image Right */}
@@ -211,7 +218,7 @@ export default function RentalPage() {
 
           {/* Card 3: Image Left, Content Right - B1 */}
           <div
-            className={`relative bg-[#2D204B] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${isHoveredB1 ? 'scale-105' : ''}`}
+            className={`relative bg-[#2B1C48] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${isHoveredB1 ? 'scale-105' : ''}`}
             onMouseEnter={handleMouseEnterB1}
             onMouseLeave={handleMouseLeaveB1}
             style={{ cursor: 'pointer', transition: 'box-shadow 0.7s, transform 0.7s, max-height 0.7s' }}
@@ -232,9 +239,9 @@ export default function RentalPage() {
               </div>
               {/* Content Right */}
               <div className="md:w-1/2 p-10 flex flex-col justify-center">
-                <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">ACROSS ALL TERRIAN</h3>
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Entertainment</h3>
                 <p className="text-white/90 text-lg leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                Legend X robots bring excitement and innovation to entertainment experiences. The humanoid G1 and quadruped B1 can be programmed to walk, interact with audiences, perform themed routines, making them a unique attraction for tech shows, malls, festivals, or media productions.
                 </p>
               </div>
             </div>
@@ -265,6 +272,7 @@ export default function RentalPage() {
 
       {/* Get in Touch Section */}
       <section
+        id="get-in-touch"
         className="w-full py-10 relative"
         style={{
           backgroundImage: 'url(https://cdn.legendholding.com/images/cdn_687f41ed958c55.63868180_20250722_074653.png)',
@@ -370,9 +378,10 @@ function ContactUsFormCard() {
             className="w-full bg-white border-0 rounded-lg h-12 text-gray-900 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-200 focus:scale-[1.02]"
           >
             <option value="">Select Product of Interest</option>
-                          <option value="G1 Humanoid Robot">G1 Humanoid Robot</option>
-              <option value="GO1 Quadruped Robot">GO1 Quadruped Robot</option>
+              <option value="G1 Humanoid Robot">G1 Humanoid Robot</option>
               <option value="B1 Quadruped Robot">B1 Quadruped Robot</option>
+              <option value="GO1 Quadruped Robot">GO1 Quadruped Robot</option>
+              
           </select>
         </div>
         <div className="bg-white rounded-lg p-3">
