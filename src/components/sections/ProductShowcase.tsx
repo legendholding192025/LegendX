@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function ProductShowcase() {
   return (
-    <section className="pt-12 pb-6">
+    <section className="pt-12 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold text-[#5E366D] mb-4 text-center">Products</h2>
@@ -12,8 +12,8 @@ export default function ProductShowcase() {
         
         <div className="grid md:grid-cols-3 gap-8">
           {/* Product Card 1 - G1 Robot */}
-          <div className="flex flex-col items-center min-h-[420px]">
-            <div className="relative group overflow-hidden rounded-lg mb-2 flex-shrink-0">
+          <div className="flex flex-col items-center h-full">
+            <div className="relative group overflow-hidden rounded-lg mb-2 flex-shrink-0 flex-1 flex items-center justify-center">
               <div className="relative transition-transform duration-300 ease-in-out group-hover:scale-110">
                 <Image
                   src="https://cdn.legendholding.com/images/cdn_6878f98bc62536.75650695_20250717_132427.png"
@@ -27,7 +27,7 @@ export default function ProductShowcase() {
                 />
               </div>
             </div>
-            <div className="mt-6 w-full flex justify-center">
+            <div className="w-full flex justify-center mt-auto">
               <Link href="/g1-specs" className="flex items-center rounded-full overflow-hidden transition-transform duration-300 hover:scale-105 shadow-md h-12">
                 <div className="bg-[#EE8900] text-white px-4 font-bold text-lg flex items-center justify-center h-full min-w-[60px]">
                   G1
@@ -40,8 +40,8 @@ export default function ProductShowcase() {
           </div>
           
           {/* Product Card 2 - B1 Robot */}
-          <div className="flex flex-col items-center min-h-[420px]">
-            <div className="relative group overflow-hidden rounded-lg mb-2 flex-shrink-0">
+          <div className="flex flex-col items-center h-full">
+            <div className="relative group overflow-hidden rounded-lg mb-2 flex-shrink-0 flex-1 flex items-center justify-center">
               <div className="relative transition-transform duration-300 ease-in-out group-hover:scale-110">
                 <Image
                   src="https://cdn.legendholding.com/images/cdn_6878f99f709cd3.49402397_20250717_132447.png"
@@ -55,7 +55,7 @@ export default function ProductShowcase() {
                 />
               </div>
             </div>
-            <div className="mt-6 w-full flex justify-center">
+            <div className="w-full flex justify-center mt-auto">
               <Link href="/b1-specs" className="flex items-center rounded-full overflow-hidden transition-transform duration-300 hover:scale-105 shadow-md h-12">
                 <div className="bg-[#EE8900] text-white px-4 font-bold text-lg flex items-center justify-center h-full min-w-[60px]">
                   B1
@@ -68,8 +68,8 @@ export default function ProductShowcase() {
           </div>
           
           {/* Product Card 3 - GO1 Robot */}
-          <div className="flex flex-col items-center min-h-[420px]">
-            <div className="relative group overflow-hidden rounded-lg mb-2 flex-shrink-0">
+          <div className="flex flex-col items-center h-full">
+            <div className="relative group overflow-hidden rounded-lg mb-2 flex-shrink-0 flex-1 flex items-center justify-center">
               <div className="relative transition-transform duration-300 ease-in-out group-hover:scale-110">
                 <Image
                   src="https://cdn.legendholding.com/images/cdn_6878f9b660f4d3.77162304_20250717_132510.png"
@@ -83,7 +83,7 @@ export default function ProductShowcase() {
                 />
               </div>
             </div>
-            <div className="mt-6 w-full flex justify-center">
+            <div className="w-full flex justify-center mt-auto">
               <Link href="/go1-specs" className="flex items-center rounded-full overflow-hidden transition-transform duration-300 hover:scale-105 shadow-md h-12">
                 <div className="bg-[#EE8900] text-white px-4 font-bold text-lg flex items-center justify-center h-full min-w-[60px]">
                   GO1
