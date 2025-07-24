@@ -78,7 +78,7 @@ export default function GO1SpecsPage() {
           </div>
 
           {/* Second Row - Left: Text, Right: Video */}
-          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg order-2 lg:order-none">
             <h3 className="text-2xl font-bold text-white mb-4">Robust and Reliable Powertrain</h3>
             
             <div className="inline-block bg-[#2B1C48] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
@@ -105,7 +105,7 @@ export default function GO1SpecsPage() {
             </ol>
           </div>
 
-          <div className="relative overflow-hidden rounded-xl shadow-lg bg-white">
+          <div className="relative overflow-hidden rounded-xl shadow-lg bg-white order-1 lg:order-none">
             <video
               className="w-full h-full object-cover"
               autoPlay

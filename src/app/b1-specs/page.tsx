@@ -126,7 +126,7 @@ export default function B1SpecsPage() {
           </div>
 
           {/* Second Row - Left: Text, Right: Image */}
-          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg order-2 lg:order-none">
             <h3 className="text-2xl font-bold text-white mb-4">Industrial Grade Performance</h3>
             
             <div className="inline-block bg-[#2B1C48] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
@@ -153,7 +153,7 @@ export default function B1SpecsPage() {
             </ol>
           </div>
 
-          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white">
+          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white order-1 lg:order-none">
             <Image
               src="https://cdn.legendholding.com/images/cdn_687f6d45bc7273.03033435_20250722_105149.jpg"
               alt="B1 Robot on Train Tracks"

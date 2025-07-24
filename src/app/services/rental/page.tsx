@@ -67,7 +67,7 @@ export default function RentalPage() {
   return (
     <main>
       {/* Banner Image */}
-      <section className="relative w-full h-64 md:h-80 lg:h-96 overflow-hidden flex items-center justify-center">
+      <section className="relative w-full h-[36rem] md:h-80 lg:h-96 overflow-hidden flex items-center justify-center">
         <Image
           src="https://cdn.legendholding.com/images/cdn_687f7e1ae07780.21025857_20250722_120338.png"
           alt="Rental Services Banner"
@@ -119,7 +119,7 @@ export default function RentalPage() {
           >
             <div className="flex flex-col lg:flex-row min-h-[500px]">
               {/* Left Side - Image Container */}
-              <div className="relative lg:w-1/2 h-80 lg:h-auto overflow-hidden">
+              <div className="relative lg:w-1/2 h-80 lg:h-auto overflow-hidden order-1 lg:order-none">
                 <Image
                   src="https://cdn.legendholding.com/images/cdn_687f879ccd7371.25648149_20250722_124412.jpg"
                   alt="GO1 Personal Companion"
@@ -132,7 +132,7 @@ export default function RentalPage() {
                 </div>
               </div>
               {/* Right Side - Content */}
-              <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+              <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center order-2 lg:order-none">
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
                   Corporate Events
                 </h3>
@@ -173,14 +173,14 @@ export default function RentalPage() {
           >
             <div className="flex flex-col md:flex-row min-h-[500px]">
               {/* Content Left */}
-              <div className="md:w-1/2 p-10 flex flex-col justify-center">
+              <div className="md:w-1/2 p-10 flex flex-col justify-center order-2 md:order-none">
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Research and Development</h3>
                 <p className="text-white/90 text-lg leading-relaxed">
                 Robots serve as powerful platforms for research and innovation. With advanced hardware, open programming capabilities, and open AI integration, they provide researchers and developers with a reliable tool for testing robotics applications, algorithms, and real-world use cases.
                 </p>
               </div>
               {/* Image Right */}
-              <div className="relative md:w-1/2 h-72 md:h-auto min-h-[250px]">
+              <div className="relative md:w-1/2 h-72 md:h-auto min-h-[250px] order-1 md:order-none">
                 <Image
                   src="https://cdn.legendholding.com/images/cdn_687f925f50a2a3.83903043_20250722_133007.jpg"
                   alt="G1 Domestic Help"
@@ -238,7 +238,7 @@ export default function RentalPage() {
                 </div>
               </div>
               {/* Content Right */}
-              <div className="md:w-1/2 p-10 flex flex-col justify-center">
+              <div className="md:w-1/2 p-10 flex flex-col justify-center order-2 md:order-none">
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Entertainment</h3>
                 <p className="text-white/90 text-lg leading-relaxed">
                 Legend X robots bring excitement and innovation to entertainment experiences. The humanoid G1 and quadruped B1 can be programmed to walk, interact with audiences, perform themed routines, making them a unique attraction for tech shows, malls, festivals, or media productions.

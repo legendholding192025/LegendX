@@ -9,7 +9,7 @@ export default function TermsPoliciesPage() {
   return (
     <main>
       {/* Banner Section */}
-      <section className="relative w-full h-64 md:h-80 lg:h-96 overflow-hidden">
+      <section className="relative w-full h-[36rem] md:h-80 lg:h-96 overflow-hidden">
         <Image
           src="https://cdn.legendholding.com/images/cdn_68809fc44e2ee6.43546854_20250723_083932.png"
           alt="Terms & Policies Banner"

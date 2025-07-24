@@ -276,7 +276,7 @@ export default function G1SpecsPage() {
               priority
               sizes="100vw"
               quality={100}
-              style={{ objectPosition: 'center -6rem' }}
+              style={{ objectPosition: 'center' }}
             />
             <div className="absolute inset-0 flex items-center justify-center z-10 transition-all duration-700 ease-in-out">
               {/* Product Information Card - Right Side */}
@@ -393,7 +393,7 @@ export default function G1SpecsPage() {
           </div>
 
           {/* Second Row - Left: Text, Right: Image */}
-          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg order-2 lg:order-none">
             <h3 className="text-2xl font-bold text-white mb-4 font-heading">Advanced Degrees of Freedom</h3>
             
             <div className="inline-block bg-[#2B1C48] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
@@ -420,7 +420,7 @@ export default function G1SpecsPage() {
             </ol>
           </div>
 
-          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full">
+          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full order-1 lg:order-none">
             <Image
               src="https://cdn.legendholding.com/images/cdn_6880d868980ee1.50193069_20250723_124112.png"
               alt="G1 Robot Degrees of Freedom"
@@ -477,7 +477,7 @@ export default function G1SpecsPage() {
 
         {/* Fourth Row - Left: Text, Right: Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg order-2 lg:order-none">
             <h3 className="text-2xl font-bold text-white mb-4 font-heading">Dexterous Hand Technology</h3>
             
             <div className="inline-block bg-[#2B1C48] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
@@ -504,7 +504,7 @@ export default function G1SpecsPage() {
             </div>
           </div>
 
-          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full">
+          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full order-1 lg:order-none">
             <Image
               src="https://cdn.legendholding.com/images/cdn_6880bd4befaa81.53340882_20250723_104531.png"
               alt="G1 Robot Dexterous Hand"
@@ -561,7 +561,7 @@ export default function G1SpecsPage() {
 
         {/* Sixth Row - Left: Text, Right: Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg">
+          <div className="bg-[#EE8900] rounded-xl p-8 shadow-lg order-2 lg:order-none">
             <h3 className="text-2xl font-bold text-white mb-4 font-heading">360° Detection & Perception</h3>
             
             <div className="inline-block bg-[#2B1C48] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
@@ -588,7 +588,7 @@ export default function G1SpecsPage() {
             </div>
           </div>
 
-          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full">
+          <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full order-1 lg:order-none">
             <Image
               src="https://cdn.legendholding.com/images/cdn_6880bda99d5cc1.74040172_20250723_104705.png"
               alt="G1 Robot 360° Detection Perception"

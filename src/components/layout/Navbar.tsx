@@ -12,6 +12,15 @@ export default function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+
+  // Close mobile menu when clicking on any link
+  const handleMobileLinkClick = () => {
+    setIsMenuOpen(false);
+    setMobileProductsOpen(false);
+    setMobileServicesOpen(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -128,25 +137,95 @@ export default function Navbar() {
             <div className="flex flex-col space-y-4">
               {/* Products Dropdown for Mobile */}
               <div>
-                <span className={`${pathname.includes('/g1-specs') || pathname.includes('/b1-specs') || pathname.includes('/go1-specs') ? 'text-orange-500' : 'text-[#2B1C48]'} font-semibold font-heading`}>Products</span>
-                <div className="ml-4 mt-2 flex flex-col space-y-2">
-                  <Link href="/g1-specs" className={`${pathname === '/g1-specs' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}>G1 Humanoid Robot</Link>
-                  <Link href="/b1-specs" className={`${pathname === '/b1-specs' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}>B1 Quadruped Robot</Link>
-                  <Link href="/go1-specs" className={`${pathname === '/go1-specs' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}>GO1 Quadruped Robot</Link>
-                </div>
+                <button
+                  onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
+                  className={`flex items-center justify-between w-full ${pathname.includes('/g1-specs') || pathname.includes('/b1-specs') || pathname.includes('/go1-specs') ? 'text-orange-500' : 'text-[#2B1C48]'} font-semibold font-heading`}
+                >
+                  <span>Products</span>
+                  <svg 
+                    className={`w-4 h-4 transition-transform duration-200 ${mobileProductsOpen ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {mobileProductsOpen && (
+                  <div className="ml-4 mt-2 flex flex-col space-y-2">
+                    <Link 
+                      href="/g1-specs" 
+                      onClick={handleMobileLinkClick}
+                      className={`${pathname === '/g1-specs' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}
+                    >
+                      G1 Humanoid Robot
+                    </Link>
+                    <Link 
+                      href="/b1-specs" 
+                      onClick={handleMobileLinkClick}
+                      className={`${pathname === '/b1-specs' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}
+                    >
+                      B1 Quadruped Robot
+                    </Link>
+                    <Link 
+                      href="/go1-specs" 
+                      onClick={handleMobileLinkClick}
+                      className={`${pathname === '/go1-specs' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}
+                    >
+                      GO1 Quadruped Robot
+                    </Link>
+                  </div>
+                )}
               </div>
+              
               {/* Services Dropdown for Mobile */}
               <div>
-                <span className={`${pathname.includes('/services') ? 'text-orange-500' : 'text-[#2B1C48]'} font-semibold font-heading`}>Services</span>
-                <div className="ml-4 mt-2 flex flex-col space-y-2">
-                  <Link href="/services/sales" className={`${pathname === '/services/sales' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}>Sales</Link>
-                  <Link href="/services/rental" className={`${pathname === '/services/rental' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}>Rental</Link>
-                </div>
+                <button
+                  onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                  className={`flex items-center justify-between w-full ${pathname.includes('/services') ? 'text-orange-500' : 'text-[#2B1C48]'} font-semibold font-heading`}
+                >
+                  <span>Services</span>
+                  <svg 
+                    className={`w-4 h-4 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {mobileServicesOpen && (
+                  <div className="ml-4 mt-2 flex flex-col space-y-2">
+                    <Link 
+                      href="/services/sales" 
+                      onClick={handleMobileLinkClick}
+                      className={`${pathname === '/services/sales' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}
+                    >
+                      Sales
+                    </Link>
+                    <Link 
+                      href="/services/rental" 
+                      onClick={handleMobileLinkClick}
+                      className={`${pathname === '/services/rental' ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all font-heading`}
+                    >
+                      Rental
+                    </Link>
+                  </div>
+                )}
               </div>
-              <Link href="/support/terms-policies" className={`${pathname.includes('/support') ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all duration-300 font-medium font-heading`}>
+              
+              <Link 
+                href="/support/terms-policies" 
+                onClick={handleMobileLinkClick}
+                className={`${pathname.includes('/support') ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all duration-300 font-medium font-heading`}
+              >
                 Support
               </Link>
-              <Link href="/contact" className={`${pathname.includes('/contact') ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all duration-300 font-medium font-heading`}>
+              <Link 
+                href="/contact" 
+                onClick={handleMobileLinkClick}
+                className={`${pathname.includes('/contact') ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all duration-300 font-medium font-heading`}
+              >
                 Contact Us
               </Link>
             </div>
