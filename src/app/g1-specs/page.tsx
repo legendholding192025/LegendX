@@ -376,7 +376,7 @@ export default function G1SpecsPage() {
               Key Measurements
             </div>
             
-            <ol className="space-y-2 text-white/90">
+            <ol className="space-y-0 text-white/90">
               <li className="flex items-start">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>Weight: 35 kg - Optimized for stability and mobility</span>
@@ -400,7 +400,7 @@ export default function G1SpecsPage() {
               Joint Freedom
             </div>
             
-            <ol className="space-y-2 text-white/90">
+            <ol className="space-y-0 text-white/90">
               <li className="flex items-start">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>Total Degrees of Freedom: 23 - 43 (depending on configuration)</span>
@@ -454,7 +454,7 @@ export default function G1SpecsPage() {
               Technical Specifications
             </div>
             
-            <div className="space-y-2 text-white/90">
+            <div className="space-y-0 text-white/90">
               <div className="flex items-center">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>Maximum Joint Torque: 120 N.m</span>
@@ -484,7 +484,7 @@ export default function G1SpecsPage() {
               Advanced Manipulation
             </div>
             
-            <div className="space-y-2 text-white/90">
+            <div className="space-y-0 text-white/90">
               <div className="flex items-start">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>3-finger force control dexterous hand for precise manipulation</span>
@@ -538,7 +538,7 @@ export default function G1SpecsPage() {
               Power Management
             </div>
             
-            <div className="space-y-2 text-white/90">
+            <div className="space-y-0 text-white/90">
               <div className="flex items-center">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>Battery Life: About 2h of continuous operation</span>
@@ -568,7 +568,7 @@ export default function G1SpecsPage() {
               Advanced Sensing
             </div>
             
-            <div className="space-y-2 text-white/90">
+            <div className="space-y-0 text-white/90">
               <div className="flex items-start">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>3D LIDAR + Depth Camera for comprehensive environment mapping</span>

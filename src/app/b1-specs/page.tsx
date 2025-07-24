@@ -109,7 +109,7 @@ export default function B1SpecsPage() {
               Key Features
             </div>
             
-            <ol className="space-y-4 text-white/90">
+            <ol className="space-y-0 text-white/90">
               <li className="flex items-start">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>Exceptional terrain adaptability with ability to navigate complex obstacles and uneven surfaces.</span>
@@ -133,7 +133,7 @@ export default function B1SpecsPage() {
               Specifications
             </div>
             
-            <ol className="space-y-4 text-white/90">
+            <ol className="space-y-0 text-white/90">
               <li className="flex items-start">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>Maximum walking speed of 1.2m/s for efficient operation in various environments.</span>
@@ -189,7 +189,7 @@ export default function B1SpecsPage() {
               Payload Capabilities
             </div>
             
-            <div className="space-y-4 text-white/90">
+            <div className="space-y-0 text-white/90">
               <p className="text-lg font-semibold text-white">
                 Maximum Load Capacity: 20kg Walking / 80kg Standing
               </p>

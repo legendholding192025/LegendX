@@ -61,7 +61,7 @@ export default function GO1SpecsPage() {
               Advantages
             </div>
             
-            <ol className="space-y-4 text-white/90">
+            <ol className="space-y-0 text-white/90">
               <li className="flex items-start">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>The robot is in the person's lateral peripheral vision, it is better than the conventional follow mode with natural human-computer interaction, safe and secure.</span>
@@ -85,7 +85,7 @@ export default function GO1SpecsPage() {
               Flexible and Adaptive Joints
             </div>
             
-            <ol className="space-y-4 text-white/90">
+            <ol className="space-y-0 text-white/90">
               <li className="flex items-start">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>The new patented design of ultra-lightweight low-noise long-life power joints.</span>
@@ -141,7 +141,7 @@ export default function GO1SpecsPage() {
               Hash Rate
             </div>
             
-            <div className="space-y-4 text-white/90">
+            <div className="space-y-0 text-white/90">
               <p className="text-lg font-semibold text-white">
                 Total: 16-core top CPU + GPU (384Core, 1.5TFLOPS)
               </p>
