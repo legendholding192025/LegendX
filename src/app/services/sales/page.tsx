@@ -64,6 +64,34 @@ export default function SalesPage() {
     }
   };
 
+  // Mobile click handlers to scroll to video sections
+  const handleCardClickGO1 = () => {
+    if (window.innerWidth < 1024) { // Only on mobile/tablet
+      const videoSection = document.getElementById('video-go1');
+      if (videoSection) {
+        videoSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  };
+
+  const handleCardClickG1 = () => {
+    if (window.innerWidth < 1024) { // Only on mobile/tablet
+      const videoSection = document.getElementById('video-g1');
+      if (videoSection) {
+        videoSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  };
+
+  const handleCardClickB1 = () => {
+    if (window.innerWidth < 1024) { // Only on mobile/tablet
+      const videoSection = document.getElementById('video-b1');
+      if (videoSection) {
+        videoSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  };
+
   return (
     <main>
       {/* Banner Image */}
@@ -115,6 +143,7 @@ export default function SalesPage() {
             className={`relative bg-[#2B1C48] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${isHoveredGO1 ? 'scale-105' : ''}`}
             onMouseEnter={handleMouseEnterGO1}
             onMouseLeave={handleMouseLeaveGO1}
+            onClick={handleCardClickGO1}
             style={{ cursor: 'pointer', transition: 'box-shadow 0.7s, transform 0.7s, max-height 0.7s' }}
           >
             <div className="flex flex-col lg:flex-row min-h-[500px]">
@@ -139,10 +168,14 @@ export default function SalesPage() {
                 <p className="text-white/90 text-lg leading-relaxed">
                 Our robots are equipped with the latest AI and smart sensors that enable them to act as attentive companions. They can match the walking speed of their owner, maintain proximity, and execute programmed commands through their integrated software. Designed for intuitive interaction, they enhance everyday experiences with seamless mobility and intelligent support.
                 </p>
+                <p className="text-white/70 text-sm mt-4 lg:hidden">
+                  💡 Tap to watch video
+                </p>
               </div>
             </div>
             {/* Expanding Video Section INSIDE the card */}
             <div
+              id="video-go1"
               className={`transition-all duration-700 ease-in-out overflow-hidden bg-gray-900 ${isHoveredGO1 ? 'max-h-[600px] py-6 opacity-100' : 'max-h-0 py-0 opacity-0'}`}
               style={{ borderBottomLeftRadius: '1rem', borderBottomRightRadius: '1rem' }}
             >
@@ -169,6 +202,7 @@ export default function SalesPage() {
             className={`relative bg-[#EE8900] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${isHoveredG1 ? 'scale-105' : ''}`}
             onMouseEnter={handleMouseEnterG1}
             onMouseLeave={handleMouseLeaveG1}
+            onClick={handleCardClickG1}
             style={{ cursor: 'pointer', transition: 'box-shadow 0.7s, transform 0.7s, max-height 0.7s' }}
           >
             <div className="flex flex-col md:flex-row min-h-[500px]">
@@ -177,6 +211,9 @@ export default function SalesPage() {
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Domestic Help</h3>
                 <p className="text-white/90 text-lg leading-relaxed">
                 Our humanoid robot – G1 is rapidly advancing in mobility and functionality, making it suitable for simple household tasks such as serving and assisting with basic cooking. Designed to support daily living, G1 brings intelligent assistance and convenience into the home environment.
+                </p>
+                <p className="text-white/70 text-sm mt-4 lg:hidden">
+                  💡 Tap to watch video
                 </p>
               </div>
               {/* Image Right */}
@@ -195,6 +232,7 @@ export default function SalesPage() {
             </div>
             {/* Expanding Video Section INSIDE the card */}
             <div
+              id="video-g1"
               className={`transition-all duration-700 ease-in-out overflow-hidden bg-gray-900 ${isHoveredG1 ? 'max-h-[600px] py-6 opacity-100' : 'max-h-0 py-0 opacity-0'}`}
               style={{ borderBottomLeftRadius: '1rem', borderBottomRightRadius: '1rem' }}
             >
@@ -221,6 +259,7 @@ export default function SalesPage() {
             className={`relative bg-[#2B1C48] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${isHoveredB1 ? 'scale-105' : ''}`}
             onMouseEnter={handleMouseEnterB1}
             onMouseLeave={handleMouseLeaveB1}
+            onClick={handleCardClickB1}
             style={{ cursor: 'pointer', transition: 'box-shadow 0.7s, transform 0.7s, max-height 0.7s' }}
           >
             <div className="flex flex-col md:flex-row min-h-[500px]">
@@ -243,10 +282,14 @@ export default function SalesPage() {
                 <p className="text-white/90 text-lg leading-relaxed">
                 Our B1 quadruped robot is engineered with a rugged design and durable joints, enabling it to carry loads of up to 20 kg while walking across diverse terrains. From climbing stairs to traversing uneven surfaces and even operating underwater, B1 is built to adapt, analyze, and perform in the most challenging environments.
                 </p>
+                <p className="text-white/70 text-sm mt-4 lg:hidden">
+                  💡 Tap to watch video
+                </p>
               </div>
             </div>
             {/* Expanding Video Section INSIDE the card */}
             <div
+              id="video-b1"
               className={`transition-all duration-700 ease-in-out overflow-hidden bg-gray-900 ${isHoveredB1 ? 'max-h-[600px] py-6 opacity-100' : 'max-h-0 py-0 opacity-0'}`}
               style={{ borderBottomLeftRadius: '1rem', borderBottomRightRadius: '1rem' }}
             >

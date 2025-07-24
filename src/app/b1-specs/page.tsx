@@ -35,19 +35,19 @@ export default function B1SpecsPage() {
             />
             <div className="absolute inset-0 flex items-center justify-center z-10 transition-all duration-700 ease-in-out">
               {/* Product Information Card - Left Side */}
-              <div className="absolute left-12 md:left-20 lg:left-24 top-1/2 transform -translate-y-1/2 bg-[#2c1b47]/71 rounded-xl p-10 shadow-2xl border border-gray-700 max-w-md transition-all duration-700 ease-in-out transform hover:scale-105">
+              <div className="absolute left-1/2 transform -translate-x-1/2 md:left-auto md:left-20 lg:left-24 top-1/2 transform -translate-y-1/2 bg-[#2c1b47]/71 rounded-xl p-6 md:p-10 shadow-2xl border border-gray-700 max-w-sm md:max-w-md transition-all duration-700 ease-in-out transform hover:scale-105">
                 <div className="text-center">
-                  <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 transition-all duration-500">
-                    <span className="text-5xl md:text-6xl">Unitree</span>
+                  <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 transition-all duration-500">
+                    <span className="text-4xl md:text-6xl">Unitree</span>
                     <br />
-                    <span className="text-3xl md:text-4xl">B1</span>
+                    <span className="text-2xl md:text-4xl">B1</span>
                   </h1>
-                  <p className="text-white text-lg mb-4 transition-all duration-500">Quadruped Robot</p>
+                  <p className="text-white text-base md:text-lg mb-4 transition-all duration-500">Quadruped Robot</p>
                   <div className="w-full h-px bg-[#EE8900] mb-6 transition-all duration-500"></div>
                   <div className="flex items-center justify-center mb-4">
                     <button 
                       onClick={handleVideoClick}
-                      className="bg-[#EE8900] hover:bg-[#d67a00] text-white px-8 py-3 rounded-lg border border-[#EE8900] transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-110 hover:shadow-lg"
+                      className="bg-[#EE8900] hover:bg-[#d67a00] text-white px-6 md:px-8 py-2 md:py-3 rounded-lg border border-[#EE8900] transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-110 hover:shadow-lg text-sm md:text-base"
                     >
                       <svg className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
@@ -55,7 +55,7 @@ export default function B1SpecsPage() {
                       Watch Video
                     </button>
                   </div>
-                  <p className="text-white text-sm opacity-80 transition-all duration-500">
+                  <p className="text-white text-xs md:text-sm opacity-80 transition-all duration-500">
                     Continuous OTA Software Upgrade and Update
                   </p>
                 </div>

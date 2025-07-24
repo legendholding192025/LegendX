@@ -60,7 +60,7 @@ export default function HeroSection() {
               
               {/* Second Line */}
               <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight whitespace-nowrap">
-                <span className="text-[#EE8900] drop-shadow-lg">
+                <span className="text-[#FFFFF] drop-shadow-lg">
                   Legend X Robotics
                 </span>
               </div>

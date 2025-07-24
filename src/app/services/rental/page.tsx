@@ -64,6 +64,34 @@ export default function RentalPage() {
     }
   };
 
+  // Mobile click handlers to scroll to video sections
+  const handleCardClickGO1 = () => {
+    if (window.innerWidth < 1024) { // Only on mobile/tablet
+      const videoSection = document.getElementById('video-go1');
+      if (videoSection) {
+        videoSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  };
+
+  const handleCardClickG1 = () => {
+    if (window.innerWidth < 1024) { // Only on mobile/tablet
+      const videoSection = document.getElementById('video-g1');
+      if (videoSection) {
+        videoSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  };
+
+  const handleCardClickB1 = () => {
+    if (window.innerWidth < 1024) { // Only on mobile/tablet
+      const videoSection = document.getElementById('video-b1');
+      if (videoSection) {
+        videoSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  };
+
   return (
     <main>
       {/* Banner Image */}
@@ -115,6 +143,7 @@ export default function RentalPage() {
             className={`relative bg-[#2B1C48] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${isHoveredGO1 ? 'scale-105' : ''}`}
             onMouseEnter={handleMouseEnterGO1}
             onMouseLeave={handleMouseLeaveGO1}
+            onClick={handleCardClickGO1}
             style={{ cursor: 'pointer', transition: 'box-shadow 0.7s, transform 0.7s, max-height 0.7s' }}
           >
             <div className="flex flex-col lg:flex-row min-h-[500px]">
@@ -139,10 +168,14 @@ export default function RentalPage() {
                 <p className="text-white/90 text-lg leading-relaxed">
                 Robots offer a unique and engaging presence at corporate events, conferences, product launches, and brand activations. Whether welcoming guests, delivering branded messages, or performing interactive routines, they create a memorable experience that reflects innovation and forward-thinking.
                 </p>
+                <p className="text-white/70 text-sm mt-4 lg:hidden">
+                  💡 Tap to watch video
+                </p>
               </div>
             </div>
             {/* Expanding Video Section INSIDE the card */}
             <div
+              id="video-go1"
               className={`transition-all duration-700 ease-in-out overflow-hidden bg-gray-900 ${isHoveredGO1 ? 'max-h-[600px] py-6 opacity-100' : 'max-h-0 py-0 opacity-0'}`}
               style={{ borderBottomLeftRadius: '1rem', borderBottomRightRadius: '1rem' }}
             >
@@ -169,6 +202,7 @@ export default function RentalPage() {
             className={`relative bg-[#EE8900] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${isHoveredG1 ? 'scale-105' : ''}`}
             onMouseEnter={handleMouseEnterG1}
             onMouseLeave={handleMouseLeaveG1}
+            onClick={handleCardClickG1}
             style={{ cursor: 'pointer', transition: 'box-shadow 0.7s, transform 0.7s, max-height 0.7s' }}
           >
             <div className="flex flex-col md:flex-row min-h-[500px]">
@@ -177,6 +211,9 @@ export default function RentalPage() {
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Research and Development</h3>
                 <p className="text-white/90 text-lg leading-relaxed">
                 Robots serve as powerful platforms for research and innovation. With advanced hardware, open programming capabilities, and open AI integration, they provide researchers and developers with a reliable tool for testing robotics applications, algorithms, and real-world use cases.
+                </p>
+                <p className="text-white/70 text-sm mt-4 lg:hidden">
+                  💡 Tap to watch video
                 </p>
               </div>
               {/* Image Right */}
@@ -195,6 +232,7 @@ export default function RentalPage() {
             </div>
             {/* Expanding Video Section INSIDE the card */}
             <div
+              id="video-g1"
               className={`transition-all duration-700 ease-in-out overflow-hidden bg-gray-900 ${isHoveredG1 ? 'max-h-[600px] py-6 opacity-100' : 'max-h-0 py-0 opacity-0'}`}
               style={{ borderBottomLeftRadius: '1rem', borderBottomRightRadius: '1rem' }}
             >
@@ -221,6 +259,7 @@ export default function RentalPage() {
             className={`relative bg-[#2B1C48] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${isHoveredB1 ? 'scale-105' : ''}`}
             onMouseEnter={handleMouseEnterB1}
             onMouseLeave={handleMouseLeaveB1}
+            onClick={handleCardClickB1}
             style={{ cursor: 'pointer', transition: 'box-shadow 0.7s, transform 0.7s, max-height 0.7s' }}
           >
             <div className="flex flex-col md:flex-row min-h-[500px]">
@@ -243,10 +282,14 @@ export default function RentalPage() {
                 <p className="text-white/90 text-lg leading-relaxed">
                 Legend X robots bring excitement and innovation to entertainment experiences. The humanoid G1 and quadruped B1 can be programmed to walk, interact with audiences, perform themed routines, making them a unique attraction for tech shows, malls, festivals, or media productions.
                 </p>
+                <p className="text-white/70 text-sm mt-4 lg:hidden">
+                  💡 Tap to watch video
+                </p>
               </div>
             </div>
             {/* Expanding Video Section INSIDE the card */}
             <div
+              id="video-b1"
               className={`transition-all duration-700 ease-in-out overflow-hidden bg-gray-900 ${isHoveredB1 ? 'max-h-[600px] py-6 opacity-100' : 'max-h-0 py-0 opacity-0'}`}
               style={{ borderBottomLeftRadius: '1rem', borderBottomRightRadius: '1rem' }}
             >

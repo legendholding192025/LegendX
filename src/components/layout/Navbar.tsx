@@ -80,9 +80,9 @@ export default function Navbar() {
                 onMouseEnter={() => setProductsDropdownOpen(true)}
                 onMouseLeave={() => setProductsDropdownOpen(false)}
               >
-                <Link href="/g1-specs" className={`block px-4 py-2 ${pathname === '/g1-specs' ? 'bg-orange-50 text-orange-600' : 'text-[#2B1C48]'} hover:bg-orange-50 hover:text-orange-600 transition-colors rounded-t-lg first:rounded-t-lg last:rounded-b-lg font-heading`}>G1 Humanoid Robot</Link>
-                <Link href="/b1-specs" className={`block px-4 py-2 ${pathname === '/b1-specs' ? 'bg-orange-50 text-orange-600' : 'text-[#2B1C48]'} hover:bg-orange-50 hover:text-orange-600 transition-colors font-heading`}>B1 Quadruped Robot</Link>
-                <Link href="/go1-specs" className={`block px-4 py-2 ${pathname === '/go1-specs' ? 'bg-orange-50 text-orange-600' : 'text-[#2B1C48]'} hover:bg-orange-50 hover:text-orange-600 transition-colors rounded-b-lg last:rounded-b-lg font-heading`}>GO1 Quadruped Robot</Link>
+                <Link href="/g1-specs" className={`block px-4 py-2 ${pathname === '/g1-specs' ? 'bg-orange-50 text-orange-600' : 'text-[#2B1C48]'} hover:bg-orange-50 hover:text-orange-600 transition-colors rounded-t-lg first:rounded-t-lg last:rounded-b-lg font-heading`}>G1</Link>
+                <Link href="/b1-specs" className={`block px-4 py-2 ${pathname === '/b1-specs' ? 'bg-orange-50 text-orange-600' : 'text-[#2B1C48]'} hover:bg-orange-50 hover:text-orange-600 transition-colors font-heading`}>B1</Link>
+                <Link href="/go1-specs" className={`block px-4 py-2 ${pathname === '/go1-specs' ? 'bg-orange-50 text-orange-600' : 'text-[#2B1C48]'} hover:bg-orange-50 hover:text-orange-600 transition-colors rounded-b-lg last:rounded-b-lg font-heading`}>GO1</Link>
               </div>
             </div>
             

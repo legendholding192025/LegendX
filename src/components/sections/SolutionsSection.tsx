@@ -4,7 +4,7 @@ const solutions = [
   {
     title: 'Security',
     description: 'Robots can be programmed to serve as patrolling units, enhancing security across properties and various facilities.',
-    image: 'https://cdn.legendholding.com/images/cdn_687f879ccd7371.25648149_20250722_124412.jpg',
+    image: 'https://cdn.legendholding.com/images/cdn_68822540b5df73.68688615_20250724_122120.png',
   },
   {
     title: 'Firefighting',
