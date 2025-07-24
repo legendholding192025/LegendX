@@ -358,7 +358,7 @@ export default function G1SpecsPage() {
           {/* First Row - Left: Image, Right: Text */}
           <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full">
             <Image
-              src="https://cdn.legendholding.com/images/cdn_6880bd6f9fc8c3.06590023_20250723_104607.png"
+              src="https://cdn.legendholding.com/images/cdn_68822dea2def77.36328949_20250724_125818.png"
               alt="G1 Robot Body Size"
               fill
               className="object-contain transition-transform duration-300 group-hover:scale-105"
@@ -376,7 +376,7 @@ export default function G1SpecsPage() {
               Key Measurements
             </div>
             
-            <ol className="space-y-4 text-white/90">
+            <ol className="space-y-2 text-white/90">
               <li className="flex items-start">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>Weight: 35 kg - Optimized for stability and mobility</span>
@@ -400,7 +400,7 @@ export default function G1SpecsPage() {
               Joint Freedom
             </div>
             
-            <ol className="space-y-4 text-white/90">
+            <ol className="space-y-2 text-white/90">
               <li className="flex items-start">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>Total Degrees of Freedom: 23 - 43 (depending on configuration)</span>
@@ -422,7 +422,7 @@ export default function G1SpecsPage() {
 
           <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full order-1 lg:order-none">
             <Image
-              src="https://cdn.legendholding.com/images/cdn_6880d868980ee1.50193069_20250723_124112.png"
+              src="https://cdn.legendholding.com/images/cdn_688231ada30302.59820338_20250724_131421.png"
               alt="G1 Robot Degrees of Freedom"
               fill
               className="object-contain transition-transform duration-300 group-hover:scale-105"
@@ -437,7 +437,7 @@ export default function G1SpecsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
           <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full">
             <Image
-              src="https://cdn.legendholding.com/images/cdn_6880bd41a010c8.12532654_20250723_104521.png"
+              src="https://cdn.legendholding.com/images/cdn_6882320fa55d52.17083424_20250724_131559.png"
               alt="G1 Robot Maximum Joint Torque"
               fill
               className="object-contain transition-transform duration-300 group-hover:scale-105"
@@ -454,7 +454,7 @@ export default function G1SpecsPage() {
               Technical Specifications
             </div>
             
-            <div className="space-y-4 text-white/90">
+            <div className="space-y-2 text-white/90">
               <div className="flex items-center">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>Maximum Joint Torque: 120 N.m</span>
@@ -484,7 +484,7 @@ export default function G1SpecsPage() {
               Advanced Manipulation
             </div>
             
-            <div className="space-y-4 text-white/90">
+            <div className="space-y-2 text-white/90">
               <div className="flex items-start">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>3-finger force control dexterous hand for precise manipulation</span>
@@ -506,7 +506,7 @@ export default function G1SpecsPage() {
 
           <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full order-1 lg:order-none">
             <Image
-              src="https://cdn.legendholding.com/images/cdn_6880bd4befaa81.53340882_20250723_104531.png"
+              src="https://cdn.legendholding.com/images/cdn_6882326d473494.28988627_20250724_131733.png"
               alt="G1 Robot Dexterous Hand"
               fill
               className="object-contain transition-transform duration-300 group-hover:scale-105"
@@ -521,7 +521,7 @@ export default function G1SpecsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
           <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full">
             <Image
-              src="https://cdn.legendholding.com/images/cdn_6880bd267ba806.78795331_20250723_104454.png"
+              src="https://cdn.legendholding.com/images/cdn_688232a0bf9e71.48877119_20250724_131824.png"
               alt="G1 Robot Battery Life"
               fill
               className="object-contain transition-transform duration-300 group-hover:scale-105"
@@ -538,7 +538,7 @@ export default function G1SpecsPage() {
               Power Management
             </div>
             
-            <div className="space-y-4 text-white/90">
+            <div className="space-y-2 text-white/90">
               <div className="flex items-center">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>Battery Life: About 2h of continuous operation</span>
@@ -568,7 +568,7 @@ export default function G1SpecsPage() {
               Advanced Sensing
             </div>
             
-            <div className="space-y-4 text-white/90">
+            <div className="space-y-2 text-white/90">
               <div className="flex items-start">
                 <span className="text-white font-bold mr-3">1.</span>
                 <span>3D LIDAR + Depth Camera for comprehensive environment mapping</span>
@@ -590,7 +590,7 @@ export default function G1SpecsPage() {
 
           <div className="relative group overflow-hidden rounded-xl shadow-lg bg-white h-64 lg:h-full order-1 lg:order-none">
             <Image
-              src="https://cdn.legendholding.com/images/cdn_6880bda99d5cc1.74040172_20250723_104705.png"
+              src="https://cdn.legendholding.com/images/cdn_688232cf7a4181.64510539_20250724_131911.png"
               alt="G1 Robot 360° Detection Perception"
               fill
               className="object-contain transition-transform duration-300 group-hover:scale-105"
