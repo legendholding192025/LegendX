@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function ProductShowcase() {
   return (
-    <section className="pt-12 pb-16">
+    <section className="pt-12 pb-8 md:pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold text-[#5E366D] mb-4 text-center">Products</h2>

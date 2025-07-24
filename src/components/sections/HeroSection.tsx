@@ -43,6 +43,8 @@ export default function HeroSection() {
           <source src="https://cdn.legendholding.com/videos/video_cdn_687900259effc9.02795891_20250717_135237.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        {/* Shadow Overlay */}
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
       
       {/* Content Container */}
