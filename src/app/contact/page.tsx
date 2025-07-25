@@ -145,35 +145,37 @@ export default function ContactPage() {
                 </div>
 
                 <div className="bg-white rounded-lg p-3">
-                  <Label className="text-gray-700 font-medium mb-1 block">Service Type</Label>
-                  <div className="flex gap-4 sm:gap-6">
-                    <div className="flex items-center space-x-2">
-                                           <input
-                         type="radio"
-                         id="rental"
-                         name="serviceType"
-                         value="rental"
-                         checked={formData.serviceType === "rental"}
-                         onChange={(e) => handleInputChange("serviceType", e.target.value)}
-                         className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500 transition-all duration-200 hover:scale-110"
-                       />
-                      <Label htmlFor="rental" className="text-gray-700 cursor-pointer text-sm sm:text-base">
-                        Rental
-                      </Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                                           <input
-                         type="radio"
-                         id="purchase"
-                         name="serviceType"
-                         value="purchase"
-                         checked={formData.serviceType === "purchase"}
-                         onChange={(e) => handleInputChange("serviceType", e.target.value)}
-                         className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500 transition-all duration-200 hover:scale-110"
-                       />
-                      <Label htmlFor="purchase" className="text-gray-700 cursor-pointer text-sm sm:text-base">
-                        Purchase
-                      </Label>
+                  <div className="flex items-center gap-4 sm:gap-6">
+                    <Label className="text-gray-700 font-medium">Service Type:</Label>
+                    <div className="flex gap-4 sm:gap-6">
+                      <div className="flex items-center space-x-2">
+                                             <input
+                           type="radio"
+                           id="rental"
+                           name="serviceType"
+                           value="rental"
+                           checked={formData.serviceType === "rental"}
+                           onChange={(e) => handleInputChange("serviceType", e.target.value)}
+                           className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500 transition-all duration-200 hover:scale-110"
+                         />
+                        <Label htmlFor="rental" className="text-gray-700 cursor-pointer text-sm sm:text-base">
+                          Rental
+                        </Label>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                                             <input
+                           type="radio"
+                           id="purchase"
+                           name="serviceType"
+                           value="purchase"
+                           checked={formData.serviceType === "purchase"}
+                           onChange={(e) => handleInputChange("serviceType", e.target.value)}
+                           className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500 transition-all duration-200 hover:scale-110"
+                         />
+                        <Label htmlFor="purchase" className="text-gray-700 cursor-pointer text-sm sm:text-base">
+                          Purchase
+                        </Label>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -181,7 +183,7 @@ export default function ContactPage() {
                                <div>
                  <textarea
                    placeholder="Please share your message..."
-                   className="w-full bg-white !bg-white border-0 rounded-lg h-24 text-gray-900 placeholder:text-gray-500 px-4 py-3 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02] resize-none"
+                   className="w-full bg-white !bg-white border-0 rounded-lg h-28 text-gray-900 placeholder:text-gray-500 px-4 py-3 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02] resize-none"
                    rows={4}
                  />
                </div>

@@ -428,20 +428,22 @@ function ContactUsFormCard() {
           </select>
         </div>
         <div className="bg-white rounded-lg p-3">
-          <label className="text-gray-700 font-medium mb-1 block">Service Type</label>
-          <div className="flex items-center space-x-2">
-            <input
-              type="radio"
-              id="rental"
-              name="serviceType"
-              value="rental"
-              checked={true}
-              readOnly
-              className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500"
-            />
-            <label htmlFor="rental" className="text-gray-700">
-              Rental
-            </label>
+          <div className="flex items-center gap-6">
+            <label className="text-gray-700 font-medium">Service Type:</label>
+            <div className="flex items-center space-x-2">
+              <input
+                type="radio"
+                id="rental"
+                name="serviceType"
+                value="rental"
+                checked={true}
+                readOnly
+                className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500"
+              />
+              <label htmlFor="rental" className="text-gray-700">
+                Rental
+              </label>
+            </div>
           </div>
         </div>
                        <div>

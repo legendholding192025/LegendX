@@ -770,35 +770,37 @@ function ContactUsFormCard() {
           </select>
         </div>
         <div className="bg-white rounded-lg p-3">
-          <Label className="text-gray-700 font-medium mb-3 block">Service Type</Label>
-          <div className="flex gap-6">
-            <div className="flex items-center space-x-2">
-              <input
-                type="radio"
-                id="rental"
-                name="serviceType"
-                value="rental"
-                checked={formData.serviceType === "rental"}
-                onChange={(e) => handleInputChange("serviceType", e.target.value)}
-                className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500 transition-all duration-200 hover:scale-110"
-              />
-              <Label htmlFor="rental" className="text-gray-700 cursor-pointer">
-                Rental
-              </Label>
-            </div>
-            <div className="flex items-center space-x-2">
-              <input
-                type="radio"
-                id="purchase"
-                name="serviceType"
-                value="purchase"
-                checked={formData.serviceType === "purchase"}
-                onChange={(e) => handleInputChange("serviceType", e.target.value)}
-                className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500 transition-all duration-200 hover:scale-110"
-              />
-              <Label htmlFor="purchase" className="text-gray-700 cursor-pointer">
-                Purchase
-              </Label>
+          <div className="flex items-center gap-6">
+            <Label className="text-gray-700 font-medium">Service Type:</Label>
+            <div className="flex gap-6">
+              <div className="flex items-center space-x-2">
+                <input
+                  type="radio"
+                  id="rental"
+                  name="serviceType"
+                  value="rental"
+                  checked={formData.serviceType === "rental"}
+                  onChange={(e) => handleInputChange("serviceType", e.target.value)}
+                  className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500 transition-all duration-200 hover:scale-110"
+                />
+                <Label htmlFor="rental" className="text-gray-700 cursor-pointer">
+                  Rental
+                </Label>
+              </div>
+              <div className="flex items-center space-x-2">
+                <input
+                  type="radio"
+                  id="purchase"
+                  name="serviceType"
+                  value="purchase"
+                  checked={formData.serviceType === "purchase"}
+                  onChange={(e) => handleInputChange("serviceType", e.target.value)}
+                  className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 focus:ring-orange-500 transition-all duration-200 hover:scale-110"
+                />
+                <Label htmlFor="purchase" className="text-gray-700 cursor-pointer">
+                  Purchase
+                </Label>
+              </div>
             </div>
           </div>
         </div>
