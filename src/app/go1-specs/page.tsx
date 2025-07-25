@@ -51,7 +51,7 @@ export default function GO1SpecsPage() {
               priority
               sizes="100vw"
               quality={100}
-              style={{ objectPosition: 'center' }}
+              style={{ objectPosition: '5% 40%', transform: 'scale(1.5)' }}
             />
             <div className="absolute inset-0 flex items-center justify-end z-10 transition-all duration-700 ease-in-out">
               {/* Product Information Card - Right Side */}
