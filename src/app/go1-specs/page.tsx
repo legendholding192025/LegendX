@@ -13,7 +13,7 @@ export default function GO1SpecsPage() {
       <section className="relative w-full h-[36rem] md:h-[42rem] lg:h-[48rem] overflow-hidden">
         <div className="relative w-full h-full">
           <video
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover hidden md:block"
             autoPlay
             muted
             loop
@@ -22,6 +22,16 @@ export default function GO1SpecsPage() {
           >
             Your browser does not support the video tag.
           </video>
+          <Image
+            src="https://cdn.legendholding.com/images/cdn_68836fcd4451f6.03071181_20250725_115141.png"
+            alt="GO1 Specs Banner Mobile"
+            fill
+            className="object-cover w-full transition-all duration-700 ease-in-out md:hidden"
+            priority
+            sizes="100vw"
+            quality={100}
+            style={{ objectPosition: 'center' }}
+          />
           <div className="absolute inset-0 flex items-center justify-center z-10 transition-all duration-700 ease-in-out" style={{ transform: 'translateY(-25%)' }}>
             {/* Centered Text Overlay */}
             <div className="text-center">

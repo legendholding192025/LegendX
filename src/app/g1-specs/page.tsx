@@ -270,9 +270,19 @@ export default function G1SpecsPage() {
           <>
             <Image
               src="https://cdn.legendholding.com/images/cloudinary_687def13c34d78.81722733_20250721_074107.jpg"
-              alt="G1 Specs Banner"
+              alt="G1 Specs Banner Desktop"
               fill
-              className="object-cover w-full transition-all duration-700 ease-in-out"
+              className="object-cover w-full transition-all duration-700 ease-in-out hidden md:block"
+              priority
+              sizes="100vw"
+              quality={100}
+              style={{ objectPosition: 'center' }}
+            />
+            <Image
+              src="https://cdn.legendholding.com/images/cdn_68836fe019f8a2.68471822_20250725_115200.png"
+              alt="G1 Specs Banner Mobile"
+              fill
+              className="object-cover w-full transition-all duration-700 ease-in-out md:hidden"
               priority
               sizes="100vw"
               quality={100}

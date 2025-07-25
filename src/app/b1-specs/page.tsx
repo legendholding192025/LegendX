@@ -25,9 +25,19 @@ export default function B1SpecsPage() {
           <>
             <Image
               src="https://cdn.legendholding.com/images/cloudinary_687f390192ac92.63357689_20250722_070849.jpg"
-              alt="B1 Specs Banner"
+              alt="B1 Specs Banner Desktop"
               fill
-              className="object-cover w-full transition-all duration-700 ease-in-out"
+              className="object-cover w-full transition-all duration-700 ease-in-out hidden md:block"
+              priority
+              sizes="100vw"
+              quality={100}
+              style={{ objectPosition: 'center' }}
+            />
+            <Image
+              src="https://cdn.legendholding.com/images/cdn_68836fbb1cc342.31788412_20250725_115123.png"
+              alt="B1 Specs Banner Mobile"
+              fill
+              className="object-cover w-full transition-all duration-700 ease-in-out md:hidden"
               priority
               sizes="100vw"
               quality={100}
