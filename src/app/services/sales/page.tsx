@@ -112,7 +112,7 @@ export default function SalesPage() {
               Sales Services
             </h1>
             <p className="text-white/90 text-lg md:text-xl max-w-md mb-8">
-              Purchase your own LegendX robot and experience the future of AI-powered automation.
+              Purchase your own LegendX robot and experience the future of AI-powered automation
             </p>
             {/* Contact Us Button */}
             <button 
@@ -427,7 +427,7 @@ function ContactUsFormCard() {
           </select>
         </div>
         <div className="bg-white rounded-lg p-3">
-          <label className="text-gray-700 font-medium mb-3 block">Service Type</label>
+          <label className="text-gray-700 font-medium mb-1 block">Service Type</label>
           <div className="flex items-center space-x-2">
             <input
               type="radio"

@@ -105,6 +105,11 @@ export default function Navbar() {
               </div>
             </div>
             
+            <Link href="/about-us" className={`relative ${pathname.includes('/about-us') ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all duration-300 font-medium group`}>
+              <span className="relative z-10 font-heading">About Us</span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
+            </Link>
+            
             <Link href="/support/terms-policies" className={`relative ${pathname.includes('/support') ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all duration-300 font-medium group`}>
               <span className="relative z-10 font-heading">Support</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
@@ -214,6 +219,13 @@ export default function Navbar() {
                 )}
               </div>
               
+              <Link 
+                href="/about-us" 
+                onClick={handleMobileLinkClick}
+                className={`${pathname.includes('/about-us') ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all duration-300 font-medium font-heading`}
+              >
+                About Us
+              </Link>
               <Link 
                 href="/support/terms-policies" 
                 onClick={handleMobileLinkClick}

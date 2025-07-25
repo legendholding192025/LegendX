@@ -332,7 +332,7 @@ export default function RentalPage() {
               <div className="text-left">
                 <h1 className="text-4xl font-bold text-white mb-2">Get in Touch</h1>
                 <p className="text-lg text-white">
-                  Visit our office or reach out to us through any of the following channels.
+                  Visit our office or reach out to us through any of the following channels
                 </p>
               </div>
             </div>
@@ -428,7 +428,7 @@ function ContactUsFormCard() {
           </select>
         </div>
         <div className="bg-white rounded-lg p-3">
-          <label className="text-gray-700 font-medium mb-3 block">Service Type</label>
+          <label className="text-gray-700 font-medium mb-1 block">Service Type</label>
           <div className="flex items-center space-x-2">
             <input
               type="radio"

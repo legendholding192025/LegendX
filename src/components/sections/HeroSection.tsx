@@ -55,7 +55,7 @@ export default function HeroSection() {
             <h1 className="font-heading">
               {/* First Line */}
               <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-5 lg:mb-6 whitespace-nowrap">
-                <span className="text-[#2B1C48]">
+                <span className="text-[#EE8900]">
                   Welcome To The Future With
                 </span>
               </div>
