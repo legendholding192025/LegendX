@@ -265,9 +265,9 @@ export default function AboutUsPage() {
                 ].map((value, index) => (
                   <div
                     key={value.title}
-                    className="group bg-white rounded-xl shadow-lg border-2 border-black flex flex-col items-center text-center min-h-36 max-w-lg mx-auto transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-gray-200 cursor-pointer transform hover:scale-[1.02]"
+                    className="group bg-[#5D376E] rounded-xl p-6 flex flex-col items-center text-center min-h-40 max-w-lg mx-auto transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#5D376E]/20 cursor-pointer transform hover:scale-[1.02]"
                   >
-                    <div className="bg-[#F3A13B] w-full rounded-t-xl p-4 mb-4 transition-transform duration-300 group-hover:scale-110">
+                    <div className="text-white mb-2 transition-transform duration-300 group-hover:scale-110">
                       <Image
                         src={value.icon}
                         alt={`${value.title} icon`}
@@ -276,12 +276,10 @@ export default function AboutUsPage() {
                         className="w-12 h-12 mx-auto"
                       />
                     </div>
-                    <div className="px-6 pb-6">
-                      <h3 className="text-xl font-bold text-[#2B1C48] mb-2">{value.title}</h3>
-                      <p className="text-gray-700 text-base leading-relaxed">
-                        {value.desc}
-                      </p>
-                    </div>
+                    <h3 className="text-xl font-bold text-[#F3A13B] mb-2">{value.title}</h3>
+                    <p className="text-white text-base leading-relaxed">
+                      {value.desc}
+                    </p>
                   </div>
                 ))}
               </div>
