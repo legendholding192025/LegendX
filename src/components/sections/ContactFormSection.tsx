@@ -22,7 +22,7 @@ export default function ContactFormSection() {
         <div className="text-left mb-8">
           <h1 className="text-4xl font-bold text-[rgb(43,28,72)] mb-2 font-heading">Get in Touch</h1>
           <p className="text-lg text-[rgb(43,28,72)]">
-            Visit our office or reach out to us through any of the following channels.
+            For more information please share your details and one of our representative will contact you shortly.
           </p>
         </div>
         

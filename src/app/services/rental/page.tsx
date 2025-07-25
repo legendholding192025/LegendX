@@ -332,7 +332,7 @@ export default function RentalPage() {
               <div className="text-left">
                 <h1 className="text-4xl font-bold text-white mb-2">Get in Touch</h1>
                 <p className="text-lg text-white">
-                  Visit our office or reach out to us through any of the following channels
+                  For more information please share your details and one of our representative will contact you shortly.
                 </p>
               </div>
             </div>

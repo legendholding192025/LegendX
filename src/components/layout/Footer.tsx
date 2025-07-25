@@ -193,7 +193,7 @@ export default function Footer() {
                                 <li className="flex items-center">
                 <Mail size={20} className="text-custom-yellow flex-shrink-0 mr-3" />
                     <Link href="mailto:info@legendx.com" className="text-white/80 hover:text-white transition-colors">
-                      info@legendx.com
+                      info@legendx.ae
                     </Link>
                   </li>
                 </ul>
