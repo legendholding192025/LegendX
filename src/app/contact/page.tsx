@@ -264,14 +264,13 @@ export default function ContactPage() {
                     <Clock className="w-5 h-5 text-custom-yellow" />
                   </div>
                   <div>
-                    <p className="text-gray-700 font-medium text-sm sm:text-base">Holiday</p>
                     <p className="text-[#2B1C48] font-normal text-sm sm:text-base">Sunday is a holiday</p>
                   </div>
                 </div>
               </div>
 
               <Button 
-                onClick={() => window.open('https://www.google.com/maps/search/?api=1&query=Legend+Holding+Group+Jebel+Ali+Freezone+Gate+5+Dubai', '_blank')}
+                onClick={() => window.open('https://maps.app.goo.gl/39d8x6kk149aqUPs9', '_blank')}
                 className="w-full bg-[#F08900] hover:bg-[#d67a00] text-white py-3 rounded-lg transition-all duration-200 font-semibold text-base flex items-center justify-center gap-2 mt-auto cursor-pointer"
               >
                 Get Directions

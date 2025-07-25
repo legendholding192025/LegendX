@@ -89,9 +89,9 @@ export default function Footer() {
     <footer className="bg-[rgb(43,28,72)] text-white pt-8 pb-4">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="flex flex-col lg:flex-row justify-between items-center mb-8">
+        <div className="flex flex-col lg:flex-row justify-between items-center mb-2">
           {/* Logo Section - Takes more space on the left */}
-          <div className="w-full lg:w-1/3 mb-6 lg:mb-0">
+          <div className="w-full lg:w-1/3 mb-4 lg:mb-0">
             <div className="flex justify-center lg:justify-center">
               <Link href="/" className="inline-block">
                 <div className="w-48 h-16 bg-transparent">
@@ -109,7 +109,7 @@ export default function Footer() {
 
           {/* Content Sections - Takes remaining space */}
           <div className="w-full lg:w-2/3">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-4">
               {/* Quick Links */}
               <div>
                 <h3 className="text-lg font-semibold mb-6 relative text-white">
@@ -199,8 +199,8 @@ export default function Footer() {
                 </ul>
               </div>
 
-              {/* Social Media */}
-              <div>
+              {/* Social Media - Hidden */}
+              {/* <div>
                 <h3 className="text-lg font-semibold mb-6 relative text-white">
                   <span className="relative z-10">Connect With Us</span>
                   <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-custom-yellow"></span>
@@ -255,13 +255,13 @@ export default function Footer() {
                     <TikTokIcon size={20} />
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
 
         {/* Divider */}
-        <div className="border-t border-white/10 my-6"></div>
+        <div className="border-t border-white/10 my-4"></div>
 
         {/* Bottom Footer */}
         <div className="flex justify-center">

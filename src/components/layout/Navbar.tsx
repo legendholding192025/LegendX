@@ -22,9 +22,35 @@ export default function Navbar() {
     setMobileServicesOpen(false);
   };
 
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (isMenuOpen && !target.closest('nav')) {
+        setIsMenuOpen(false);
+        setMobileProductsOpen(false);
+        setMobileServicesOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+      
+      // Don't hide navbar if mobile menu is open
+      if (isMenuOpen) {
+        setIsVisible(true);
+        return;
+      }
       
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         // Scrolling down & past 100px - hide navbar
@@ -39,7 +65,7 @@ export default function Navbar() {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY]);
+  }, [lastScrollY, isMenuOpen]);
 
   return (
     <nav className={`bg-white border-b border-gray-200 sticky top-0 z-50 transition-transform duration-300 ${

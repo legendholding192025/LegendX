@@ -6,8 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
 export default function GO1SpecsPage() {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   const handleVideoClick = () => {
     setIsVideoPlaying(true);
@@ -34,6 +34,16 @@ export default function GO1SpecsPage() {
               Your browser does not support the video tag.
             </video>
             <Image
+              src="https://cdn.legendholding.com/images/cdn_68837e2b41fd30.85027467_20250725_125259.png"
+              alt="GO1 Specs Banner Desktop"
+              fill
+              className="object-cover w-full transition-all duration-700 ease-in-out hidden md:block"
+              priority
+              sizes="100vw"
+              quality={100}
+              style={{ objectPosition: 'center' }}
+            />
+            <Image
               src="https://cdn.legendholding.com/images/cdn_68836fcd4451f6.03071181_20250725_115141.png"
               alt="GO1 Specs Banner Mobile"
               fill
@@ -43,16 +53,16 @@ export default function GO1SpecsPage() {
               quality={100}
               style={{ objectPosition: 'center' }}
             />
-            <div className="absolute inset-0 flex items-center justify-end z-10 transition-all duration-700 ease-in-out md:hidden">
-              {/* Product Information Card - Right Side - Mobile Only */}
-              <div className="absolute right-8 top-1/2 transform -translate-y-1/2 bg-[#2c1b47]/71 rounded-xl p-6 shadow-2xl border border-gray-700 w-80 transition-all duration-700 ease-in-out transform hover:scale-105">
+            <div className="absolute inset-0 flex items-center justify-end z-10 transition-all duration-700 ease-in-out">
+              {/* Product Information Card - Right Side */}
+              <div className="absolute right-8 md:right-8 lg:right-12 xl:right-16 top-1/2 transform -translate-y-1/2 bg-[#5D376E]/71 rounded-xl p-6 md:p-8 shadow-2xl border border-gray-700 w-80 md:w-96 transition-all duration-700 ease-in-out transform hover:scale-105">
                 <div className="text-center">
-                  <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 transition-all duration-500">
+                  <h1 className="text-3xl md:text-5xl font-bold text-[#2B1C48] mb-2 transition-all duration-500">
                     <span className="text-4xl md:text-6xl">Unitree</span>
                     <br />
                     <span className="text-2xl md:text-4xl">GO1</span>
                   </h1>
-                  <p className="text-white text-base md:text-lg mb-4 transition-all duration-500">Quadruped Robot</p>
+                  <p className="text-[#2B1C48] text-base md:text-lg mb-4 transition-all duration-500">Quadruped Robot</p>
                   <div className="w-full h-px bg-[#EE8900] mb-6 transition-all duration-500"></div>
                   <div className="flex items-center justify-center mb-4">
                     <button 
@@ -65,7 +75,7 @@ export default function GO1SpecsPage() {
                       Watch Video
                     </button>
                   </div>
-                  <p className="text-white text-xs md:text-sm opacity-80 transition-all duration-500">
+                  <p className="text-[#2B1C48] text-xs md:text-sm opacity-80 transition-all duration-500">
                     Continuous OTA Software Upgrade and Update
                   </p>
                 </div>
@@ -73,7 +83,7 @@ export default function GO1SpecsPage() {
             </div>
           </>
                 ) : (
-          <div className="relative w-full h-full animate-fadeIn bg-black md:hidden">
+          <div className="relative w-full h-full animate-fadeIn bg-black">
             <button
               onClick={handleVideoClose}
               className="absolute top-4 right-4 text-white hover:text-gray-300 text-3xl font-bold z-10 bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center transition-all duration-300 hover:bg-opacity-70 hover:scale-110 transform"
@@ -92,18 +102,10 @@ export default function GO1SpecsPage() {
           </div>
         )}
         
-        {/* Desktop Banner - No Video Card */}
-        <div className="absolute inset-0 flex items-center justify-center z-10 transition-all duration-700 ease-in-out hidden md:flex" style={{ transform: 'translateY(-25%)' }}>
-          {/* Centered Text Overlay */}
-          <div className="text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2B1C48] mb-4 transition-all duration-500">
-              Welcome To The Future
-            </h1>
-          </div>
-        </div>
+
       </section>
 
-      {/* Video Modal - Keep existing modal for fullscreen option */}
+      {/* Video Modal - Works for both mobile and desktop */}
       {showVideo && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="relative w-screen h-screen max-w-none max-h-none bg-black">

@@ -49,26 +49,52 @@ export default function AboutUsPage() {
           {/* Our Story Section */}
           <section className="w-full py-8 md:py-14 px-0 relative bg-[#5D376E] overflow-hidden">
             {/* Background Image with Next.js Image component */}
-            <div className="absolute inset-0 z-0 flex justify-end items-end">
-              <Image
-                src="https://cdn.legendholding.com/images/cdn_6862a6e1eef048.35976175_20250630_150153.jpg"
-                alt="Legend Holding Group background"
-                width={2000}
-                height={1500}
-                priority
-                className={`transition-opacity duration-500 ${
-                  imagesLoaded ? 'opacity-100' : 'opacity-0'
-                }`}
-                style={{
-                  maxWidth: '95%',
-                  width: '95%',
-                  height: '95%',
-                  objectFit: 'contain',
-                  objectPosition: 'right bottom'
-                }}
-                quality={85}
-                onLoad={() => setImagesLoaded(true)}
-              />
+            <div className="absolute inset-0 z-0">
+              {/* Mobile Image */}
+              <div className="block md:hidden absolute inset-0 flex items-end justify-end pr-4 pb-4">
+                <Image
+                  src="https://cdn.legendholding.com/images/cdn_6862a6e1eef048.35976175_20250630_150153.jpg"
+                  alt="Legend Holding Group background"
+                  width={400}
+                  height={300}
+                  priority
+                  className={`transition-opacity duration-500 ${
+                    imagesLoaded ? 'opacity-100' : 'opacity-0'
+                  }`}
+                  style={{
+                    width: '60%',
+                    height: '60%',
+                    objectFit: 'cover',
+                    objectPosition: 'center'
+                  }}
+                  quality={85}
+                  onLoad={() => setImagesLoaded(true)}
+                />
+              </div>
+              
+              {/* Desktop Image */}
+              <div className="hidden md:flex justify-end items-end h-full">
+                <Image
+                  src="https://cdn.legendholding.com/images/cdn_6862a6e1eef048.35976175_20250630_150153.jpg"
+                  alt="Legend Holding Group background"
+                  width={2000}
+                  height={1500}
+                  priority
+                  className={`transition-opacity duration-500 ${
+                    imagesLoaded ? 'opacity-100' : 'opacity-0'
+                  }`}
+                  style={{
+                    maxWidth: '85%',
+                    width: '85%',
+                    height: '85%',
+                    objectFit: 'contain',
+                    objectPosition: 'right bottom'
+                  }}
+                  quality={85}
+                  onLoad={() => setImagesLoaded(true)}
+                />
+              </div>
+              
               {!imagesLoaded && (
                 <div className="absolute inset-0 bg-[#5D376E] animate-pulse"></div>
               )}
