@@ -167,15 +167,15 @@ export default function Footer() {
                 <MapPin size={20} className="text-custom-yellow flex-shrink-0 mr-3 mt-1" />
                     <div className="text-white/80">
                       <span>
-                        Jebel Ali Freezone, Gate 5,
+                        Showroom 46, 
                         <br />
-                        Legend Holding Group HQ
+                        Al Awir New Auto Market,
                         <br />
-                        Dubai, United Arab Emirates
+                        Ras al Khor - Dubai
                       </span>
                       <br />
                       <Link 
-                        href="https://www.google.com/maps/search/?api=1&query=Legend+Holding+Group+Jebel+Ali+Freezone+Gate+5+Dubai"
+                        href="https://maps.app.goo.gl/39d8x6kk149aqUPs9"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-custom-yellow hover:text-white transition-colors duration-200 text-sm mt-1 inline-block"
