@@ -240,9 +240,9 @@ export default function ContactPage() {
                   <div>
                     <p className="text-gray-700 font-medium text-sm sm:text-base">Address</p>
                     <p className="text-[#2B1C48] font-normal text-sm sm:text-base">
-                      Legend Holding Group HQ, Jebel Ali Freezone
+                      Showroom 46, Al Awir New Auto Market,
                       <br />
-                      Gate 5, Dubai, United Arab Emirates
+                      Ras al Khor - Dubai
                     </p>
                   </div>
                 </div>
