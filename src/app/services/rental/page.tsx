@@ -35,6 +35,7 @@ export default function RentalPage() {
     setIsHoveredG1(true);
     setTimeout(() => {
       if (videoRefG1.current) {
+        videoRefG1.current.currentTime = 69; // Start from 1:09
         videoRefG1.current.play();
       }
     }, 300);
@@ -245,7 +246,7 @@ export default function RentalPage() {
                   loop
                   playsInline
                 >
-                  <source src="https://cdn.legendholding.com/videos/video_cdn_687f9300ab0e89.53785479_20250722_133248.mp4" type="video/mp4" />
+                  <source src="https://cdn.legendholding.com/videos/video_cdn_688371cf31eb63.85920242_20250725_120015.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm px-4 py-2 rounded-full">
