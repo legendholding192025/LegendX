@@ -95,12 +95,13 @@ export default function SalesPage() {
   return (
     <main>
       {/* Banner Image */}
-      <section className="relative w-full h-[36rem] md:h-80 lg:h-96 overflow-hidden flex items-center justify-center">
+      <section className="relative w-full h-[40rem] md:h-96 lg:h-[28rem] overflow-hidden flex items-center justify-center">
         <Image
           src="https://cdn.legendholding.com/images/cdn_687f7e1ae07780.21025857_20250722_120338.png"
           alt="Sales Services Banner"
           fill
-          className="object-cover object-bottom w-full h-full"
+          className="object-cover w-full h-full"
+          style={{ objectPosition: 'center 60%' }}
           priority
           sizes="100vw"
           quality={100}

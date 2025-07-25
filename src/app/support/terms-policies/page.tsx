@@ -9,12 +9,13 @@ export default function TermsPoliciesPage() {
   return (
     <main>
       {/* Banner Section */}
-      <section className="relative w-full h-[36rem] md:h-80 lg:h-96 overflow-hidden">
+      <section className="relative w-full h-[40rem] md:h-96 lg:h-[28rem] overflow-hidden">
         <Image
           src="https://cdn.legendholding.com/images/cdn_68809fc44e2ee6.43546854_20250723_083932.png"
           alt="Terms & Policies Banner"
           fill
-          className="object-cover object-bottom w-full h-full"
+          className="object-cover w-full h-full"
+          style={{ objectPosition: 'center 60%' }}
           priority
           sizes="100vw"
           quality={100}
