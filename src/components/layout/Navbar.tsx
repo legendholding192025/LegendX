@@ -48,20 +48,23 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 relative">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <div className="w-44 h-44">
+          <Link href="/" className="flex items-center md:ml-16">
+            <div className="w-32 h-12">
               <Image
-                src="/logo/legendx-logo.svg"
+                src="/logo/logo-x-navbar.png"
                 alt="LegendX Logo"
-                width={176}
-                height={176}
-                className="w-full h-full"
+                width={128}
+                height={48}
+                className="w-full h-full object-contain"
               />
             </div>
           </Link>
 
+          {/* Spacer to push navigation to the right */}
+          <div className="hidden md:block w-32"></div>
+
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6 ml-4">
+          <div className="hidden md:flex items-center space-x-6 mr-16">
             <Link href="/about-us" className={`relative ${pathname.includes('/about-us') ? 'text-orange-500' : 'text-[#2B1C48]'} hover:text-orange-500 transition-all duration-300 font-medium group`}>
               <span className="relative z-10 font-heading">About Us</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>

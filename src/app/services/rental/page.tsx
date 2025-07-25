@@ -131,8 +131,8 @@ export default function RentalPage() {
       </section>
 
       {/* Solution Section with Hover Card */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto space-y-12">
+      <section className="py-16 px-2 sm:px-4 bg-white">
+        <div className="max-w-7xl mx-auto space-y-12">
           {/* Section Title */}
           <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#5E366D] mb-4 text-center">Available for Rent</h2>

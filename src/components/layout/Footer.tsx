@@ -92,14 +92,14 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-center mb-8">
           {/* Logo Section - Takes more space on the left */}
           <div className="w-full lg:w-1/3 mb-6 lg:mb-0">
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-center">
               <Link href="/" className="inline-block">
-                <div className="w-80 h-24 bg-transparent">
+                <div className="w-48 h-16 bg-transparent">
                   <Image
-                    src="/logo/footer-logo.svg"
+                    src="/logo/logo-x-footer.png"
                     alt="LegendX Logo"
-                    width={128}
-                    height={48}
+                    width={192}
+                    height={64}
                     className="w-full h-full object-contain"
                   />
                 </div>
