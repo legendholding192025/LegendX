@@ -63,15 +63,15 @@ export default function GO1SpecsPage() {
             
             <ol className="space-y-0 text-white/90">
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">1.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>The robot is in the person's lateral peripheral vision, it is better than the conventional follow mode with natural human-computer interaction, safe and secure.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">2.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>No need to always look back and worry about whether the robot is lost or encounters obstacles.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">3.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>When the environment is complex, people can actively choose a simpler route to help the robot pass.</span>
               </li>
             </ol>
@@ -87,19 +87,19 @@ export default function GO1SpecsPage() {
             
             <ol className="space-y-0 text-white/90">
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">1.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>The new patented design of ultra-lightweight low-noise long-life power joints.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">2.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Body/Thigh Joint C520:8-1g 23.70N.m (MAX).</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">3.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Knee Joint C1.5×8-1 ratio 35.55N.m (MAX).</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">4.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>A patented heat pipe-assisted heat dissipation system is built into the vicinity of the knee joint motor.</span>
               </li>
             </ol>
@@ -145,9 +145,10 @@ export default function GO1SpecsPage() {
               <p className="text-lg font-semibold text-white">
                 Total: 16-core top CPU + GPU (384Core, 1.5TFLOPS)
               </p>
-              <p className="text-white/80">
-                1. Reference, NVIDIA TX2 only has CPU (4 cores) + GPU (256Core, 1.3TFLOPS), and the unit price of the chip is chargeable as an add-on.
-              </p>
+              <div className="flex items-start">
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
+                <span className="text-white/80">Reference, NVIDIA TX2 only has CPU (4 cores) + GPU (256Core, 1.3TFLOPS), and the unit price of the chip is chargeable as an add-on.</span>
+              </div>
             </div>
           </div>
         </div>

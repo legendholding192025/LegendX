@@ -378,15 +378,15 @@ export default function G1SpecsPage() {
             
             <ol className="space-y-0 text-white/90">
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">1.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Weight: 35 kg - Optimized for stability and mobility</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">2.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Height: 132 cm - Human-like proportions for natural interaction</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">3.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Dimensions: 132 × 45 × 20 cm (Stand) / 69 × 45 × 30 cm (Fold)</span>
               </li>
             </ol>
@@ -402,19 +402,19 @@ export default function G1SpecsPage() {
             
             <ol className="space-y-0 text-white/90">
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">1.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Total Degrees of Freedom: 23 - 43 (depending on configuration)</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">2.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Single Leg: 6 degrees of freedom for natural walking</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">3.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Single Arm: 5 degrees of freedom for precise manipulation</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">4.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Waist: 1 degree of freedom with optional additional 2</span>
               </li>
             </ol>
@@ -456,19 +456,19 @@ export default function G1SpecsPage() {
             
             <div className="space-y-0 text-white/90">
               <div className="flex items-center">
-                <span className="text-white font-bold mr-3">1.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0" />
                 <span>Maximum Joint Torque: 120 N.m</span>
               </div>
               <div className="flex items-center">
-                <span className="text-white font-bold mr-3">2.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0" />
                 <span>Battery Life: About 2h of continuous operation</span>
               </div>
               <div className="flex items-center">
-                <span className="text-white font-bold mr-3">3.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0" />
                 <span>Arm Maximum Load: 3 Kg for manipulation tasks</span>
               </div>
               <div className="flex items-center">
-                <span className="text-white font-bold mr-3">4.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0" />
                 <span>360 Detection: 3D LIDAR + Depth Camera for advanced perception</span>
               </div>
             </div>
@@ -486,19 +486,19 @@ export default function G1SpecsPage() {
             
             <div className="space-y-0 text-white/90">
               <div className="flex items-start">
-                <span className="text-white font-bold mr-3">1.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>3-finger force control dexterous hand for precise manipulation</span>
               </div>
               <div className="flex items-start">
-                <span className="text-white font-bold mr-3">2.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Optional installation of tactile sensor arrays</span>
               </div>
               <div className="flex items-start">
-                <span className="text-white font-bold mr-3">3.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Advanced force feedback for delicate object handling</span>
               </div>
               <div className="flex items-start">
-                <span className="text-white font-bold mr-3">4.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Human-like grip patterns for natural interaction</span>
               </div>
             </div>
@@ -540,19 +540,19 @@ export default function G1SpecsPage() {
             
             <div className="space-y-0 text-white/90">
               <div className="flex items-center">
-                <span className="text-white font-bold mr-3">1.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0" />
                 <span>Battery Life: About 2h of continuous operation</span>
               </div>
               <div className="flex items-center">
-                <span className="text-white font-bold mr-3">2.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0" />
                 <span>Advanced power management for optimal performance</span>
               </div>
               <div className="flex items-center">
-                <span className="text-white font-bold mr-3">3.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0" />
                 <span>Quick charging capabilities for minimal downtime</span>
               </div>
               <div className="flex items-center">
-                <span className="text-white font-bold mr-3">4.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0" />
                 <span>Energy-efficient design for extended mission duration</span>
               </div>
             </div>
@@ -570,19 +570,19 @@ export default function G1SpecsPage() {
             
             <div className="space-y-0 text-white/90">
               <div className="flex items-start">
-                <span className="text-white font-bold mr-3">1.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>3D LIDAR + Depth Camera for comprehensive environment mapping</span>
               </div>
               <div className="flex items-start">
-                <span className="text-white font-bold mr-3">2.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>360° field of view for complete situational awareness</span>
               </div>
               <div className="flex items-start">
-                <span className="text-white font-bold mr-3">3.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Real-time obstacle detection and path planning</span>
               </div>
               <div className="flex items-start">
-                <span className="text-white font-bold mr-3">4.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Advanced perception algorithms for safe navigation</span>
               </div>
             </div>

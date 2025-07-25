@@ -111,15 +111,15 @@ export default function B1SpecsPage() {
             
             <ol className="space-y-0 text-white/90">
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">1.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Exceptional terrain adaptability with ability to navigate complex obstacles and uneven surfaces.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">2.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>High payload capacity of 20kg while walking and 80kg when standing stationary.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">3.</span>
+                <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Advanced perception system with multiple sensors for autonomous navigation and obstacle avoidance.</span>
               </li>
             </ol>
@@ -135,19 +135,19 @@ export default function B1SpecsPage() {
             
             <ol className="space-y-0 text-white/90">
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">1.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Maximum walking speed of 1.2m/s for efficient operation in various environments.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">2.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>IP67 standard protection with optional IP68 for extreme weather and water resistance.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">3.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Extended endurance with 2-2.5 hours of continuous operation on a single charge.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-white font-bold mr-3">4.</span>
+                <Image src="/white-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0 mt-1" />
                 <span>Compact design measuring 1126mm x 467mm x 636mm for versatile deployment.</span>
               </li>
             </ol>
@@ -198,15 +198,15 @@ export default function B1SpecsPage() {
               </p>
               <div className="mt-4 space-y-2">
                 <div className="flex items-center">
-                  <span className="text-orange-400 font-bold mr-3">•</span>
+                  <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0" />
                   <span>Stable walking with 20kg payload</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-orange-400 font-bold mr-3">•</span>
+                  <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0" />
                   <span>Stationary operations up to 80kg</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-orange-400 font-bold mr-3">•</span>
+                  <Image src="/yellow-icon.png" alt="Icon" width={12} height={12} className="mr-3 flex-shrink-0" />
                   <span>Precise load positioning and control</span>
                 </div>
               </div>
