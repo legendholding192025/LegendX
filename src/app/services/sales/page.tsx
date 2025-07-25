@@ -443,6 +443,14 @@ function ContactUsFormCard() {
             </label>
           </div>
         </div>
+                       <div>
+                 <textarea
+                   placeholder="Please share your message..."
+                   className="w-full bg-white !bg-white border-0 rounded-lg h-24 text-gray-900 placeholder:text-gray-500 px-4 py-3 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02] resize-none"
+                   rows={4}
+                 />
+               </div>
+
         <button
           type="submit"
           className="w-full bg-[#F08900] hover:bg-[#d67a00] text-white py-3 rounded-lg transition-all duration-200 font-semibold text-base mt-auto"

@@ -3,6 +3,7 @@ import ProductShowcase from '@/components/sections/ProductShowcase';
 import AboutSection from '@/components/sections/AboutSection';
 import SolutionsSection from '@/components/sections/SolutionsSection';
 import PartnersSection from '@/components/sections/PartnersSection';
+import ContactFormSection from '@/components/sections/ContactFormSection';
 
 export default function HomePage() {
   return (
@@ -21,6 +22,9 @@ export default function HomePage() {
       
       {/* 5. Partners Section */}
       <PartnersSection />
+      
+      {/* 6. Contact Form Section */}
+      <ContactFormSection />
     </main>
   );
 } 

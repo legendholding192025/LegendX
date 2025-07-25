@@ -178,6 +178,14 @@ export default function ContactPage() {
                   </div>
                 </div>
 
+                               <div>
+                 <textarea
+                   placeholder="Please share your message..."
+                   className="w-full bg-white !bg-white border-0 rounded-lg h-24 text-gray-900 placeholder:text-gray-500 px-4 py-3 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 focus:scale-[1.02] resize-none"
+                   rows={4}
+                 />
+               </div>
+
                 <Button
                   type="submit"
                   className="w-full bg-[#F08900] hover:bg-[#d67a00] text-white py-3 rounded-lg transition-all duration-200 font-semibold text-base mt-auto"
@@ -197,7 +205,7 @@ export default function ContactPage() {
 
               <div className="space-y-3 mb-4 flex-1">
                 {/* Phone */}
-                <div className="bg-white rounded-lg p-1.5 flex items-center gap-3 transition-all duration-200 hover:shadow-md hover:scale-[1.02]">
+                <div className="bg-white rounded-lg p-2.5 flex items-center gap-3 transition-all duration-200 hover:shadow-md hover:scale-[1.02] min-h-[55px]">
                   <div className="bg-[rgb(43,28,72)] p-2 rounded-lg">
                     <Phone className="w-5 h-5 text-custom-yellow" />
                   </div>
@@ -210,7 +218,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Email */}
-                <div className="bg-white rounded-lg p-1.5 flex items-center gap-3 transition-all duration-200 hover:shadow-md hover:scale-[1.02]">
+                <div className="bg-white rounded-lg p-2.5 flex items-center gap-3 transition-all duration-200 hover:shadow-md hover:scale-[1.02] min-h-[55px]">
                   <div className="bg-[rgb(43,28,72)] p-2 rounded-lg">
                     <Mail className="w-5 h-5 text-custom-yellow" />
                   </div>
@@ -223,7 +231,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Address */}
-                <div className="bg-white rounded-lg p-1.5 flex items-start gap-3 transition-all duration-200 hover:shadow-md hover:scale-[1.02]">
+                <div className="bg-white rounded-lg p-2.5 flex items-start gap-3 transition-all duration-200 hover:shadow-md hover:scale-[1.02] min-h-[70px]">
                   <div className="bg-[rgb(43,28,72)] p-2 rounded-lg">
                     <MapPin className="w-5 h-5 text-custom-yellow" />
                   </div>
@@ -238,13 +246,24 @@ export default function ContactPage() {
                 </div>
 
                 {/* Business Hours */}
-                <div className="bg-white rounded-lg p-1.5 flex items-center gap-3 transition-all duration-200 hover:shadow-md hover:scale-[1.02]">
+                <div className="bg-white rounded-lg p-2.5 flex items-center gap-3 transition-all duration-200 hover:shadow-md hover:scale-[1.02] min-h-[55px]">
                   <div className="bg-[rgb(43,28,72)] p-2 rounded-lg">
                     <Clock className="w-5 h-5 text-custom-yellow" />
                   </div>
                   <div>
                     <p className="text-gray-700 font-medium text-sm sm:text-base">Business Hours</p>
                     <p className="text-[#2B1C48] font-normal text-sm sm:text-base">Monday - Saturday : 9:00 AM - 6:00 PM</p>
+                  </div>
+                </div>
+
+                {/* Holiday Information */}
+                <div className="bg-white rounded-lg p-2.5 flex items-center gap-3 transition-all duration-200 hover:shadow-md hover:scale-[1.02] min-h-[55px]">
+                  <div className="bg-[rgb(43,28,72)] p-2 rounded-lg">
+                    <Clock className="w-5 h-5 text-custom-yellow" />
+                  </div>
+                  <div>
+                    <p className="text-gray-700 font-medium text-sm sm:text-base">Holiday</p>
+                    <p className="text-[#2B1C48] font-normal text-sm sm:text-base">Sunday is a holiday</p>
                   </div>
                 </div>
               </div>
