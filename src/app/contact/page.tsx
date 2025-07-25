@@ -227,7 +227,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-gray-700 font-medium text-sm sm:text-base">Email</p>
                     <a href="mailto:info@legendx.com" className="text-[#2B1C48] font-normal hover:text-orange-500 transition-colors duration-200 text-sm sm:text-base">
-                      info@legendx.com
+                      info@legendx.ae
                     </a>
                   </div>
                 </div>
