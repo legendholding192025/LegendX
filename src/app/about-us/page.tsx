@@ -51,21 +51,22 @@ export default function AboutUsPage() {
             {/* Background Image with Next.js Image component */}
             <div className="absolute inset-0 z-0">
               {/* Mobile Image */}
-              <div className="block md:hidden absolute inset-0 flex items-end justify-end pr-4 pb-4">
+              <div className="block md:hidden absolute inset-0 flex justify-end items-end">
                 <Image
                   src="https://cdn.legendholding.com/images/cdn_6862a6e1eef048.35976175_20250630_150153.jpg"
                   alt="Legend Holding Group background"
-                  width={400}
-                  height={300}
+                  width={1600}
+                  height={1200}
                   priority
                   className={`transition-opacity duration-500 ${
                     imagesLoaded ? 'opacity-100' : 'opacity-0'
                   }`}
                   style={{
-                    width: '60%',
-                    height: '60%',
-                    objectFit: 'cover',
-                    objectPosition: 'center'
+                    maxWidth: '1600px',
+                    width: 'auto',
+                    height: 'auto',
+                    objectFit: 'contain',
+                    objectPosition: 'right bottom'
                   }}
                   quality={85}
                   onLoad={() => setImagesLoaded(true)}
