@@ -11,7 +11,9 @@
     "create-admin": "node scripts/create-admin-user.js",
     "create-admin-simple": "node scripts/create-admin-simple.js",
     "check-db": "node scripts/check-database.js",
-    "add-existing-admin": "node scripts/add-existing-admin.js"
+    "add-existing-admin": "node scripts/add-existing-admin.js",
+    "update-status": "node scripts/update-status.js",
+    "fix-status": "node scripts/fix-status-constraint.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.52.1",

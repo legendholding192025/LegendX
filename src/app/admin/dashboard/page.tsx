@@ -16,7 +16,7 @@ interface ContactSubmission {
   product_of_interest: string;
   service_type: 'rental' | 'purchase';
   message: string | null;
-  status: 'new' | 'contacted' | 'completed' | 'archived';
+  status: 'pending' | 'contacted' | 'completed' | 'archived';
   created_at: string;
   updated_at: string;
 }
@@ -25,8 +25,11 @@ export default function AdminDashboard() {
   const [submissions, setSubmissions] = useState<ContactSubmission[]>([]);
   const [loading, setLoading] = useState(true);
   const [updating, setUpdating] = useState<string | null>(null);
+  const [deleting, setDeleting] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState<string>('all');
+  const [activeTab, setActiveTab] = useState<'all' | 'rental' | 'purchase'>('all');
+  const [adminEmail, setAdminEmail] = useState<string>('');
   const router = useRouter();
 
   useEffect(() => {
@@ -40,6 +43,9 @@ export default function AdminDashboard() {
       router.push('/admin/login');
       return;
     }
+
+    // Set admin email
+    setAdminEmail(user.email || '');
 
     // Check if user is admin
     const { data: adminData, error: adminError } = await supabase
@@ -105,6 +111,32 @@ export default function AdminDashboard() {
     }
   };
 
+  const deleteSubmission = async (id: string) => {
+    if (!confirm('Are you sure you want to delete this submission? This action cannot be undone.')) {
+      return;
+    }
+
+    setDeleting(id);
+    try {
+      const { error } = await supabase
+        .from('legendx_contact_submissions')
+        .delete()
+        .eq('id', id);
+
+      if (error) {
+        console.error('Error deleting submission:', error);
+        return;
+      }
+
+      // Remove from local state
+      setSubmissions(prev => prev.filter(sub => sub.id !== id));
+    } catch (error) {
+      console.error('Error deleting submission:', error);
+    } finally {
+      setDeleting(null);
+    }
+  };
+
   const handleLogout = async () => {
     await supabase.auth.signOut();
     router.push('/admin/login');
@@ -118,15 +150,25 @@ export default function AdminDashboard() {
     
     const matchesStatus = statusFilter === 'all' || submission.status === statusFilter;
     
-    return matchesSearch && matchesStatus;
+    const matchesTab = activeTab === 'all' || submission.service_type === activeTab;
+    
+    return matchesSearch && matchesStatus && matchesTab;
   });
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'new': return 'bg-blue-100 text-blue-800';
+      case 'pending': return 'bg-blue-100 text-blue-800';
       case 'contacted': return 'bg-yellow-100 text-yellow-800';
       case 'completed': return 'bg-green-100 text-green-800';
       case 'archived': return 'bg-gray-100 text-gray-800';
+      default: return 'bg-gray-100 text-gray-800';
+    }
+  };
+
+  const getServiceTypeColor = (serviceType: string) => {
+    switch (serviceType) {
+      case 'rental': return 'bg-purple-100 text-purple-800';
+      case 'purchase': return 'bg-orange-100 text-orange-800';
       default: return 'bg-gray-100 text-gray-800';
     }
   };
@@ -145,18 +187,43 @@ export default function AdminDashboard() {
       <div className="bg-white shadow">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
-            <div>
-              <h1 className="text-3xl font-bold text-gray-900 font-heading">
-                Admin Dashboard
-              </h1>
-              <p className="text-gray-600">Manage contact form submissions</p>
+            <div className="flex items-center space-x-4">
+              <img
+                className="h-12 w-auto"
+                src="/logo/logo-x-navbar.png"
+                alt="LegendX Logo"
+              />
+              <div>
+                <h1 className="text-3xl font-bold text-gray-900 font-heading">
+                  Admin Dashboard
+                </h1>
+                <p className="text-gray-600">Manage contact form submissions</p>
+              </div>
             </div>
-            <Button
-              onClick={handleLogout}
-              className="bg-red-600 hover:bg-red-700"
-            >
-              Logout
-            </Button>
+            <div className="flex items-center space-x-4">
+              {/* Profile Section */}
+              <div className="flex items-center space-x-3 bg-gray-100 rounded-lg px-4 py-2">
+                <div className="w-8 h-8 bg-[#F08900] rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="text-sm">
+                  <div className="font-medium text-gray-900">Admin</div>
+                  <div className="text-gray-500">{adminEmail}</div>
+                </div>
+              </div>
+              {/* Logout Button */}
+              <Button
+                onClick={handleLogout}
+                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105 flex items-center space-x-2"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                </svg>
+                <span>Logout</span>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
@@ -164,7 +231,7 @@ export default function AdminDashboard() {
       {/* Filters */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="bg-white rounded-lg shadow p-6 mb-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
               <Label htmlFor="search" className="block text-sm font-medium text-gray-700 mb-2">
                 Search
@@ -189,20 +256,57 @@ export default function AdminDashboard() {
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#F08900] focus:border-[#F08900]"
               >
                 <option value="all">All Status</option>
-                <option value="new">New</option>
+                <option value="pending">Pending</option>
                 <option value="contacted">Contacted</option>
                 <option value="completed">Completed</option>
                 <option value="archived">Archived</option>
               </select>
             </div>
+            <div>
+              <Label className="block text-sm font-medium text-gray-700 mb-2">
+                Service Type
+              </Label>
+              <div className="flex space-x-2">
+                <button
+                  onClick={() => setActiveTab('all')}
+                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                    activeTab === 'all'
+                      ? 'bg-[#F08900] text-white'
+                      : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                  }`}
+                >
+                  All
+                </button>
+                <button
+                  onClick={() => setActiveTab('rental')}
+                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                    activeTab === 'rental'
+                      ? 'bg-purple-600 text-white'
+                      : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                  }`}
+                >
+                  Rental
+                </button>
+                <button
+                  onClick={() => setActiveTab('purchase')}
+                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                    activeTab === 'purchase'
+                      ? 'bg-orange-600 text-white'
+                      : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                  }`}
+                >
+                  Purchase
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-4 mb-6">
           <div className="bg-white rounded-lg shadow p-6">
-            <div className="text-2xl font-bold text-blue-600">{submissions.filter(s => s.status === 'new').length}</div>
-            <div className="text-gray-600">New</div>
+            <div className="text-2xl font-bold text-blue-600">{submissions.filter(s => s.status === 'pending').length}</div>
+            <div className="text-gray-600">Pending</div>
           </div>
           <div className="bg-white rounded-lg shadow p-6">
             <div className="text-2xl font-bold text-yellow-600">{submissions.filter(s => s.status === 'contacted').length}</div>
@@ -211,6 +315,14 @@ export default function AdminDashboard() {
           <div className="bg-white rounded-lg shadow p-6">
             <div className="text-2xl font-bold text-green-600">{submissions.filter(s => s.status === 'completed').length}</div>
             <div className="text-gray-600">Completed</div>
+          </div>
+          <div className="bg-white rounded-lg shadow p-6">
+            <div className="text-2xl font-bold text-purple-600">{submissions.filter(s => s.service_type === 'rental').length}</div>
+            <div className="text-gray-600">Rental</div>
+          </div>
+          <div className="bg-white rounded-lg shadow p-6">
+            <div className="text-2xl font-bold text-orange-600">{submissions.filter(s => s.service_type === 'purchase').length}</div>
+            <div className="text-gray-600">Purchase</div>
           </div>
           <div className="bg-white rounded-lg shadow p-6">
             <div className="text-2xl font-bold text-gray-600">{submissions.length}</div>
@@ -270,8 +382,10 @@ export default function AdminDashboard() {
                         <div className="text-sm font-medium text-gray-900">
                           {submission.product_of_interest}
                         </div>
-                        <div className="text-sm text-gray-500 capitalize">
-                          {submission.service_type}
+                        <div className="flex items-center space-x-2">
+                          <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${getServiceTypeColor(submission.service_type)}`}>
+                            {submission.service_type}
+                          </span>
                         </div>
                       </div>
                     </td>
@@ -289,17 +403,26 @@ export default function AdminDashboard() {
                       {new Date(submission.created_at).toLocaleDateString()}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                      <select
-                        value={submission.status}
-                        onChange={(e) => updateStatus(submission.id, e.target.value as ContactSubmission['status'])}
-                        disabled={updating === submission.id}
-                        className="text-sm border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#F08900]"
-                      >
-                        <option value="new">New</option>
-                        <option value="contacted">Contacted</option>
-                        <option value="completed">Completed</option>
-                        <option value="archived">Archived</option>
-                      </select>
+                      <div className="flex space-x-2">
+                        <select
+                          value={submission.status}
+                          onChange={(e) => updateStatus(submission.id, e.target.value as ContactSubmission['status'])}
+                          disabled={updating === submission.id}
+                          className="text-sm border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#F08900]"
+                        >
+                          <option value="pending">Pending</option>
+                          <option value="contacted">Contacted</option>
+                          <option value="completed">Completed</option>
+                          <option value="archived">Archived</option>
+                        </select>
+                        <Button
+                          onClick={() => deleteSubmission(submission.id)}
+                          disabled={deleting === submission.id}
+                          className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 text-xs"
+                        >
+                          {deleting === submission.id ? 'Deleting...' : 'Delete'}
+                        </Button>
+                      </div>
                     </td>
                   </tr>
                 ))}

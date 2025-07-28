@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
           product_of_interest: productOfInterest,
           service_type: serviceType,
           message: message || null,
-          status: 'new'
+          status: 'pending'
         }
       ])
       .select()
