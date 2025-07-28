@@ -26,7 +26,7 @@ const solutions = [
 export default function SolutionsSection() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
-      <h2 className="text-3xl sm:text-4xl font-bold text-[#5E366D] mb-4 text-center">Real-World Solutions</h2>
+      <h2 className="text-3xl sm:text-4xl font-bold text-[#5D376E] mb-4 text-center">Real-World Solutions</h2>
       <div className="w-24 h-1 bg-[#EE8900] mx-auto rounded-full mb-6"></div>
       <div className="space-y-12">
         {solutions.map((solution, idx) => (
@@ -48,7 +48,7 @@ export default function SolutionsSection() {
               />
             </div>
             {/* Content Side */}
-            <div className={`md:w-1/2 w-full flex flex-col justify-center h-60 md:h-64 p-6 ${idx % 2 === 0 ? 'bg-[#2B1C48]' : 'bg-[#EE8900]'}`}>
+            <div className={`md:w-1/2 w-full flex flex-col justify-center h-60 md:h-64 p-6 ${idx % 2 === 0 ? 'bg-[#5D376E]' : 'bg-[#EE8900]'}`}>
               <div className="flex items-center mb-2">
                 <h3 className="text-2xl font-bold text-white">{solution.title}</h3>
               </div>

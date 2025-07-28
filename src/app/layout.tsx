@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+import LayoutWrapper from '@/components/layout/LayoutWrapper';
 
 export const metadata: Metadata = {
   title: {
@@ -21,6 +20,14 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://legendx.com'),
   alternates: {
     canonical: '/',
+  },
+  icons: {
+    icon: [
+      { url: '/url_logo.png', type: 'image/png' },
+      { url: '/favicon.ico' }
+    ],
+    shortcut: '/url_logo.png',
+    apple: '/url_logo.png',
   },
   openGraph: {
     type: 'website',
@@ -78,15 +85,15 @@ export default function RootLayout({
       <head>
         <link rel="dns-prefetch" href="//cdn.legendholding.com" />
         <link rel="preconnect" href="//cdn.legendholding.com" />
+        <link rel="icon" type="image/png" href="/url_logo.png" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/url_logo.png" />
+        <link rel="apple-touch-icon" href="/url_logo.png" />
       </head>
       <body className="antialiased font-sans">
-        <div className="flex flex-col min-h-screen">
-          <Navbar />
-          <main className="flex-grow">
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <LayoutWrapper>
+          {children}
+        </LayoutWrapper>
       </body>
     </html>
   );

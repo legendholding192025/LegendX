@@ -181,7 +181,7 @@ export default function Navbar() {
               <div>
                 <button
                   onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
-                  className={`flex items-center justify-between w-full ${pathname.includes('/g1-specs') || pathname.includes('/b1-specs') || pathname.includes('/go1-specs') ? 'text-orange-500' : 'text-[#2B1C48]'} font-semibold font-heading`}
+                  className={`flex items-center justify-between w-full ${pathname.includes('/g1-specs') || pathname.includes('/b1-specs') || pathname.includes('/go1-specs') ? 'text-orange-500' : 'text-[#2B1C48]'} font-medium font-heading`}
                 >
                   <span>Products</span>
                   <svg 
@@ -224,7 +224,7 @@ export default function Navbar() {
               <div>
                 <button
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                  className={`flex items-center justify-between w-full ${pathname.includes('/services') ? 'text-orange-500' : 'text-[#2B1C48]'} font-semibold font-heading`}
+                  className={`flex items-center justify-between w-full ${pathname.includes('/services') ? 'text-orange-500' : 'text-[#2B1C48]'} font-medium font-heading`}
                 >
                   <span>Services</span>
                   <svg 
