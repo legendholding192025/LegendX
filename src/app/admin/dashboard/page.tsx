@@ -73,7 +73,6 @@ export default function AdminDashboard() {
         return;
       }
 
-      console.log('Fetched submissions:', data?.length || 0);
       setSubmissions(data || []);
     } catch (error) {
       console.error('Error fetching submissions:', error);
@@ -85,7 +84,6 @@ export default function AdminDashboard() {
   const forceRefresh = async () => {
     try {
       setLoading(true);
-      console.log('Force refreshing data...');
       
       // Clear any cached data by making a fresh request
       const { data, error } = await supabase
@@ -98,7 +96,6 @@ export default function AdminDashboard() {
         return;
       }
 
-      console.log('Force refresh completed. Submissions count:', data?.length || 0);
       setSubmissions(data || []);
     } catch (error) {
       console.error('Error force refreshing:', error);
@@ -145,8 +142,6 @@ export default function AdminDashboard() {
 
     setDeleting(id);
     try {
-      console.log('Attempting to delete submission:', id);
-      
       const { data, error } = await supabase
         .from('legendx_contact_submissions')
         .delete()
@@ -158,8 +153,6 @@ export default function AdminDashboard() {
         alert('Failed to delete submission: ' + error.message);
         return;
       }
-
-      console.log('Delete response:', data);
       
       // Remove from local state
       setSubmissions(prev => prev.filter(sub => sub.id !== id));
@@ -167,7 +160,6 @@ export default function AdminDashboard() {
       // Refresh data to ensure consistency
       await fetchSubmissions();
       
-      console.log('Submission deleted successfully');
     } catch (error) {
       console.error('Error deleting submission:', error);
       alert('An unexpected error occurred while deleting the submission');
