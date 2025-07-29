@@ -62,6 +62,7 @@ export default function AdminDashboard() {
 
   const fetchSubmissions = async () => {
     try {
+      setLoading(true);
       const { data, error } = await supabase
         .from('legendx_contact_submissions')
         .select('*')
@@ -72,9 +73,35 @@ export default function AdminDashboard() {
         return;
       }
 
+      console.log('Fetched submissions:', data?.length || 0);
       setSubmissions(data || []);
     } catch (error) {
       console.error('Error fetching submissions:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const forceRefresh = async () => {
+    try {
+      setLoading(true);
+      console.log('Force refreshing data...');
+      
+      // Clear any cached data by making a fresh request
+      const { data, error } = await supabase
+        .from('legendx_contact_submissions')
+        .select('*')
+        .order('created_at', { ascending: false });
+
+      if (error) {
+        console.error('Error force refreshing:', error);
+        return;
+      }
+
+      console.log('Force refresh completed. Submissions count:', data?.length || 0);
+      setSubmissions(data || []);
+    } catch (error) {
+      console.error('Error force refreshing:', error);
     } finally {
       setLoading(false);
     }
@@ -118,20 +145,32 @@ export default function AdminDashboard() {
 
     setDeleting(id);
     try {
-      const { error } = await supabase
+      console.log('Attempting to delete submission:', id);
+      
+      const { data, error } = await supabase
         .from('legendx_contact_submissions')
         .delete()
-        .eq('id', id);
+        .eq('id', id)
+        .select(); // Add select to see what was deleted
 
       if (error) {
         console.error('Error deleting submission:', error);
+        alert('Failed to delete submission: ' + error.message);
         return;
       }
 
+      console.log('Delete response:', data);
+      
       // Remove from local state
       setSubmissions(prev => prev.filter(sub => sub.id !== id));
+      
+      // Refresh data to ensure consistency
+      await fetchSubmissions();
+      
+      console.log('Submission deleted successfully');
     } catch (error) {
       console.error('Error deleting submission:', error);
+      alert('An unexpected error occurred while deleting the submission');
     } finally {
       setDeleting(null);
     }
@@ -213,6 +252,17 @@ export default function AdminDashboard() {
                   <div className="text-gray-500">{adminEmail}</div>
                 </div>
               </div>
+              {/* Refresh Button */}
+              <Button
+                onClick={forceRefresh}
+                disabled={loading}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105 flex items-center space-x-2"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                <span>{loading ? 'Refreshing...' : 'Refresh'}</span>
+              </Button>
               {/* Logout Button */}
               <Button
                 onClick={handleLogout}

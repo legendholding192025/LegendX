@@ -109,11 +109,11 @@ export default function TermsPoliciesPage() {
                           </li>
                           <li className="flex items-start">
                             <span className="text-orange-500 mr-2 mt-1">※</span>
-                            <span>If the Unitree product you purchased is out of warranty, you can also get help and support by purchasing a separate service.</span>
+                            <span>If the Legend X product you purchased is out of warranty, you can also get help and support by purchasing a separate service.</span>
                           </li>
                           <li className="flex items-start">
                             <span className="text-orange-500 mr-2 mt-1">※</span>
-                            <span>The warranty will be invalid directly if following behaviors happen without Unitree Robotics permission: unauthorized modification, unauthorized disassembly, and shell opening, etc.</span>
+                            <span>The warranty will be invalid directly if following behaviors happen without Legend X Robotics permission: unauthorized modification, unauthorized disassembly, and shell opening, etc.</span>
                           </li>
                         </ul>
                       </div>
@@ -122,7 +122,7 @@ export default function TermsPoliciesPage() {
                       <div className="mb-6">
                         <h3 className="text-xl font-semibold text-[#2B1C48] mb-4">Maintenance Condition</h3>
                         <p className="text-gray-700 mb-4">
-                          According to the specific situation, we will provide corresponding maintenance or parts replacement for the Unitree product you purchased. But the following cases are not covered by the free warranty:
+                          According to the specific situation, we will provide corresponding maintenance or parts replacement for the Legend X product you purchased. But the following cases are not covered by the free warranty:
                         </p>
                         <ul className="space-y-2 text-gray-700 list-disc list-inside">
                           <li>Beyond the warranty period.</li>
@@ -145,7 +145,7 @@ export default function TermsPoliciesPage() {
                           <li>Damage caused by compatibility and reliability issues when using the third-party product simultaneously.</li>
                           <li>Damage caused by forced operation with damaged and aging components.</li>
                           <li>Damage caused by insufficient discharge when the power is insufficient or using battery packs with quality problems.</li>
-                          <li>The product was not delivered within the stipulated time after contacting Unitree to confirm the warranty service.</li>
+                          <li>The product was not delivered within the stipulated time after contacting Legend X to confirm the warranty service.</li>
                           <li>Hitting with hard objects, fall, obvious collision marks and scratch marks on robot surface caused by misoperation.</li>
                           <li>There are obvious invasion traces of dust, gravel, water, metal powder in the robot.</li>
                           <li>There are obvious water stains on the surface and inside of the robot and corrosion marks on components and circuit boards due to the use in humid environment.</li>
@@ -157,13 +157,13 @@ export default function TermsPoliciesPage() {
                       <div>
                         <h3 className="text-xl font-semibold text-[#2B1C48] mb-4">Other Detailed Rules</h3>
                         <ul className="space-y-2 text-gray-700 list-disc list-inside">
-                          <li>When you send the product to Unitree Robotics, you need to bear the postage cost first.</li>
-                          <li>After receiving the defective products, you need to guarantee, Unitree Robotics will test the products to determine the problems and responsibilities. If it is a quality defect of the product itself, Unitree Robotics will be responsible for the cost of testing, materials, labor and express delivery.</li>
+                          <li>When you send the product to Legend X Robotics, you need to bear the postage cost first.</li>
+                          <li>After receiving the defective products, you need to guarantee, Legend X Robotics will test the products to determine the problems and responsibilities. If it is a quality defect of the product itself, Legend X Robotics will be responsible for the cost of testing, materials, labor and express delivery.</li>
                           <li>If the tested product does not meet the free maintenance conditions, you can choose to pay for maintenance or return the original machine, and you will be responsible for the courier fee for the original machine.</li>
                           <li>If the problem of the product exceeds the warranty scope, we will charge the corresponding inspection fee, replacement part fee, test fee, labor fee and transportation fee according to the specific problem.</li>
                           <li>Product maintenance may cause data loss. Please backup your data first.</li>
-                          <li>Please do not return the seriously damaged battery packs; If you have already sent them back, Unitree Robotics will scrap the battery packs and will not return them.</li>
-                          <li>If you have any questions about the warranty service of Unitree Robotics, please contact us.</li>
+                          <li>Please do not return the seriously damaged battery packs; If you have already sent them back, Legend X Robotics will scrap the battery packs and will not return them.</li>
+                          <li>If you have any questions about the warranty service of Legend X Robotics, please contact us.</li>
                         </ul>
                       </div>
                     </div>
@@ -172,16 +172,16 @@ export default function TermsPoliciesPage() {
                   {activeTab === 'after-sales' && (
                     <div className="space-y-6">
                       <p className="text-gray-700">
-                        This after-sales policy is only applicable to the Unitree Robotics products that you purchased for your own use and not for resale.
+                        This after-sales policy is only applicable to the Legend X Robotics products that you purchased for your own use and not for resale.
                       </p>
 
                       <div className="space-y-4">
                         <p className="text-gray-700">
-                          The warranty period of all products of Unitree Robotics starts from the day when you receive the goods.
+                          The warranty period of all products of Legend X Robotics starts from the day when you receive the goods.
                         </p>
                         
                         <p className="text-gray-700">
-                          Any product repair and maintenance not caused by the original design and manufacturing of the product will be charged corresponding fees. Unitree Robotics does not entrust or authorize any third party to repair and maintain the product. If there is any after-sales demand, please contact us directly.
+                          Any product repair and maintenance not caused by the original design and manufacturing of the product will be charged corresponding fees. Legend X Robotics does not entrust or authorize any third party to repair and maintain the product. If there is any after-sales demand, please contact us directly.
                         </p>
                         
                         <p className="text-gray-700">
@@ -189,11 +189,11 @@ export default function TermsPoliciesPage() {
                         </p>
                         
                         <p className="text-gray-700">
-                          When obtaining after-sales service, Unitree Robotics will have full and free rights to access your equipment to provide necessary after-sales service support.
+                          When obtaining after-sales service, Legend X Robotics will have full and free rights to access your equipment to provide necessary after-sales service support.
                         </p>
                         
                         <p className="text-gray-700">
-                          When the warranty service involves the replacement of product parts, the replaced product parts will become the property of Unitree Robotics, and the replaced product parts will become your property. Only unmodified products and parts can be replaced.
+                          When the warranty service involves the replacement of product parts, the replaced product parts will become the property of Legend X Robotics, and the replaced product parts will become your property. Only unmodified products and parts can be replaced.
                         </p>
                         
                         <p className="text-gray-700">
@@ -226,27 +226,27 @@ export default function TermsPoliciesPage() {
                           </p>
                           
                           <p className="text-gray-700">
-                            If the non-complete Unitree Robotics product you purchased has its own manufacturing performance failure, damage during transportation or other conditions inconsistent with the original product description, you can apply for return/replacement within 15 natural working days.
+                            If the non-complete Legend X Robotics product you purchased has its own manufacturing performance failure, damage during transportation or other conditions inconsistent with the original product description, you can apply for return/replacement within 15 natural working days.
                           </p>
                           
                           <p className="text-gray-700">
-                            For Unitree Robotics non-complete products, we have the right to refuse your request for return and replacement. Under the following circumstances, return and replacement are not allowed:
+                            For Legend X Robotics non-complete products, we have the right to refuse your request for return and replacement. Under the following circumstances, return and replacement are not allowed:
                           </p>
                           
                           <ul className="space-y-2 text-gray-700 list-disc list-inside ml-4">
                             <li>When you request for goods return or replacement beyond the time specified above after receiving the goods.</li>
                             <li>The product is artificially damaged, the package is incomplete, the manual and other accessories are incomplete or damaged.</li>
                             <li>When the product is damaged due to manual disassembly, modification, operation not in accordance with the instructions and other incorrect use.</li>
-                            <li>It is not the original genuine product of Unitree Robotics, or the legal purchase certificate cannot be provided.</li>
+                            <li>It is not the original genuine product of Legend X Robotics, or the legal purchase certificate cannot be provided.</li>
                             <li>When the product is damaged due to irresistible factors such as flood, fire, traffic accident, lightning stroke, etc.</li>
                             <li>Failure or damage caused by any third-party product.</li>
-                            <li>After contacting Unitree Robotics and confirming the return and replacement service, the corresponding product items are not sent out within the above specified return and replacement time.</li>
+                            <li>After contacting Legend X Robotics and confirming the return and replacement service, the corresponding product items are not sent out within the above specified return and replacement time.</li>
                             <li>When the policy is adjusted.</li>
                           </ul>
                         </div>
                         
                         <p className="text-gray-700 mt-4">
-                          As quadruped robots are pioneering products at present, and the operating conditions are complex and difficult to define, the above after-sales policies may not be the latest or most comprehensive. If you want to know more complete after-sales policies of Unitree Robotics, you can contact us.
+                          As quadruped robots are pioneering products at present, and the operating conditions are complex and difficult to define, the above after-sales policies may not be the latest or most comprehensive. If you want to know more complete after-sales policies of Legend X Robotics, you can contact us.
                         </p>
                       </div>
 
@@ -256,14 +256,14 @@ export default function TermsPoliciesPage() {
                         
                         <div className="space-y-4">
                           <p className="text-gray-700">
-                            Unitree Robotics is only responsible for the loss or damage of the product in the following cases:
+                            Legend X Robotics is only responsible for the loss or damage of the product in the following cases:
                           </p>
                           <ul className="space-y-2 text-gray-700 list-disc list-inside ml-4">
-                            <li>The product is owned by Unitree Robotics, or the product is transported by Unitree Robotics.</li>
+                            <li>The product is owned by Legend X Robotics, or the product is transported by Legend X Robotics.</li>
                           </ul>
                           
                           <p className="text-gray-700">
-                            Unitree Robotics is not responsible for the loss or disclosure of any data contained in the product, including confidential, proprietary, or personal information.
+                            Legend X Robotics is not responsible for the loss or disclosure of any data contained in the product, including confidential, proprietary, or personal information.
                           </p>
                           
                           <p className="text-gray-700">
@@ -276,15 +276,15 @@ export default function TermsPoliciesPage() {
                           </ul>
                           
                           <p className="text-gray-700">
-                            No matter whether any relief specified herein has achieved its fundamental purpose, and no matter whether the claim is based on contract, guarantee, negligence, strict liability or other liability theories, Unitree Robotics will not be responsible, even if it has known the possibility of these situations. Regardless of the damage based on any reason, the full liability of Unitree Robotics and its affiliated enterprises, suppliers, distributors or suppliers is limited to the direct losses you actually suffered and is not more than the amount you paid for purchasing products.
+                            No matter whether any relief specified herein has achieved its fundamental purpose, and no matter whether the claim is based on contract, guarantee, negligence, strict liability or other liability theories, Legend X Robotics will not be responsible, even if it has known the possibility of these situations. Regardless of the damage based on any reason, the full liability of Legend X Robotics and its affiliated enterprises, suppliers, distributors or suppliers is limited to the direct losses you actually suffered and is not more than the amount you paid for purchasing products.
                           </p>
                           
                           <p className="text-gray-700">
-                            The above restrictions do not apply to the personal injury (including death) that Unitree Robotics should be responsible for according to law, as well as the compensation for the loss of real estate and tangible movable property.
+                            The above restrictions do not apply to the personal injury (including death) that Legend X Robotics should be responsible for according to law, as well as the compensation for the loss of real estate and tangible movable property.
                           </p>
                           
                           <p className="text-gray-700">
-                            Unitree Robotics will not bear any responsibility for the personal or property damage caused by the customer's own operation of the robot.
+                            Legend X Robotics will not bear any responsibility for the personal or property damage caused by the customer's own operation of the robot.
                           </p>
                           
                           <p className="text-gray-700">
@@ -292,7 +292,7 @@ export default function TermsPoliciesPage() {
                           </p>
                           
                           <p className="text-gray-700">
-                            Unitree Robotics will have the final right to explain the after-sales policy.
+                            Legend X Robotics will have the final right to explain the after-sales policy.
                           </p>
                           
                           <p className="text-gray-700">
@@ -310,16 +310,16 @@ export default function TermsPoliciesPage() {
                   {activeTab === 'privacy' && (
                     <div className="space-y-6">
                       <p className="text-gray-700">
-                        This privacy policy is only applicable to the Unitree Robotics products that you purchased for your own use and not for resale.
+                        This privacy policy is only applicable to the Legend X Robotics products that you purchased for your own use and not for resale.
                       </p>
 
                       <div className="space-y-4">
                         <p className="text-gray-700">
-                          Unitree Robotics attaches importance to the maintenance and protection of users' personal information.
+                          Legend X Robotics attaches importance to the maintenance and protection of users' personal information.
                         </p>
                         
                         <p className="text-gray-700">
-                          When you use Unitree Robotics products and services, we may collect and use your personal information.
+                          When you use Legend X Robotics products and services, we may collect and use your personal information.
                         </p>
                         
                         <p className="text-gray-700">
@@ -335,11 +335,11 @@ export default function TermsPoliciesPage() {
                       <div className="space-y-3">
                         <div className="flex items-start">
                           <span className="text-orange-500 mr-2 mt-1">※</span>
-                          <span className="text-gray-700">When you use Unitree Robotics products or services, it means that you agree to our collection, storage and use of your personal information in accordance with this 'Privacy Policy'.</span>
+                          <span className="text-gray-700">When you use Legend X Robotics products or services, it means that you agree to our collection, storage and use of your personal information in accordance with this 'Privacy Policy'.</span>
                         </div>
                         <div className="flex items-start">
                           <span className="text-orange-500 mr-2 mt-1">※</span>
-                          <span className="text-gray-700">The information you provide to Unitree Robotics, including name, phone number, e-mail address, ID number, bank card number, third-party payment account number, etc., may be collected by us.</span>
+                          <span className="text-gray-700">The information you provide to Legend X Robotics, including name, phone number, e-mail address, ID number, bank card number, third-party payment account number, etc., may be collected by us.</span>
                         </div>
                         <div className="flex items-start">
                           <span className="text-orange-500 mr-2 mt-1">※</span>
@@ -374,20 +374,20 @@ export default function TermsPoliciesPage() {
                       <div>
                         <h3 className="text-xl font-semibold text-gray-900 mb-4">Information Protection and Sharing</h3>
                         <p className="text-gray-700 mb-4">
-                          No matter how your personal information is provided to Unitree Robotics, it will be stored and protected by Unitree Robotics.
+                          No matter how your personal information is provided to Legend X Robotics, it will be stored and protected by Legend X Robotics.
                         </p>
                         <p className="text-gray-700 mb-4">
-                          We will not share your personal information with any third party other than Unitree Robotics, but there are some exceptions in the following cases.
+                          We will not share your personal information with any third party other than Legend X Robotics, but there are some exceptions in the following cases.
                         </p>
                         <ul className="space-y-2 text-gray-700 list-disc list-inside ml-4">
-                          <li>With your consent, share your information with the product or service providers authorized by Unitree Robotics to achieve the necessary purpose.</li>
-                          <li>Share your personal information within Unitree Robotics to achieve the necessary purpose.</li>
-                          <li>In the future, we may sell Unitree Robotics business or merge new business. In this case, your personal information and relevant accounts, products, and services you purchased, etc. will be transferred along with the business.</li>
+                          <li>With your consent, share your information with the product or service providers authorized by Legend X Robotics to achieve the necessary purpose.</li>
+                          <li>Share your personal information within Legend X Robotics to achieve the necessary purpose.</li>
+                          <li>In the future, we may sell Legend X Robotics business or merge new business. In this case, your personal information and relevant accounts, products, and services you purchased, etc. will be transferred along with the business.</li>
                           <li>Your personal information may be required to be disclosed under the following circumstances.</li>
                           <li>Disclosure to judicial or law enforcement agencies to detect and prevent crimes when suspected of criminal activity.</li>
                           <li>Disclosure required by law (or court).</li>
                           <li>Disclosure according to the mandatory requirements of the government.</li>
-                          <li>To protect Unitree Robotics assets (such as paying off overdue accounts).</li>
+                          <li>To protect Legend X Robotics assets (such as paying off overdue accounts).</li>
                         </ul>
                         <p className="text-gray-700 mt-4">
                           Under the above circumstances, we will record the content, time, reason and object of information disclosure.
@@ -404,7 +404,7 @@ export default function TermsPoliciesPage() {
                           </div>
                           <div className="flex items-start">
                             <span className="text-blue-500 mr-2 mt-1">△</span>
-                            <span className="text-gray-700">In some cases, you have the right to refuse to provide us with certain information, but we may not be able to provide you with certain products, services, or information. To protect the interests of both parties, for example, to ensure that your requirements are implemented and to prove that we have provided you with the required information, we may monitor your telephone or email exchanges with Unitree Robotics to ensure our service quality.</span>
+                            <span className="text-gray-700">In some cases, you have the right to refuse to provide us with certain information, but we may not be able to provide you with certain products, services, or information. To protect the interests of both parties, for example, to ensure that your requirements are implemented and to prove that we have provided you with the required information, we may monitor your telephone or email exchanges with Legend X Robotics to ensure our service quality.</span>
                           </div>
                           <div className="flex items-start">
                             <span className="text-blue-500 mr-2 mt-1">△</span>
@@ -412,7 +412,7 @@ export default function TermsPoliciesPage() {
                           </div>
                           <div className="flex items-start">
                             <span className="text-blue-500 mr-2 mt-1">△</span>
-                            <span className="text-gray-700">If you do not want us to share your personal information among members of Unitree Robotics, please inform us. In this case, we may not be able to provide you with specific products or services due to missing information.</span>
+                            <span className="text-gray-700">If you do not want us to share your personal information among members of Legend X Robotics, please inform us. In this case, we may not be able to provide you with specific products or services due to missing information.</span>
                           </div>
                           <div className="flex items-start">
                             <span className="text-blue-500 mr-2 mt-1">△</span>
@@ -441,7 +441,7 @@ export default function TermsPoliciesPage() {
 
                   {activeTab === 'disclaimer' && (
                     <div className="space-y-6">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-4">Disclaimer and Warning in Use of Unitree Robotics Robot Dog Series Products</h3>
+                      <h3 className="text-xl font-semibold text-gray-900 mb-4">Disclaimer and Warning in Use of Legend X Robotics Robot Dog Series Products</h3>
                       
                       <div className="space-y-4">
                         <p className="text-gray-700">
@@ -463,19 +463,19 @@ export default function TermsPoliciesPage() {
                           </li>
                           <li className="flex items-start">
                             <span className="text-red-500 mr-2 mt-1">•</span>
-                            <span>This product should not be used in similar scenes such as infants, children, pregnant women, the elderly, disabled people, and densely populated areas (with an interval of less than 1 meter). If the above related personnel are injured or damaged by property due to misoperation, Unitree Robotics will not bear all the losses and consequences arising therefrom;</span>
+                            <span>This product should not be used in similar scenes such as infants, children, pregnant women, the elderly, disabled people, and densely populated areas (with an interval of less than 1 meter). If the above related personnel are injured or damaged by property due to misoperation, Legend X Robotics will not bear all the losses and consequences arising therefrom;</span>
                           </li>
                           <li className="flex items-start">
                             <span className="text-red-500 mr-2 mt-1">•</span>
-                            <span>Unauthorized disassembly, modification and informal maintenance of this product are prohibited. Unitree Robotics will not bear any responsibility for all failures and damages caused by the above behaviors;</span>
+                            <span>Unauthorized disassembly, modification and informal maintenance of this product are prohibited. Legend X Robotics will not bear any responsibility for all failures and damages caused by the above behaviors;</span>
                           </li>
                           <li className="flex items-start">
                             <span className="text-red-500 mr-2 mt-1">•</span>
-                            <span>This product is strictly forbidden to be used in unconventional environments (such as high temperature, extreme cold, chemical corrosion, fire blisters). Unitree Robotics will not be responsible for all the above failures and damages;</span>
+                            <span>This product is strictly forbidden to be used in unconventional environments (such as high temperature, extreme cold, chemical corrosion, fire blisters). Legend X Robotics will not be responsible for all the above failures and damages;</span>
                           </li>
                           <li className="flex items-start">
                             <span className="text-red-500 mr-2 mt-1">•</span>
-                            <span>Under normal use, the failure and risk burden caused by normal natural loss of parts and aging of batteries of this product are considered as the risk of normal use of the product, and Unitree Robotics will not bear the corresponding consequences and responsibilities;</span>
+                            <span>Under normal use, the failure and risk burden caused by normal natural loss of parts and aging of batteries of this product are considered as the risk of normal use of the product, and Legend X Robotics will not bear the corresponding consequences and responsibilities;</span>
                           </li>
                         </ul>
                       </div>
@@ -494,7 +494,7 @@ export default function TermsPoliciesPage() {
                           </li>
                           <li className="flex items-start">
                             <span className="text-red-500 mr-2 mt-1">•</span>
-                            <span>You promise that you are not subject to trade restrictions and sanctions or law and regulation restrictions by any country, international organization or region; otherwise, you may not be able to register or use Unitree Robotics's product functions and services.</span>
+                            <span>You promise that you are not subject to trade restrictions and sanctions or law and regulation restrictions by any country, international organization or region; otherwise, you may not be able to register or use Legend X Robotics's product functions and services.</span>
                           </li>
                         </ul>
                       </div>
@@ -507,7 +507,7 @@ export default function TermsPoliciesPage() {
                         </p>
                         
                         <p className="text-gray-700">
-                          The users promise to use this product only for legitimate purposes and agrees to all the terms and contents of the document and any relevant policies or guidelines that may be formulated by Unitree Robotics. Unitree Robotics will not bear all losses and consequences caused by the users' failure to use the product in accordance with the guide and the user manual.
+                          The users promise to use this product only for legitimate purposes and agrees to all the terms and contents of the document and any relevant policies or guidelines that may be formulated by Legend X Robotics. Legend X Robotics will not bear all losses and consequences caused by the users' failure to use the product in accordance with the guide and the user manual.
                         </p>
                       </div>
 
@@ -515,7 +515,7 @@ export default function TermsPoliciesPage() {
                       <div>
                         <h4 className="text-lg font-semibold text-gray-900 mb-3">Final Rights and Interpretation</h4>
                         <p className="text-gray-700">
-                          In compliance with laws and regulations, Unitree Robotics has the final right to interpret this document. Unitree Robotics reserves the right to update, revise or terminate these terms without prior notice.
+                          In compliance with laws and regulations, Legend X Robotics has the final right to interpret this document. Legend X Robotics reserves the right to update, revise or terminate these terms without prior notice.
                         </p>
                       </div>
                     </div>

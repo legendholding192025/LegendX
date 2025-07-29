@@ -100,7 +100,7 @@ export default function PartnersSection() {
       <section className="py-12 sm:py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#5E366D] mb-4 text-center">Partners Section</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#5E366D] mb-4 text-center">Clients List</h2>
             <div className="w-24 h-1 bg-[#EE8900] mx-auto rounded-full mb-6"></div>
           </div>
 
