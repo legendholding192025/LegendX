@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import LayoutWrapper from '@/components/layout/LayoutWrapper';
+import Script from 'next/script';
+import { GA_MEASUREMENT_ID } from '@/lib/gtag';
 
 export const metadata: Metadata = {
   title: {
@@ -244,6 +246,19 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased font-sans">
+        <Script
+          id="ga-loader"
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        />
+        <Script id="ga-config" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);} 
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <LayoutWrapper>
           {children}
         </LayoutWrapper>
