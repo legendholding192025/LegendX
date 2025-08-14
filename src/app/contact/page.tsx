@@ -1,6 +1,7 @@
 "use client"
 
 import Image from 'next/image';
+import ObfuscatedEmail from '@/components/ui/ObfuscatedEmail';
 import ContactForm from "@/components/ui/ContactForm";
 import { Phone, Mail, MapPin, Clock, ExternalLink } from "lucide-react"
 
@@ -105,9 +106,12 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-gray-700 font-medium text-sm sm:text-base">Email</p>
-                    <a href="mailto:info@legendx.com" className="text-[#2B1C48] font-normal hover:text-orange-500 transition-colors duration-200 text-sm sm:text-base">
-                      info@legendx.ae
-                    </a>
+                    <ObfuscatedEmail
+                      user="info"
+                      domain="legendx"
+                      tld="ae"
+                      className="text-[#2B1C48] font-normal hover:text-orange-500 transition-colors duration-200 text-sm sm:text-base"
+                    />
                   </div>
                 </div>
 

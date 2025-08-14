@@ -3,6 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { MapPin, Phone, Mail, ChevronRight } from "lucide-react"
+import ObfuscatedEmail from "@/components/ui/ObfuscatedEmail"
 
 const FacebookIcon = ({ size = 20, className = "" }) => (
   <svg
@@ -190,11 +191,9 @@ export default function Footer() {
                       +971 4 234 0738
                     </Link>
                   </li>
-                                <li className="flex items-center">
+                  <li className="flex items-center">
                 <Mail size={20} className="text-custom-yellow flex-shrink-0 mr-3" />
-                    <Link href="mailto:info@legendx.com" className="text-white/80 hover:text-white transition-colors">
-                      info@legendx.ae
-                    </Link>
+                    <ObfuscatedEmail user="info" domain="legendx" tld="ae" className="text-white/80 hover:text-white transition-colors" />
                   </li>
                 </ul>
               </div>
