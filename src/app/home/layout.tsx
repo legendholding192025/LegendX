@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Legend X | Robotics Company',
+  title: { absolute: 'Legend X | Robotics Company' },
   description: 'Legend X is a robotics company specialized in cutting-edge technology and AI-driven innovations. We offer advanced robotics solutions designed to integrate everyday life with AI, both at the corporate and personal level',
   alternates: {
     canonical: '/home',

@@ -160,7 +160,7 @@ export const metadata: Metadata = {
     url: 'https://legendx.ae/home',
     title: 'Legend X | Robotics Company',
     description: 'Legend X is a robotics company specialized in cutting-edge technology and AI-driven innovations. We offer advanced robotics solutions designed to integrate everyday life with AI, both at the corporate and personal level',
-    siteName: 'LegendX',
+    siteName: 'Legend X',
     images: [
       {
         url: '/logo/legendx-logo.svg',
@@ -222,7 +222,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'LegendX',
+              name: 'Legend X',
+              alternateName: 'LegendX',
               url: 'https://legendx.ae',
               logo: 'https://legendx.ae/logo/legendx-logo.svg',
               sameAs: []
@@ -235,7 +236,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'WebSite',
-              name: 'LegendX',
+              name: 'Legend X',
+              alternateName: 'LegendX',
               url: 'https://legendx.ae'
             })
           }}
