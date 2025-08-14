@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Sales Services | LegendX',
-  description: 'Purchase LegendX robots and bring AI-powered automation to your organization with expert support.',
+  title: 'Buy Advanced Robots | Legend X',
+  description: 'Buy advanced robots from Legend X — humanoid and quadruped robots for automation, inspection, and security. AI robotics with support.',
   alternates: { canonical: '/services/sales' },
   openGraph: {
     url: 'https://legendx.ae/services/sales',
-    title: 'Sales Services | LegendX',
-    description: 'Purchase LegendX robots and bring AI-powered automation to your organization with expert support.',
+    title: 'Buy Advanced Robots | Legend X',
+    description: 'Buy advanced robots from Legend X — humanoid and quadruped robots for automation, inspection, and security. AI robotics with support.',
     images: [
       { url: '/logo/legendx-logo.svg', width: 1200, height: 630, alt: 'LegendX Logo' },
     ],

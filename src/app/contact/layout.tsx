@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | LegendX',
-  description: 'Get in touch with LegendX for cutting-edge technology and AI-driven robotics solutions.',
+  title: 'Contact | Legend X',
+  description: 'Contact Legend X to discuss advanced robots, AI robotics solutions, rentals, sales, and support.',
   alternates: {
     canonical: '/contact',
   },
   openGraph: {
     url: 'https://legendx.ae/contact',
-    title: 'Contact Us | LegendX',
-    description: 'Get in touch with LegendX for cutting-edge technology and AI-driven robotics solutions.',
+    title: 'Contact | Legend X',
+    description: 'Contact Legend X to discuss advanced robots, AI robotics solutions, rentals, sales, and support.',
     images: [
       {
         url: '/logo/legendx-logo.svg',

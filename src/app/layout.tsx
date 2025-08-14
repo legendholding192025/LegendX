@@ -4,10 +4,10 @@ import LayoutWrapper from '@/components/layout/LayoutWrapper';
 
 export const metadata: Metadata = {
   title: {
-    default: 'LegendX - Cutting-edge Technology & AI Robotics',
-    template: '%s | LegendX'
+    default: 'Legend X | Robotics Company',
+    template: '%s | Legend X'
   },
-  description: 'LegendX is a robotics company specialized in cutting-edge technology and AI-driven innovations. We offer advanced robotics solutions designed to integrate everyday life with AI, both at the corporate and personal level',
+  description: 'Legend X is a robotics company specialized in cutting-edge technology and AI-driven innovations. We offer advanced robotics solutions designed to integrate everyday life with AI, both at the corporate and personal level',
   keywords: [
     'robots',
     'ai',
@@ -158,8 +158,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://legendx.ae/home',
-    title: 'LegendX - Cutting-edge Technology & AI Robotics',
-    description: 'Is a robotics company specialized in cutting-edge technology and AI-driven innovations. We offer advanced robotics solutions designed to integrate everyday life with AI, both at the corporate and personal level',
+    title: 'Legend X | Robotics Company',
+    description: 'Legend X is a robotics company specialized in cutting-edge technology and AI-driven innovations. We offer advanced robotics solutions designed to integrate everyday life with AI, both at the corporate and personal level',
     siteName: 'LegendX',
     images: [
       {
@@ -172,8 +172,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LegendX - Cutting-edge Technology & AI Robotics',
-    description: 'Is a robotics company specialized in cutting-edge technology and AI-driven innovations. We offer advanced robotics solutions designed to integrate everyday life with AI, both at the corporate and personal level',
+    title: 'Legend X | Robotics Company',
+    description: 'Legend X is a robotics company specialized in cutting-edge technology and AI-driven innovations. We offer advanced robotics solutions designed to integrate everyday life with AI, both at the corporate and personal level',
     images: ['/logo/legendx-logo.svg'],
   },
   robots: {
