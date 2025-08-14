@@ -35,11 +35,17 @@ export default function ContactPage() {
       <section className="relative py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <img
-            src="https://cdn.legendholding.com/images/cdn_687a26aa467e88.57510195_20250718_104914.png"
-            alt="Contact Background"
-            className="w-full h-full object-cover"
-          />
+          <div className="absolute inset-0">
+            <Image
+              src="https://cdn.legendholding.com/images/cdn_687a26aa467e88.57510195_20250718_104914.png"
+              alt="Contact Background"
+              fill
+              className="object-cover"
+              priority={false}
+              sizes="100vw"
+              quality={85}
+            />
+          </div>
           {/* Overlay for better text readability */}
           <div className="absolute inset-0 bg-black/5"></div>
         </div>

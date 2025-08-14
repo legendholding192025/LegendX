@@ -210,6 +210,8 @@ export default function RootLayout({
       <head>
         <link rel="dns-prefetch" href="//cdn.legendholding.com" />
         <link rel="preconnect" href="//cdn.legendholding.com" />
+        <link rel="preload" as="font" href="/fonts/Effra_Std_Rg.ttf" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" as="font" href="/fonts/fonnts.com-Richmond-Text-Medium.otf" type="font/otf" crossOrigin="anonymous" />
         <link rel="icon" type="image/png" href="/url_logo.png" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/url_logo.png" />

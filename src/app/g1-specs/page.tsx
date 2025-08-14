@@ -617,11 +617,17 @@ export default function G1SpecsPage() {
             <div className="w-24 h-1 bg-[#EE8900] mx-auto rounded-full mb-6"></div>
           </div>
           <div className="w-full flex justify-center">
-            <img
-              src="https://cdn.legendholding.com/images/cdn_687e33025e1d55.07412621_20250721_123058.png"
-              alt="Technical Details"
-              style={{ width: '100%', height: 'auto', maxWidth: '100%' }}
-            />
+            <div className="relative w-full max-w-5xl aspect-[16/9]">
+              <Image
+                src="https://cdn.legendholding.com/images/cdn_687e33025e1d55.07412621_20250721_123058.png"
+                alt="Technical Details"
+                fill
+                className="object-contain"
+                priority={false}
+                sizes="(max-width: 768px) 100vw, 1024px"
+                quality={85}
+              />
+            </div>
           </div>
           <div className="flex justify-center mt-8">
             <button

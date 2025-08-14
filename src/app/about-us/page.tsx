@@ -105,8 +105,8 @@ export default function AboutUsPage() {
             
             <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
               {/* About Us Heading - Centered across full width */}
-              <div className="text-center mb-12">
-                <h1 className="text-4xl md:text-5xl font-bold text-white mb-8">
+             <div className="text-center mb-12">
+               <h1 className="text-4xl md:text-5xl font-bold text-white mb-8" style={{minHeight: '2.75rem'}}>
                   About Us
                 </h1>
               </div>

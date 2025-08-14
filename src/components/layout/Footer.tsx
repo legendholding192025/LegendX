@@ -86,7 +86,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-[rgb(43,28,72)] text-white pt-8 pb-4">
+    <footer className="bg-[rgb(43,28,72)] text-white pt-8 pb-4" style={{contain: 'layout paint'}}>
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
         <div className="flex flex-col lg:flex-row justify-between items-center mb-2">
