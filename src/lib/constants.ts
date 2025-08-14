@@ -2,12 +2,12 @@
 export const SITE_CONFIG = {
   name: 'LegendX',
   description: 'Cutting-edge technology and AI-driven innovations for advanced robotics solutions',
-  url: 'https://legendx.com',
+  url: 'https://legendx.ae',
   ogImage: '/logo/legendx-logo.svg',
   links: {
-    twitter: 'https://twitter.com/legendx',
-    github: 'https://github.com/legendx',
-    linkedin: 'https://linkedin.com/company/legendx',
+    twitter: '',
+    github: '',
+    linkedin: '',
   },
 } as const;
 

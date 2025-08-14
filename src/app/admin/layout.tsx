@@ -6,6 +6,11 @@ export const metadata: Metadata = {
     template: '%s | LegendX Admin'
   },
   description: 'LegendX Admin Dashboard - Manage contact form submissions and website content.',
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: { index: false, follow: false },
+  },
   icons: {
     icon: [
       { url: '/url_logo.png', type: 'image/png' },
