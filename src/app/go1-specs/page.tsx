@@ -42,25 +42,25 @@ export default function GO1SpecsPage() {
               style={{ objectPosition: 'center' }}
             />
             <Image
-              src="https://cdn.legendholding.com/images/cdn_68836fcd4451f6.03071181_20250725_115141.png"
+              src="https://cdn.legendholding.com/images/cdn_687f879ccd7371.25648149_20250722_124412.jpg"
               alt="GO1 Specs Banner Mobile"
               fill
               className="object-cover w-full transition-all duration-700 ease-in-out md:hidden"
               priority
               sizes="100vw"
               quality={100}
-              style={{ objectPosition: '5% 40%', transform: 'scale(1.5)' }}
+              style={{ objectPosition: '75% 65%', transform: 'scale(1.5)' }}
             />
             <div className="absolute inset-0 flex items-center justify-end z-10 transition-all duration-700 ease-in-out">
               {/* Product Information Card - Right Side */}
-              <div className="absolute right-8 md:right-8 lg:right-12 xl:right-16 top-1/2 transform -translate-y-1/2 bg-[#5D376E]/71 rounded-xl p-6 md:p-8 shadow-2xl border border-gray-700 w-80 md:w-96 transition-all duration-700 ease-in-out transform hover:scale-105">
+              <div className="absolute top-1/2 left-1/2 md:left-auto md:right-8 lg:right-12 xl:right-16 transform -translate-y-1/2 -translate-x-1/2 md:translate-x-0 bg-[#5D376E]/71 rounded-xl p-6 md:p-8 shadow-2xl border border-gray-700 w-80 md:w-96 transition-all duration-700 ease-in-out transform hover:scale-105">
                 <div className="text-center">
-                  <h1 className="text-3xl md:text-5xl font-bold text-[#2B1C48] mb-2 transition-all duration-500">
+                  <h1 className="text-3xl md:text-5xl font-bold text-white md:text-[#2B1C48] mb-2 transition-all duration-500">
                     <span className="text-4xl md:text-6xl">Unitree</span>
                     <br />
                     <span className="text-2xl md:text-4xl">GO1</span>
                   </h1>
-                  <p className="text-[#2B1C48] text-base md:text-lg mb-4 transition-all duration-500">Quadruped Robot</p>
+                  <p className="text-white md:text-[#2B1C48] text-base md:text-lg mb-4 transition-all duration-500">Quadruped Robot</p>
                   <div className="w-full h-px bg-[#EE8900] mb-6 transition-all duration-500"></div>
                   <div className="flex items-center justify-center mb-4">
                     <button 
@@ -73,7 +73,7 @@ export default function GO1SpecsPage() {
                       Watch Video
                     </button>
                   </div>
-                  <p className="text-[#2B1C48] text-xs md:text-sm opacity-80 transition-all duration-500">
+                  <p className="text-white md:text-[#2B1C48] text-xs md:text-sm opacity-80 transition-all duration-500">
                     Continuous OTA Software Upgrade and Update
                   </p>
                 </div>

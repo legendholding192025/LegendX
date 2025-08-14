@@ -43,7 +43,7 @@ export default function B1SpecsPage() {
             />
             <div className="absolute inset-0 flex items-center z-10 transition-all duration-700 ease-in-out">
               {/* Product Information Card - Left Side */}
-              <div className="absolute left-8 md:left-8 lg:left-12 xl:left-16 top-1/2 transform -translate-y-1/2 bg-[#2c1b47]/71 rounded-xl p-6 md:p-8 shadow-2xl border border-gray-700 w-80 md:w-96 transition-all duration-700 ease-in-out transform hover:scale-105">
+              <div className="absolute top-1/2 left-1/2 md:left-8 lg:left-12 xl:left-16 transform -translate-y-1/2 -translate-x-1/2 md:translate-x-0 bg-[#2c1b47]/71 rounded-xl p-6 md:p-8 shadow-2xl border border-gray-700 w-80 md:w-96 transition-all duration-700 ease-in-out transform hover:scale-105">
                 <div className="text-center">
                   <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 transition-all duration-500">
                     <span className="text-4xl md:text-6xl">Unitree</span>
