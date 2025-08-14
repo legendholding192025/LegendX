@@ -146,7 +146,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://legendx.ae'),
   alternates: {
-    canonical: '/home',
+    canonical: '/',
   },
   icons: {
     icon: [
@@ -159,7 +159,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://legendx.ae/home',
+    url: 'https://legendx.ae/',
     title: 'Legend X | Robotics Company',
     description: 'Legend X is a robotics company specialized in cutting-edge technology and AI-driven innovations. We offer advanced robotics solutions designed to integrate everyday life with AI, both at the corporate and personal level',
     siteName: 'Legend X',

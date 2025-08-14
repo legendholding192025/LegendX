@@ -8,22 +8,11 @@ import ContactFormSection from '@/components/sections/ContactFormSection';
 export default function HomePage() {
   return (
     <main>
-      {/* 1. Hero Section */}
       <HeroSection />
-      
-      {/* 2. Product Showcase Section */}
       <ProductShowcase />
-      
-      {/* 3. About Section */}
       <AboutSection />
-      
-      {/* 4. Solutions Section */}
       <SolutionsSection />
-      
-      {/* 5. Partners Section */}
       <PartnersSection />
-      
-      {/* 6. Contact Form Section */}
       <ContactFormSection />
     </main>
   );
