@@ -37,8 +37,8 @@ export default function GO1SpecsPage() {
               fill
               className="object-cover w-full transition-all duration-700 ease-in-out hidden md:block"
               priority
-              sizes="100vw"
-              quality={100}
+              sizes="(min-width: 768px) 100vw, 768px"
+              quality={95}
               style={{ objectPosition: 'center' }}
             />
             <Image
@@ -47,9 +47,9 @@ export default function GO1SpecsPage() {
               fill
               className="object-cover w-full transition-all duration-700 ease-in-out md:hidden"
               priority
-              sizes="100vw"
-              quality={100}
-              style={{ objectPosition: '75% 65%', transform: 'scale(1.5)' }}
+              sizes="(max-width: 768px) 100vw, 768px"
+              quality={95}
+              style={{ objectPosition: '75% 65%' }}
             />
             <div className="absolute inset-0 flex items-center justify-end z-10 transition-all duration-700 ease-in-out">
               {/* Product Information Card - Right Side */}
